@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="We are thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Starter Kit</title>
+    <title>thoughtram - Extend your memory</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -14,7 +14,7 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <meta name="apple-mobile-web-app-title" content="thoughtram">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -26,37 +26,118 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="app-bar promote-layer">
+    <!-- Add your site or app content here -->
+
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header role="banner" class="app-bar promote-layer">
       <div class="app-bar-container">
+        <h1 class="logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
         <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">Web <strong>Starter Kit</strong></h1>
         <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
-        <!-- e.g <button><i class="icon icon-star"></i></button> -->
+        <!-- <button><i class="icon icon-star"></i></button> -->
+        <ul class="navigation">
+          <li><a class="navigation-link" href="/" title="Home">Home</a></li>
+          <li><a class="navigation-link" href="/about-us.html" title="About us">About us</a></li>
+          <li><a class="navigation-link" href="/products.html" title="Products">Products</a></li>
+          <li><a class="navigation-link" href="/training.html" title="Training">Training</a></li>
+          <li><a class="navigation-link" href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
+          <!-- <li><a class="navigation-link" href="/contact.html" title="Contact">Contact</a></li> -->
+        </ul>
         </section>
       </div>
     </header>
 
-    <nav class="navdrawer-container promote-layer">
+    <nav role="navigation" class="navdrawer-container promote-layer">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="/about-us.html" title="About us">About us</a></li>
+        <li><a href="/products.html" title="Products">Products</a></li>
+        <li><a href="/training.html" title="Training">Training</a></li>
+        <li><a href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
+        <!-- <li><a href="/contact.html" title="Contact">Contact</a></li> -->
       </ul>
     </nav>
 
-    <main>
-      <h1 id="hello">Hello!</h1>
-      <p>Welcome to Web Starter Kit.</p>
+    <main role="main">
+      <div class="video-canvas">
+        <video loop autoplay muted>
+          <source src="/images/thoughtram.mp4" type="video/mp4">
+          <!-- <source src="/video/fractal.ogv" type="video/ogg"> -->
+          <!-- <source src="/images/thoughtram.webm" type="video/webm"> -->
+        </video>
+      </div>
+      <div class="section-wrapper our-mission">
+        <section class="section-content">
+          <h1 class="section-headline">Our mission</h1>
+          <p>We enjoy learning new stuff every day and we love teaching it to others even more. We want learning to be both fun and efficient. That's why we help people to get a deep understanding of different technologies. If you aren’t satisfied with our material, then we aren’t either.</p>
+        </section>
+        <div class="section-skew"></div>
+      </div>
+      <div class="section-wrapper thoughtram-blue we-teach">
+        <section class="section-content">
+          <h2 class="section-headline">We teach</h2>
 
-      <h2 id="get-started">Get Started.</h2>
-      <p>Read how to <a href="http://developers.google.com/web/starter-kit">Get Started</a> or check out the <a href="styleguide.html">Style Guide</a>.</p>
+          <p>At thoughtram we regularly organize workshops, webinars or even free training days near you. If you can't make it to one of our events, <a href="mailto:hello@thoughtram.io">contact us</a> for in-house workshops at your company.</p>
+        </section>
+        <div class="section-skew">
+        </div>
+      </div>
+      <div class="section-wrapper thoughtram-dark-blue we-code">
+        <section class="section-content">
+          <h2 class="section-headline">We code</h2>
+
+          <p>We love coding. And we also believe in open source. That's why we contribute to many projects with people from all over the world to push things forward. Check out our latest <a href="http://github.com/thoughtram" title="thoughtram on GitHub">open source projects</a>.</p>
+        </section>
+        <div class="section-skew">
+        </div>
+      </div>
+      <div class="section-wrapper we-build">
+        <section class="section-content">
+          <h2 class="section-headline">We build</h2>
+          <p>Our experience and expertise makes it possible for us to write books or build tools and applications that make developers life a lot easier. Head over to our <a href="/products.html" title="thoughtram products page">products</a> to find out more!</p>
+        </section>
+        <div class="section-skew">
+        </div>
+      </div>
+      <div id="contact-us" class="section-wrapper contact-us">
+        <section class="section-content">
+          <p><strong>Interested in a training?</strong> <a class="contact-us-link" href="mailto:hello@thoughtram.io"><i class="fa fa-envelope"></i> Let us know!</a></p>
+        </section>
+      </div>
+      <!-- <div class="section-wrapper"> -->
+      <!--   <section class="section-content testimonials"> -->
+      <!--     <blockquote> -->
+      <!--       <p>“Diversity in Tech is one project we have on our list. We want to work with conferences, community leaders, companies, initiatives on making our community more open, inclusive and diverse: an even better place. We are currently talking to people, collecting and discussing ideas.”</p> -->
+      <!--     </blockquote> -->
+      <!--   </section> -->
+      <!-- </div> -->
+
     </main>
+    <footer>
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a class="footer-link" href="/" title="Home">Home</a></li>
+          <li><a class="footer-link" href="/about-us.html" title="About us">About us</a></li>
+          <li><a class="footer-link" href="/products.html" title="Products">Products</a></li>
+          <li><a class="footer-link" href="/training.html" title="Training">Training</a></li>
+          <li><a class="footer-link" href="http://blog.thoughtram.io" title="thoughtram blog">Blog</a></li>
+          <!-- <li><a class="footer-link" href="/contact.html" title="Contact">Contact</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-footer">
+        <img class="footer-logo" src="images/thoughtram-brain-white.png" alt="thoughtram logo">
+        <p>We are <img class="footer-logo-line" alt="thoughtram" src="images/thoughtram-logo-line-white.png"></p>
+        <p class="copyright"><small>&copy; 2014 thoughtram UG (haftungsbeschränkt) <a href="/impressum.html">Impressum</a></small></p>
+      </div>
+    </footer>
 
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
@@ -68,7 +149,7 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('create', 'UA-51360648-1', 'auto');
       ga('send', 'pageview');
     </script>
     <!-- Built with love using Web Starter Kit -->
