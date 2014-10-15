@@ -83,18 +83,17 @@ gulp.task('fonts', function () {
 gulp.task('styles', function () {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-      'app/styles/*.scss',
-      'app/styles/**/*.css',
-      'app/styles/components/components.scss'
-    ])
+    'app/styles/*.scss',
+    'app/styles/**/*.css',
+    'app/styles/components/components.scss'
+  ])
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.rubySass({
-        style: 'expanded',
-        precision: 10
-      })
-      .on('error', console.error.bind(console))
-    )
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+      style: 'expanded',
+      precision: 10
+    }))
+    .on('error', console.error.bind(console))
+    .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate And Minify Styles
     .pipe($.if('*.css', $.csso()))
@@ -145,6 +144,8 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 gulp.task('serve', ['styles'], function () {
   browserSync({
     notify: false,
+    // Customize the BrowserSync console logging prefix
+    logPrefix: 'WSK',
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
@@ -162,6 +163,7 @@ gulp.task('serve', ['styles'], function () {
 gulp.task('serve:dist', ['default'], function () {
   browserSync({
     notify: false,
+    logPrefix: 'WSK',
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
@@ -187,4 +189,4 @@ gulp.task('pagespeed', pagespeed.bind(null, {
 }));
 
 // Load custom tasks from the `tasks` directory
-try { require('require-dir')('tasks'); } catch (err) {}
+// try { require('require-dir')('tasks'); } catch (err) { console.error(err); }
