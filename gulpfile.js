@@ -72,6 +72,15 @@ gulp.task('copy', function () {
     .pipe($.size({title: 'copy'}));
 });
 
+gulp.task('videos', function () {
+  return gulp.src([
+    'app/videos/*',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/videos'))
+    .pipe($.size({title: 'copy'}));
+});
+
 // Copy Web Fonts To Dist
 gulp.task('fonts', function () {
   return gulp.src(['app/fonts/**'])
@@ -173,7 +182,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'videos'], cb);
 });
 
 // Run PageSpeed Insights
