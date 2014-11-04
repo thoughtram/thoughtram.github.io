@@ -577,7 +577,7 @@ h3.section-headline {
 }
 
 .training-graphic {
-  max-width: 80%;
+  max-width: 70%;
   margin-bottom: 1.5em;
 }
 
@@ -651,7 +651,8 @@ h3.section-headline {
     padding-top: 10px;
   }
 
-  .copyright {
+  .copyright,
+  .impressum-link {
     color: #4A7D8B;
     text-transform: none;
 
@@ -663,6 +664,10 @@ h3.section-headline {
       color: #4A7D8B;
       text-decoration: none;
     }
+  }
+
+  .impressum-link {
+    margin-top: -1em;
   }
 }
 
