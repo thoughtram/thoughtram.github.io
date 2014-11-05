@@ -36,6 +36,63 @@ body.open {
   overflow: hidden;
 }
 
+.thtrm-l-constraint {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.thtrm-m-list {
+  display: block;
+  list-style: none;
+  padding-top: 1em;
+  padding-left: 0;
+
+  li {
+    padding-left: 0;
+
+    &:before {
+      content: '';
+    }
+  }
+}
+
+.thtrm-m-list--horizontally {
+  li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+}
+
+.thtrm-m-uppercase-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 19px;
+
+  @media all and (min-width: 750px) {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s ease-out;
+  }
+
+  &:visited {
+    color: #fff;
+  }
+}
+
 .app-bar {
   display: block;
   width: 100%;
@@ -601,14 +658,10 @@ h3.section-headline {
   }
 }
 
-.footer-content {
-  background: #4D8799;
-  padding: 1em;
-}
-
 .footer-links {
   list-style: none;
   padding: 0;
+  padding: 1em;
 
   li {
     padding: 0;
@@ -620,27 +673,7 @@ h3.section-headline {
   }
 }
 
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em 0;
-  font-size: 19px;
-  text-transform: uppercase;
-
-  &:hover {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: background-color 0.2s ease-out;
-  }
-
-  &:visited {
-    color: #fff;
-  }
-}
-
 .footer-footer {
-  background: #123742;
   padding-bottom: 30px;
   padding-top: 40px;
   p {
@@ -650,38 +683,6 @@ h3.section-headline {
     font-weight: 600;
     padding-top: 10px;
   }
-
-  .copyright,
-  .impressum-link {
-    color: #4A7D8B;
-    text-transform: none;
-
-    small {
-      padding-top: 0;
-    }
-
-    a {
-      color: #4A7D8B;
-      text-decoration: none;
-    }
-  }
-
-  .impressum-link {
-    margin-top: -1em;
-  }
-}
-
-.footer-logo-line {
-  height: 0.8em;
-  width: auto;
-  vertical-align: -3%;
-}
-
-.footer-logo {
-  max-width: 100%;
-  width: 60px;
-  display: block;
-  margin: 0 auto;
 }
 
 @media all and (min-width: 770px) {
