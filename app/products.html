@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="We are thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
+    <meta name="description" content="Our experience and expertise makes it possible for us to write books or build tools and applications that make developers life a lot easier. Here's what we've made.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Products | thoughtram - Extend your memory</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#4D8799">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -19,15 +20,22 @@
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-TileColor" content="#4D8799">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Our experience and expertise makes it possible for us to write books or build tools and applications that make developers life a lot easier. Here's what we've made.">
+    <meta property="og:url" content="http://thoughtram.io/products.html">
+    <meta property="og:site_name" content="Products | thoughtram - Extend your memory">
+    <meta property="og:image" content="images/thoughtram-brain-og.png">
+    <meta property="og:publisher" content="http://www.facebook.com/thoughtram">
+
     <link rel="stylesheet" href="styles/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Add your site or app content here -->
@@ -35,60 +43,56 @@
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header role="banner" class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <h1 class="logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- <button><i class="icon icon-star"></i></button> -->
-        <ul class="navigation">
-          <li><a class="navigation-link" href="/" title="Home">Home</a></li>
-          <li><a class="navigation-link" href="/about-us.html" title="About us">About us</a></li>
-          <li><a class="navigation-link" href="/products.html" title="Products">Products</a></li>
-          <li><a class="navigation-link" href="/training.html" title="Training">Training</a></li>
-          <li><a class="navigation-link" href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-          <!-- <li><a class="navigation-link" href="/contact.html" title="Contact">Contact</a></li> -->
-        </ul>
+    <header role="banner" class="thtrm-l-header has-backface-visibility--hidden">
+      <div class="thtrm-l-header__bar">
+        <h1 class="thtrm-l-header__logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
+        <button class="thtrm-l-header__menu-btn"><img src="images/hamburger.svg" alt="Menu"></button>
+        <section class="thtrm-l-header__bar__actions">
+          <ul class="thtrm-l-header__bar__actions__navigation">
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/about-us.html" title="About us">About us</a></li>
+            <li><a href="/products.html" title="Products">Products</a></li>
+            <li><a href="/training.html" title="Training">Training</a></li>
+            <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
+          </ul>
         </section>
       </div>
     </header>
 
-    <nav role="navigation" class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
-      <ul>
+    <nav role="navigation" class="thtrm-l-navdrawer has-backface-visibility--hidden">
+      <h4 class="thtrm-l-navdrawer__headline">Navigation</h4>
+      <ul class="thtrm-l-navdrawer__navigation">
         <li><a href="/" title="Home">Home</a></li>
         <li><a href="/about-us.html" title="About us">About us</a></li>
         <li><a href="/products.html" title="Products">Products</a></li>
         <li><a href="/training.html" title="Training">Training</a></li>
-        <li><a href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-        <!-- <li><a href="/contact.html" title="Contact">Contact</a></li> -->
+        <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
       </ul>
     </nav>
 
-    <main role="main" class="products">
-      <div class="section-wrapper things-we-have-made">
-        <section class="section-content small-top-padding">
-          <h2 class="section-headline">Things we've made</h2>
-          <p>Our products make developers life a lot easier. Find out what we've made and what we're currently working on.</p>
-        </section>
-      </div>
-      <div class="section-wrapper thoughtram-dark-blue hard-degree-negative">
-        <section class="section-content">
-          <h3 class="section-headline">The Rebase book</h3>
-          <img class="book-cover" src="images/rebase-book.png">
-          <p>Rebasing is one of Gits most powerful features. Yet we've found that not many developers know how to use it properly to create and adopt powerful workflows.</p>
-          <p>That's why we decided to write a book about it. <strong>Rebase</strong> is entirely written in the open and goes far behind the regular <a href="http://git-scm.com/book">Git book</a> with a strong focus on rebasing.</p>
-
-          <p><a href="https://leanpub.com/rebase-the-complete-guide-on-rebasing-in-git" title="Rebase on leanpub">Learn more &rarr;</a></p>
-        </section>
-        <div class="section-skew"></div>
-      </div>
-      <div class="section-wrapper contact-us">
-        <section class="section-content">
-          <p><strong>Interested in a training?</strong> <a class="contact-us-link" href="mailto:hello@thoughtram.io"><i class="fa fa-envelope"></i> Let us know!</a></p>
-        </section>
-      </div>
+    <main role="main" class="thtrm-l-main">
+      <section class="thtrm-m-section">
+        <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--bottom-right"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h1 class="thtrm-m-section__headline">Products</h1>
+            <p class="thtrm-m-teaser-text">Our products make developers life a lot easier. Find out what we've made and what we're currently working on.</p>
+            <ul class="thtrm-m-list thtrm-m-list--spaced">
+              <li>
+                <div class="thtrm-m-content-box thtrm-m-content-box--horizontally clear">
+                <img class="thtrm-m-content-box__product-image" alt="Rebase Book Cover" src="images/rebase-book.png">
+                  <div class="thtrm-m-content-box__content">
+                    <h2 class="thtrm-m-section__sub-headline"><a title="Git Master Class" href="/git-master-class.html">Rebase</a></h2>
+                <p>Rebasing is one of Gits most powerful features. Yet we've found that not many developers know how to use it properly to create and adopt powerful workflows.</p>
+                <p>That's why we decided to write a book about it. <strong>Rebase</strong> is entirely written in the open and goes far behind the regular <a href="http://git-scm.com/book">Git book</a> with a strong focus on rebasing.</p>
+                <p><a href="https://leanpub.com/rebase-the-complete-guide-on-rebasing-in-git" title="Rebase on leanpub">Learn more &rarr;</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer role="contentinfo" class="thtrm-l-footer">
@@ -114,6 +118,7 @@
             <li><a href="http://facebook.com/thoughtram" title="thoughtram on facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://plus.google.com/thoughtramio" title="thoughtram on Google Plus"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="http://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q" title="thoughtram on Youtube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="/code-of-conduct.html" title="thoughtram's code of conduct">Code of Conduct</a></li>
             <li><a href="/impressum.html" title="Impressum">Impressum</a></li>
           </ul>
         </div>

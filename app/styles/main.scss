@@ -7,6 +7,7 @@
  */
 @import '_h5bp';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /*
  * Visual Style Guide styles
@@ -36,14 +37,6 @@ body.open {
   overflow: hidden;
 }
 
-.thtrm-l-constraint {
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 .thtrm-m-list {
   display: block;
   list-style: none;
@@ -59,10 +52,69 @@ body.open {
   }
 }
 
+.thtrm-m-list--trusted-by {
+  img {
+    max-height: 40px;
+    vertical-align: middle;
+
+    @media all and (min-width: 750px) {
+      max-height: 60px;
+    }
+  }
+}
+
 .thtrm-m-list--horizontally {
   li {
     display: inline-block;
-    margin-left: 1em;
+    margin-top: 2em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @media all and (min-width: 750px) {
+      margin-left: 3em;
+    }
+  }
+}
+
+.thtrm-m-list--spaced {
+  li {
+    margin-top: 2em;
+  }
+}
+
+.thtrm-m-list--checked {
+  li {
+    position: relative;
+    margin-top: 0.6em;
+    padding-left: 1.5em;
+    font-size: 20px;
+
+
+    &:before {
+      content: '\f00c';
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      top: 0.3em;
+      color: #4D8799;
+    }
+
+    @media all and (min-width: 990px) {
+      font-size: 21px;
+    }
+
+    @media all and (min-width: 1500px) {
+      font-size: 26px;
+      margin-top: 1em;
+
+      &:before {
+        top: 0.2em;
+      }
+    }
   }
 }
 
@@ -93,211 +145,11 @@ body.open {
   }
 }
 
-.app-bar {
-  display: block;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow: hidden;
-  z-index: 19;
-}
-
-.app-bar-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  position: relative;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 auto;
-}
-
-.app-bar.open,
-.app-bar.open ~ main {
-  -webkit-transform: translate(250px, 0);
-          transform: translate(250px, 0);
-}
-
-.app-bar .logo {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 2em;
-  line-height: 60px;
-  margin: 0 16px;
-  padding: 0;
-  color: #000;
-  float: none;
-  max-width: none;
-  font-weight: 600;
-  display: initial;
-  background-image: url('../images/thoughtram-logo-brain.png');
-  background-repeat: no-repeat;
-  background-size: 55px auto;
-  background-position: 0;
-  text-indent: -7000px;
-}
-
-.app-bar .logo a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: normal;
-}
-
-.app-bar-actions {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  z-index: 2;
-}
-
-.app-bar button {
-  width: 60px;
-  height: 60px;
-  background-image: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  display: inline-block;
-  -webkit-transition: background-color 0.2s ease-out;
-          transition: background-color 0.2s ease-out;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.app-bar button img {
-  height: 24px;
-  width: 24px;
-}
-
-.app-bar button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.app-bar button:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: 0;
-}
-
-.app-bar button:active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.promote-layer {
-  /*
-  This may promote the layer to a composited
-  layer.
-
-  Replace with will-change when available
-
-  #perfmatters
-  */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.navigation {
-  display: none;
-}
-
 .base,
 p,
 ul,
 ol {
   font-size: 19px;
-}
-
-.navdrawer-container {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #3E6F7E;
-  color: #fefefe;
-  -webkit-transform: translate(-250px, 0);
-          transform: translate(-250px, 0);
-  overflow-y: auto;
-}
-
-.navdrawer-container.open {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.app-bar,
-.navdrawer-container.opened,
-main {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-          transition: transform 0.3s ease-out;
-}
-
-.navdrawer-container h4,
-.navdrawer-container ul li a {
-  height: 60px;
-  padding: 17px 20px;
-  line-height: 1.4;
-}
-
-.navdrawer-container h4 {
-  background-color: white;
-  color: #000;
-  font-weight: 800;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.navdrawer-container ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.navdrawer-container ul li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  -webkit-transition: background-color 0.2s ease-out;
-          transition: background-color 0.2s ease-out;
-  white-space: nowrap;
-}
-
-.navdrawer-container ul li {
-  border: none;
-  padding: 0;
-}
-
-.navdrawer-container ul li::before {
-  content: none;
-}
-
-.navdrawer-container ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.navdrawer-container ul li a:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  outline: 0;
-}
-
-.navdrawer-container ul li a:active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-main {
-  margin: 0 auto;
-  /* Height of the header */
-  padding: 60px 0 0 0;
-  min-height: 100%;
 }
 
 .thoughtram-blue .section-content,
@@ -329,17 +181,6 @@ main {
 
 .hard-degree-negative .section-skew {
   transform: skewY(-3deg);
-}
-
-.video-canvas {
-  background-image: url(../images/thoughtram-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  video {
-    min-width: 100%;
-  }
 }
 
 .section-wrapper {
@@ -658,33 +499,6 @@ h3.section-headline {
   }
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  padding: 1em;
-
-  li {
-    padding: 0;
-    text-align: center;
-
-    &:before {
-      content: '';
-    }
-  }
-}
-
-.footer-footer {
-  padding-bottom: 30px;
-  padding-top: 40px;
-  p {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding-top: 10px;
-  }
-}
-
 @media all and (min-width: 770px) {
 
   .section-skew {
@@ -738,129 +552,9 @@ h3.section-headline {
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
-  .app-bar {
-    background: #fff;
-  }
-
-  .app-bar.open,
-  .app-bar.open ~ main {
-    -webkit-transform: translate(0px, 0);
-            transform: translate(0px, 0);
-  }
-
-  .app-bar-container {
-    display: block;
-    height: 100px;
-    padding: 0 40px;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .app-bar .logo {
-    margin: 0;
-    padding: 0;
-    line-height: 100px;
-    font-size: 46px;
-    display: inherit;
-    background-image: url('../images/thoughtram-brain-with-logo-line-blue.png');
-    background-repeat: no-repeat;
-    background-size: 260px auto;
-    max-width: 260px;
-  }
-
-  .app-bar-actions {
-    float: right;
-  }
-
-  .app-bar::after {
-    content: ' ';
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both;
-  }
-
-  button.menu {
-    display: none;
-  }
-
-  .navdrawer-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    -webkit-transition: none;
-            transition: none;
-    overflow-y: auto;
-    display: none;
-  }
-
-  .navdrawer-container h4 {
-    display: none;
-  }
-
-  .navdrawer-container ul {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 864px;
-    margin: 0 auto;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .navdrawer-container ul li {
-    border: none;
-  }
-
-  .navigation {
-    display: block;
-    list-style: none;
-    position: absolute;
-    top: 38px;
-    right: 40px;
-    text-align: right;
-    padding-top: 0;
-
-    li {
-      display: inline-block;
-
-      &:before {
-        content: '';
-      }
-    }
-  }
-
-  .navigation-link {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 800;
-
-    &:hover {
-      color: #4D8799;
-    }
-
-    &:visited {
-      color: #000;
-    }
-  }
-
-  main {
-    /*max-width: 864px;*/
-    padding-top: 120px;
-    min-height: initial;
-  }
 
   body {
     overflow-y: scroll;
-  }
-
-  .video-canvas {
-    margin-top: -50px;
   }
 
   .section-wrapper {

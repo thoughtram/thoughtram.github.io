@@ -9,6 +9,7 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#4D8799">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -19,15 +20,22 @@
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-TileColor" content="#4D8799">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="We are thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
+    <meta property="og:url" content="http://thoughtram.io">
+    <meta property="og:site_name" content="thoughtram - Extend your memory">
+    <meta property="og:image" content="images/thoughtram-brain-og.png">
+    <meta property="og:publisher" content="http://www.facebook.com/thoughtram">
+
     <link rel="stylesheet" href="styles/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Add your site or app content here -->
@@ -35,83 +43,151 @@
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header role="banner" class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <h1 class="logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- <button><i class="icon icon-star"></i></button> -->
-        <ul class="navigation">
-          <li><a class="navigation-link" href="/" title="Home">Home</a></li>
-          <li><a class="navigation-link" href="/about-us.html" title="About us">About us</a></li>
-          <li><a class="navigation-link" href="/products.html" title="Products">Products</a></li>
-          <li><a class="navigation-link" href="/training.html" title="Training">Training</a></li>
-          <li><a class="navigation-link" href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-          <!-- <li><a class="navigation-link" href="/contact.html" title="Contact">Contact</a></li> -->
-        </ul>
+    <header role="banner" class="thtrm-l-header has-backface-visibility--hidden">
+      <div class="thtrm-l-header__bar">
+        <h1 class="thtrm-l-header__logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
+        <button class="thtrm-l-header__menu-btn"><img src="images/hamburger.svg" alt="Menu"></button>
+        <section class="thtrm-l-header__bar__actions">
+          <ul class="thtrm-l-header__bar__actions__navigation">
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/about-us.html" title="About us">About us</a></li>
+            <li><a href="/products.html" title="Products">Products</a></li>
+            <li><a href="/training.html" title="Training">Training</a></li>
+            <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
+          </ul>
         </section>
       </div>
     </header>
 
-    <nav role="navigation" class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
-      <ul>
+    <nav role="navigation" class="thtrm-l-navdrawer has-backface-visibility--hidden">
+      <h4 class="thtrm-l-navdrawer__headline">Navigation</h4>
+      <ul class="thtrm-l-navdrawer__navigation">
         <li><a href="/" title="Home">Home</a></li>
         <li><a href="/about-us.html" title="About us">About us</a></li>
         <li><a href="/products.html" title="Products">Products</a></li>
         <li><a href="/training.html" title="Training">Training</a></li>
-        <li><a href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-        <!-- <li><a href="/contact.html" title="Contact">Contact</a></li> -->
+        <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
       </ul>
     </nav>
 
-    <main role="main">
-      <div class="video-canvas">
-        <video loop autoplay muted>
+    <main role="main" class="thtrm-l-main">
+      <div class="thtrm-m-video-canvas">
+        <video class="thtrm-m-video-canvas__video"  preload="true" loop="loop" autoplay="autoplay" muted="muted">
           <source src="/videos/thoughtram.mp4" type="video/mp4">
-          <!-- <source src="/images/thoughtram.webm" type="video/webm"> -->
+          <source src="/videos/thoughtram.webm" type="video/webm">
         </video>
       </div>
-      <div class="section-wrapper our-mission">
-        <section class="section-content">
-          <h1 class="section-headline">Our mission</h1>
-          <p>We enjoy learning new stuff every day and we love teaching it to others even more. We want learning to be both fun and efficient. That's why we help people to get a deep understanding of different technologies. If you aren’t satisfied with our material, then we aren’t either.</p>
-        </section>
-        <div class="section-skew"></div>
-      </div>
-      <div class="section-wrapper thoughtram-blue we-teach">
-        <section class="section-content">
-          <h2 class="section-headline">We teach</h2>
-
+      <section class="thtrm-m-section">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h1 class="thtrm-m-section__headline">Our Mission</h1>
+            <p class="thtrm-m-teaser-text">We enjoy learning new stuff every day and we love teaching it to others even more. We want learning to be both fun and efficient. That's why we help people to get a deep understanding of different technologies. If you aren’t satisfied with our material, then we aren’t either.</p>
+          </div>
+        </div>
+      </section>
+      <section class="thtrm-m-section thtrm-m-section--negative-skew thtrm-m-section--dark-blue">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h2 class="thtrm-m-section__headline">What we do</h2>
+            <div class="thtrm-l-grid-units">
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <h2 class="thtrm-m-section__sub-headline"><i class="fa fa-share-alt"></i>We teach</h2>
           <p>At thoughtram we regularly organize workshops, webinars or even free training days near you. If you can't make it to one of our events, <a href="mailto:hello@thoughtram.io">contact us</a> for in-house workshops at your company.</p>
-        </section>
-        <div class="section-skew">
-        </div>
-      </div>
-      <div class="section-wrapper thoughtram-dark-blue we-code">
-        <section class="section-content">
-          <h2 class="section-headline">We code</h2>
-
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <h2 class="thtrm-m-section__sub-headline"><i class="fa fa-code"></i>We code</h2>
           <p>We love coding. And we also believe in open source. That's why we contribute to many projects with people from all over the world to push things forward. Check out our latest <a href="http://github.com/thoughtram" title="thoughtram on GitHub">open source projects</a>.</p>
-        </section>
-        <div class="section-skew">
-        </div>
-      </div>
-      <div class="section-wrapper we-build">
-        <section class="section-content">
-          <h2 class="section-headline">We build</h2>
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <h2 class="thtrm-m-section__sub-headline"><i class="fa fa-users"></i>We build</h2>
           <p>Our experience and expertise makes it possible for us to write books or build tools and applications that make developers life a lot easier. Head over to our <a href="/products.html" title="thoughtram products page">products</a> to find out more!</p>
-        </section>
-        <div class="section-skew">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="contact-us" class="section-wrapper contact-us">
-        <section class="section-content">
-          <p><strong>Interested in a training?</strong> <a class="contact-us-link" href="mailto:hello@thoughtram.io"><i class="fa fa-envelope"></i> Let us know!</a></p>
-        </section>
-      </div>
+      </section>
+      <section class="thtrm-m-section">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--right"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h2 class="thtrm-m-section__headline">Expertise</h2>
+            <p class="thtrm-m-teaser-text">In order to always deliver high quality content, we focus on just a minium set of technologies. This is where our strength lies.</p>
+            <div class="thtrm-l-grid-units">
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
+                <div class="thtrm-m-content-box">
+                  <img alt="Angular Logo" src="images/angular-logo.png">
+                  <p>AngularJS is a JavaScript toolset that changes the way we build web applications. We have <strong>over 3 years experience</strong> with AngularJS, we've built widely used modules for it and are also active contributors to the project.</p>
+                  <p>In our <strong>Angular Master Class</strong> attendees learn everything they need to know to build fully fledged single page applications for tomorrow with AngularJS.</p>
+                  <p class="thtrm-l-center"><a href="/angular-master-class.html" title="Angular Master Class">Learn more &rarr;</a></p>
+                </div>
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
+                <div class="thtrm-m-content-box">
+                  <img alt="Git Logo" src="images/git-logo.png">
+                  <p>Git is a free and open source distributed version control system. It's invention was a blessing to the whole software world. We use Git on our daily basis to be as productive as possible, especially when working in larger teams.</p>
 
+                  <p>Attending our <strong>Git Master Class</strong> gives you a deep understanding of how Git works and what tools it comes with to make working with code a lot easier.</p>
+                  <p class="thtrm-l-center"><a href="/git-master-class.html" title="Git Master Class">Learn more &rarr;</a></p>
+                </div>
+              </div>
+            </div>
+            <h4 style="margin-top: 3em;" class="thtrm-m-section__sub-headline">Interested in a training? <a class="thtrm-m-btn thtrm-m-btn--medium-inline-block" href="mailto:hello@thoughtram.io" title="Mail us!"><i class="fa fa-envelope"></i> Let us know</a></h4>
+          </div>
+        </div>
+      </section>
+      <section class="thtrm-m-section thtrm-m-section--negative-skew thtrm-m-section--blue">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-m-floating-polygon"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h1 class="thtrm-m-section__headline">What people say</h1>
+            <p class="thtrm-m-teaser-text">We want to make our users happy. That's why we care a lot about your opinion and feedback. Here's what our users say about us.</p>
+            <div class="thtrm-l-grid-units">
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
+                <div class="thtrm-m-quote">
+                  <blockquote>
+                    "I attended thoughtram's Git Master Class and <strong>I was impressed</strong> by how passionate Christoph and Pascal conveyed knowledge about Git, the version control system! Regardless of whether you're a beginner or an experienced Git user, <strong>you will gain new insights</strong> by attending one of their workshops. Do yourself a favor and book one of thoughtram's workshops. It'll be worth your time!"
+                  </blockquote>
+                  <div class="thtrm-m-quote__info">
+                    <img alt="Mike Adolphs" src="images/testimonial-mike.png">
+                    <span class="thtrm-m-quote__info__name"><strong>Mike Adoplphs</strong>Support Engineer at <i class="fa fa-github"></i> GitHub Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
+                <div class="thtrm-m-quote thtrm-m-quote--inverted">
+                  <blockquote>
+                    "thoughtram did an excellent job on Git Training Day in Istanbul! As an English teacher and Computer Scientist, I can say that <strong>their material is well-made, coherent, and awesome</strong>! Not only the material, but also the live examples and problems are well planned. Trainees are able to work on the real-world problems with the good assistance of toughtram team."
+                  </blockquote>
+                  <div class="thtrm-m-quote__info">
+                    <img alt="Eren Turkay" src="images/testimonial-eren.jpeg">
+                    <span class="thtrm-m-quote__info__name"><strong>Eren Turkay</strong>Teacher and Computer Scientist at Bilgi University</span>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="thtrm-m-section thtrm-m-section--gray thtrm-m-section--last-on-page">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h5 class="thtrm-m-section__sub-headline thtrm-m-section__sub-headline--bright">Trusted by</h5>
+
+            <ul class="thtrm-m-list thtrm-m-list--trusted-by thtrm-m-list--horizontally thtrm-l-center">
+              <li><img alt="webbox.io" src="images/webbox-logo.png"></li>
+              <li><img alt="De Voorhoede" src="images/devoorhoede-logo.png"></li>
+              <li><img class="has-opacity--0-4" alt="EDELSTALL" src="images/edelstall-logo.png"></li>
+              <li><img alt="angularjs.de" src="images/angularjsde-logo.png"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer role="contentinfo" class="thtrm-l-footer">
       <div class="thtrm-l-constraint">
@@ -136,6 +212,7 @@
             <li><a href="http://facebook.com/thoughtram" title="thoughtram on facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://plus.google.com/thoughtramio" title="thoughtram on Google Plus"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="http://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q" title="thoughtram on Youtube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="/code-of-conduct.html" title="thoughtram's code of conduct">Code of Conduct</a></li>
             <li><a href="/impressum.html" title="Impressum">Impressum</a></li>
           </ul>
         </div>

@@ -1,0 +1,11 @@
+.thtrm-m-training-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  max-width: 230px;
+
+  @media all and (min-width: 990px) {
+    max-width: 350px;
+    margin-bottom: 4em;
+  }
+}

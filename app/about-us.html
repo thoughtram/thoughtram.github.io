@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="We are thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
+    <meta name="description" content="Meet the people behind thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us | thoughtram - Extend your memory</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#4D8799">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -19,15 +20,22 @@
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-TileColor" content="#4D8799">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Meet the people behind thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.">
+    <meta property="og:url" content="http://thoughtram.io/about-us.html">
+    <meta property="og:site_name" content="About Us | thoughtram - Extend your memory">
+    <meta property="og:image" content="images/thoughtram-brain-og.png">
+    <meta property="og:publisher" content="http://www.facebook.com/thoughtram">
+
     <link rel="stylesheet" href="styles/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Add your site or app content here -->
@@ -35,88 +43,101 @@
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header role="banner" class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <h1 class="logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- <button><i class="icon icon-star"></i></button> -->
-        <ul class="navigation">
-          <li><a class="navigation-link" href="/" title="Home">Home</a></li>
-          <li><a class="navigation-link" href="/about-us.html" title="About us">About us</a></li>
-          <li><a class="navigation-link" href="/products.html" title="Products">Products</a></li>
-          <li><a class="navigation-link" href="/training.html" title="Training">Training</a></li>
-          <li><a class="navigation-link" href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-          <!-- <li><a class="navigation-link" href="/contact.html" title="Contact">Contact</a></li> -->
-        </ul>
+    <header role="banner" class="thtrm-l-header has-backface-visibility--hidden">
+      <div class="thtrm-l-header__bar">
+        <h1 class="thtrm-l-header__logo"><a href="/" title="thoughtram official website">thoughtram</a></h1>
+        <button class="thtrm-l-header__menu-btn"><img src="images/hamburger.svg" alt="Menu"></button>
+        <section class="thtrm-l-header__bar__actions">
+          <ul class="thtrm-l-header__bar__actions__navigation">
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/about-us.html" title="About us">About us</a></li>
+            <li><a href="/products.html" title="Products">Products</a></li>
+            <li><a href="/training.html" title="Training">Training</a></li>
+            <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
+          </ul>
         </section>
       </div>
     </header>
 
-    <nav role="navigation" class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a class="navigation-link" href="/" title="Home">Home</a></li>
+    <nav role="navigation" class="thtrm-l-navdrawer has-backface-visibility--hidden">
+      <h4 class="thtrm-l-navdrawer__headline">Navigation</h4>
+      <ul class="thtrm-l-navdrawer__navigation">
+        <li><a href="/" title="Home">Home</a></li>
         <li><a href="/about-us.html" title="About us">About us</a></li>
         <li><a href="/products.html" title="Products">Products</a></li>
         <li><a href="/training.html" title="Training">Training</a></li>
-        <li><a href="http://blog.thoughtram.io" title="thoughtram Blog">Blog</a></li>
-        <!-- <li><a href="/contact.html" title="Contact">Contact</a></li> -->
+        <li><a href="http://blog.thoughtram.io" title="Blog">Blog</a></li>
       </ul>
     </nav>
 
-    <main role="main" class="about-us">
-      <div class="section-wrapper who-we-are">
-        <section class="section-content small-bottom-padding small-top-padding">
-          <h2 class="section-headline">Who we are</h2>
-
-          <p>We enjoy learning new stuff every day and we love teaching it to others even more. Meet our team.</p>
-        </section>
-      </div>
-      <div class="section-wrapper banner banner-chris">
-      </div>
-      <div class="section-wrapper thoughtram-blue hard-degree about-chris">
-        <section class="section-content small-top-padding small-bottom-padding">
-          <h3 class="section-headline">Christoph Burgdorf</h3>
-
-          <p>Christoph began with programming at the age of 10 with BASIC but has since moved on to become proficient in various different programming languages and technologies.</p>
-          <p>Christoph has contributed to many projects, including <a href="http://angularjs.org" title="angularjs website">AngularJS</a>, jquery-ui, <a href="http://todomvc.org" title="TodoMVC">TodoMVC</a> and the banshee media player. When he's not evangelizing git, he likes to travel the world with his bicycle.</p>
-
-          <ul class="socialmedia-links">
-            <li class="socialmedia-link-item"><a class="socialmedia-link" href="http://twitter.com/cburgdorf" title="Christoph Burgdorf on Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li class="socialmedia-link-item"><a class="socialmedia-link" href="http://github.com/cburgdorf" title="Christoph Burgdorf on GitHub"><i class="fa fa-github"></i> GitHub</a></li>
-          </ul>
-        </section>
-        <div class="section-skew">
+    <main role="main" class="thtrm-l-main">
+      <section class="thtrm-m-section thtrm-m-section--last-on-page">
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h1 class="thtrm-m-section__headline">Who we are</h1>
+            <p class="thtrm-m-teaser-text">We enjoy learning new stuff every day and we love teaching it to others even more. This is who we are. This is what we do.</p>
+          </div>
         </div>
-      </div>
-      <div class="section-wrapper banner banner-pascal">
-      </div>
-      <div class="section-wrapper thoughtram-dark-blue hard-degree-negative about-pascal">
-        <section class="section-content small-top-padding small-bottom-padding">
-          <h3 class="section-headline">Pascal Precht</h3>
-          <p>Pascal is a front-end engineer with a love for semantic markup and evolving technologies in the open web. He loves contributing to open source and is the creator of the popular <a href="http://angular-translate.github.io" title="angular-translate website">angular-translate</a>  module.</p>
-          <p>Pascal loves to travel the world and speaks at conferences and meetups. When he's not busy preparing the next workshop or conference talk, you might find him outside with his skateboard.</p>
-          <ul class="socialmedia-links">
-            <li class="socialmedia-link-item"><a class="socialmedia-link" href="http://twitter.com/PascalPrecht" title="Pascal Precht on Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li class="socialmedia-link-item"><a class="socialmedia-link" href="http://github.com/PascalPrecht" title="Pascal Precht on GitHub"><i class="fa fa-github"></i> GitHub</a></li>
-          </ul>
-        </section>
-        <div class="section-skew"></div>
-      </div>
-      <div class="section-wrapper we-love-open-source">
-        <section class="section-content">
-          <h3 class="section-headline section-headline-light">We love open source.</h3>
-        </section>
-      </div>
-      <div id="contact-us" class="section-wrapper contact-us">
-        <section class="section-content">
-          <p><strong>Interested in a training?</strong> <a class="contact-us-link" href="mailto:hello@thoughtram.io"><i class="fa fa-envelope"></i> Let us know!</a></p>
-        </section>
-      </div>
+      </section>
+      <section class="thtrm-m-section thtrm-m-section--negative-skew thtrm-m-section--dark-blue">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-m-floating-polygon"></div>
+        <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--bottom-right"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <div class="thtrm-m-about-profile">
+              <img alt="Christoph Burgdorf" src="images/christoph.jpg">
+                <h3 class="thtrm-m-section__sub-headline">Christoph Burgdorf</h3>
+                <p>Christoph began with programming at the age of 10 with BASIC but has since moved on to become proficient in various different programming languages and technologies.</p>
+                <p>Christoph has contributed to many projects, including <a href="http://angularjs.org" title="angularjs website">AngularJS</a>, jquery-ui, <a href="http://todomvc.org" title="TodoMVC">TodoMVC</a> and the banshee media player and is also the creator of the <a href="http://nickel.rs" title="Nickel.rs website">nickel.rs</a> framework. When he's not evangelizing git, he likes to travel the world with his bicycle.</p>
+                <ul class="thtrm-m-list thtrm-m-list--horizontally">
+                  <li><a href="http://twitter.com/cburgdorf" title="Christoph Burgdorf on Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  <li><a href="http://github.com/cburgdorf" title="Christoph Burgdorf on GitHub"><i class="fa fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+            <div class="thtrm-m-about-profile thtrm-m-about-profile--image-right">
+              <img alt="Pascal Precht" src="images/pascal.jpg">
+                <h3 class="thtrm-m-section__sub-headline">Pascal Precht</h3>
+                <p>Pascal is a front-end engineer with a love for semantic markup and evolving technologies in the open web. He loves contributing to open source and is the creator of the popular <a href="http://angular-translate.github.io" title="angular-translate website">angular-translate</a>  module.</p>
+                <p>Pascal loves to travel the world and speaks at conferences and meetups. When he's not busy preparing the next workshop or conference talk, you might find him outside with his skateboard.</p>
+                <ul class="thtrm-m-list thtrm-m-list--horizontally">
+                  <li><a href="http://twitter.com/PascalPrecht" title="Pascal Precht on Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  <li><a href="http://github.com/PascalPrecht" title="Pascal Precht on GitHub"><i class="fa fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thtrm-m-section">
+        <div class="thtrm-m-section__skew"></div>
+        <div class="thtrm-l-constraint">
+          <div class="thtrm-m-section__content">
+            <h2 class="thtrm-m-section__sub-headline">We love open source</h2>
+            <p class="thtrm-m-teaser-text">We love coding. And we also believe in open source. That's why we contribute to many projects with people from all over the world to push things forward. <strong>Here's what we've contributed to</strong>.</p>
+            <div class="thtrm-l-grid-units">
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <div class="thtrm-m-content-box thtrm-content-box--has-bigger-images">
+                  <img style="margin-top: 2em; margin-bottom: 2em;" src="images/angular-logo.png">
+                  <p class="thtrm-l-center">AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly.</p>
+                </div>
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <div class="thtrm-m-content-box thtrm-content-box--has-bigger-images">
+                  <img src="images/angular-translate-logo.png">
+                  <p class="thtrm-l-center">angular-translate is an Angular module built by thoughtram  that extends the frameworks internationalization and localization capabilities with dedicated components like services and directives.</p>
+                </div>
+              </div>
+              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
+                <div class="thtrm-m-content-box thtrm-content-box--has-bigger-images">
+                  <img style="margin-top: 2em; margin-bottom: 2.5em;" src="images/nickel.rs-logo.png">
+                  <p class="thtrm-l-center">Nickel.rs is a web application framework for the Rust programming language that comes with express-like APIs and features like application routing, templating and JSON handling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <footer role="contentinfo" class="thtrm-l-footer">
       <div class="thtrm-l-constraint">
         <ul class="thtrm-l-footer__list">
@@ -140,6 +161,7 @@
             <li><a href="http://facebook.com/thoughtram" title="thoughtram on facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://plus.google.com/thoughtramio" title="thoughtram on Google Plus"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="http://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q" title="thoughtram on Youtube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="/code-of-conduct.html" title="thoughtram's code of conduct">Code of Conduct</a></li>
             <li><a href="/impressum.html" title="Impressum">Impressum</a></li>
           </ul>
         </div>
