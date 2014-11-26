@@ -4,14 +4,14 @@
   font-style: normal;
   font-size: 18px;
 
-  span {
+  > span {
     display: block;
   }
 
   @media all and (min-width: 1500px) {
     font-size: 24px;
 
-    span {
+    > span {
       margin-top: 0.3em;
     }
   }
