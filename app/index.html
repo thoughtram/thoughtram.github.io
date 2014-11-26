@@ -40,7 +40,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Add your site or app content here -->
 
     <!--[if lt IE 10]>
@@ -73,19 +73,19 @@
       </ul>
     </nav>
 
-    <main role="main" class="thtrm-l-main">
+    <main role="main" class="thtrm-l-main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
       <div class="thtrm-m-video-canvas">
         <video class="thtrm-m-video-canvas__video"  preload="true" loop="loop" autoplay="autoplay" muted="muted">
           <source src="/videos/thoughtram.mp4" type="video/mp4">
           <source src="/videos/thoughtram.webm" type="video/webm">
         </video>
       </div>
-      <section class="thtrm-m-section">
+      <section itemprop="about" itemtype="http://schema.org/Thing" class="thtrm-m-section">
         <div class="thtrm-m-section__skew"></div>
         <div class="thtrm-l-constraint">
           <div class="thtrm-m-section__content">
             <h1 class="thtrm-m-section__headline">Our Mission</h1>
-            <p class="thtrm-m-teaser-text">We enjoy learning new stuff every day and we love teaching it to others even more. We want learning to be both fun and efficient. That's why we help people to get a deep understanding of different technologies. If you aren’t satisfied with our material, then we aren’t either.</p>
+            <p itemprop="description" class="thtrm-m-teaser-text">We enjoy learning new stuff every day and we love teaching it to others even more. We want learning to be both fun and efficient. That's why we help people to get a deep understanding of different technologies. If you aren’t satisfied with our material, then we aren’t either.</p>
           </div>
         </div>
       </section>
@@ -120,17 +120,17 @@
             <p class="thtrm-m-teaser-text">In order to always deliver high quality content, we focus on just a minium set of technologies. This is where our strength lies.</p>
             <div class="thtrm-l-grid-units">
               <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
-                <div class="thtrm-m-content-box">
+                <div itemprop="speciality" itemscope itemtype="http://schema.org/Specialty" class="thtrm-m-content-box">
                   <img alt="Angular Logo" src="images/angular-logo.png">
-                  <p>AngularJS is a JavaScript toolset that changes the way we build web applications. We have <strong>over 3 years experience</strong> with AngularJS, we've built widely used modules for it and are also active contributors to the project.</p>
+                  <p itemprop="description"><a itemprop="significantLink" itemprop="url" title="AngularJS Website" href="http://angularjs.org"><span itemprop="name">AngularJS</span></a> is a JavaScript toolset that changes the way we build web applications. We have <strong>over 3 years experience</strong> with AngularJS, we've built widely used modules for it and are also active contributors to the project.</p>
                   <p>In our <strong>Angular Master Class</strong> attendees learn everything they need to know to build fully fledged single page applications for tomorrow with AngularJS.</p>
                   <p class="thtrm-l-center"><a href="/angular-master-class.html" title="Angular Master Class">Learn more &rarr;</a></p>
                 </div>
               </div>
               <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2">
-                <div class="thtrm-m-content-box">
+                <div itemprop="speciality" itemscope itemtype="http://schema.org/Specialty" class="thtrm-m-content-box">
                   <img alt="Git Logo" src="images/git-logo.png">
-                  <p>Git is a free and open source distributed version control system. It's invention was a blessing to the whole software world. We use Git on our daily basis to be as productive as possible, especially when working in larger teams.</p>
+                  <p itemprop="description"><a itemprop="significantLink" itemprop="url" title="Git Website" href="http://git-scm.com"><span itemprop="name">Git</span></a> is a free and open source distributed version control system. It's invention was a blessing to the whole software world. We use Git on our daily basis to be as productive as possible, especially when working in larger teams.</p>
 
                   <p>Attending our <strong>Git Master Class</strong> gives you a deep understanding of how Git works and what tools it comes with to make working with code a lot easier.</p>
                   <p class="thtrm-l-center"><a href="/git-master-class.html" title="Git Master Class">Learn more &rarr;</a></p>

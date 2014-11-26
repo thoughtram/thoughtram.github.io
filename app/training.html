@@ -39,7 +39,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Add your site or app content here -->
 
     <!--[if lt IE 10]>
@@ -72,14 +72,14 @@
       </ul>
     </nav>
 
-    <main role="main" class="thtrm-l-main">
+    <main role="main" class="thtrm-l-main" itemprop="mainContentOfPage">
       <section class="thtrm-m-section thtrm-m-section--last-on-page">
         <div class="thtrm-m-floating-polygon"></div>
         <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--bottom-right"></div>
         <div class="thtrm-l-constraint">
           <div class="thtrm-m-section__content">
           <h1 class="thtrm-m-section__headline">Training</h1>
-          <p class="thtrm-m-teaser-text">We regularly organize workshops, webinars or even free training days near you. Here's our portfolio of workshops we offer. You might be interested in one of these.</p>
+          <p itemprop="about" class="thtrm-m-teaser-text">We regularly organize workshops, webinars or even free training days near you. Here's our portfolio of workshops we offer. You might be interested in one of these.</p>
 
           <ul class="thtrm-m-list thtrm-m-list--spaced">
             <li>
@@ -95,7 +95,7 @@
             </li>
             <li>
               <div class="thtrm-m-content-box thtrm-m-content-box--horizontally clear">
-                <img alt="Git Logo" src="images/angular-logo.png">
+                <img itemprop="primaryImageOfPage" alt="Git Logo" src="images/angular-logo.png">
                 <div class="thtrm-m-content-box__content">
                   <h2 class="thtrm-m-section__sub-headline"><a title="Angular Master Class" href="/angular-master-class.html">Angular Master Class</a></h2>
                   <p>AngularJS is a JavaScript tool set that changes the way we build web applications. We have over 3 years experience with AngularJS, we've built widely used modules for it and are also active contributors to the project.</p>

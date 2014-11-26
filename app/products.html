@@ -39,7 +39,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Add your site or app content here -->
 
     <!--[if lt IE 10]>
@@ -72,22 +72,22 @@
       </ul>
     </nav>
 
-    <main role="main" class="thtrm-l-main">
+    <main role="main" class="thtrm-l-main" itemprop="mainContentOfPage">
       <section class="thtrm-m-section">
         <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--bottom-right"></div>
         <div class="thtrm-l-constraint">
           <div class="thtrm-m-section__content">
             <h1 class="thtrm-m-section__headline">Products</h1>
-            <p class="thtrm-m-teaser-text">Our products make developers life a lot easier. Find out what we've made and what we're currently working on.</p>
+            <p itemprop="about" class="thtrm-m-teaser-text">Our products make developers life a lot easier. Find out what we've made and what we're currently working on.</p>
             <ul class="thtrm-m-list thtrm-m-list--spaced">
               <li>
                 <div class="thtrm-m-content-box thtrm-m-content-box--horizontally clear">
-                <img class="thtrm-m-content-box__product-image" alt="Rebase Book Cover" src="images/rebase-book.png">
+                <img itemprop="primaryImageOfPage" class="thtrm-m-content-box__product-image" alt="Rebase Book Cover" src="images/rebase-book.png">
                   <div class="thtrm-m-content-box__content">
-                    <h2 class="thtrm-m-section__sub-headline"><a title="Git Master Class" href="/git-master-class.html">Rebase</a></h2>
+                    <h2 class="thtrm-m-section__sub-headline"><a itemprop="significantLink" title="Rebase" href="https://leanpub.com/rebase-the-complete-guide-on-rebasing-in-git">Rebase</a></h2>
                 <p>Rebasing is one of Gits most powerful features. Yet we've found that not many developers know how to use it properly to create and adopt powerful workflows.</p>
-                <p>That's why we decided to write a book about it. <strong>Rebase</strong> is entirely written in the open and goes far behind the regular <a href="http://git-scm.com/book">Git book</a> with a strong focus on rebasing.</p>
-                <p><a href="https://leanpub.com/rebase-the-complete-guide-on-rebasing-in-git" title="Rebase on leanpub">Learn more &rarr;</a></p>
+                <p>That's why we decided to write a book about it. <strong>Rebase</strong> is entirely written in the open and goes far behind the regular <a itemprop="significantLink" href="http://git-scm.com/book">Git book</a> with a strong focus on rebasing.</p>
+                <p><a itemprop="significantLink" href="https://leanpub.com/rebase-the-complete-guide-on-rebasing-in-git" title="Rebase on leanpub">Learn more &rarr;</a></p>
                   </div>
                 </div>
               </li>
