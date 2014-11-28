@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>http://thoughtram.io/training.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/about-us.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/products.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/git-master-class.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/angular-master-class.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/code-of-conduct.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://thoughtram.io/impressum.html</loc>
+  <lastmod>2014-11-28T19:38:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
