@@ -258,6 +258,8 @@
     font-weight: 800;
 
     &:hover,
+    &.active,
+    &:active,
     &:focus {
       color: #4D8799;
       -webkitkit-transition: ease-out color 0.2s;
