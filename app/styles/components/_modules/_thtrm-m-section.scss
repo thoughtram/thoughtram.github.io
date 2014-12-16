@@ -57,6 +57,13 @@
   }
 }
 
+.thtrm-m-section--has-background-image {
+  background-image: url('../images/banner-3.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .thtrm-m-section__content {
   position: relative;
   z-index: 1;
@@ -80,7 +87,8 @@
 }
 
 .thtrm-m-section--dark-blue,
-.thtrm-m-section--blue {
+.thtrm-m-section--blue,
+.thtrm-m-section--has-background-image {
   .thtrm-m-section__headline,
   .thtrm-m-section__sub-headline,
   .thtrm-m-section__sub-headline i,
