@@ -13,5 +13,9 @@
   "quotmark": "single",
   "undef": true,
   "unused": "vars",
-  "strict": true
+  "strict": true,
+  "globals": {
+    "angular": true,
+    "EVENTSDATA": true
+  }
 }

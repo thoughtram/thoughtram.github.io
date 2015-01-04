@@ -1,3 +1,4 @@
+/* jshint unused:false */
 var EVENTSDATA = [
   {
     name: 'Voxxed Days Ticino',
