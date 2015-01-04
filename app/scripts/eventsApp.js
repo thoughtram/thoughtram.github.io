@@ -69,5 +69,5 @@ angular.module('thtrmEvents', [])
         '</li>',
       '</ul>'
     ].join('')
-  }
+  };
 });
