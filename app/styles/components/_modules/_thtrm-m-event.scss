@@ -1,6 +1,10 @@
 .thtrm-m-events {
-  margin: 0;
   padding-top: 0;
+  padding-left: 0;
+  margin-left: -16px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
   li {
     width: 100%;
     margin-top: 2em;
@@ -8,8 +12,11 @@
     &:first-child {
       margin-top: 0;
     }
+  }
 
-    @media all and (min-width: 900px) {
+  @media all and (min-width: 900px) {
+    margin-top: 3em;
+    li {
       width: 33.33333%;
       display: inline-block;
       vertical-align: top;
@@ -35,6 +42,7 @@
   @media all and (min-width: 900px) {
     margin-bottom: 2em;
     padding: 2em;
+    min-height: 450px;
   }
 }
 

@@ -86,28 +86,7 @@
         <div class="thtrm-m-section__skew"></div>
         <div class="thtrm-l-constraint">
           <div class="thtrm-m-section__content">
-
-            <div ng-app="thtrmEvents" ng-controller="EventsController as ctrl">
-              <ul class="thtrm-m-events">
-                <li ng-repeat="event in ctrl.events">
-                <div class="thtrm-m-event" ng-class="{ 'thtrm-m-event--past': ctrl.isPastEvent(event.date) }">
-                    <span class="thtrm-m-event__date">
-                      <i class="fa fa-calendar"></i>
-                      <span ng-bind="event.date | date"></span>
-                    </span>
-
-                    <h3 class="thtrm-m-event__name"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}" ng-bind="event.name"></a></h3>
-
-                    <span class="thtrm-m-event__talk-name" ng-if="event.talkName" ng-bind="event.talkName"></span>
-                    <p class="thtrm-m-event__summary" ng-bind="event.summary"></p>
-
-                    <p class="thtrm-m-event__info"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}">More info</a></p>
-                    <p class="thtrm-m-event__info" ng-if="event.slideUrl || event.videoUrl"><a ng-if="event.slidesUrl" ng-href="{{event.slidesUrl}}">View Slides</a> <span ng-if="event.slidesUrl && event.videoUrl">or</span> <a ng-href="{{event.videoUrl}}">Watch Video</a></p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
+            <thtrm-events-app ng-app="thtrmEvents"></thtrm-events-app>
           </div>
         </div>
       </section>
