@@ -1,0 +1,94 @@
+.thtrm-m-events {
+  margin: 0;
+  padding-top: 0;
+  li {
+    width: 100%;
+    margin-top: 2em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media all and (min-width: 900px) {
+      width: 33.33333%;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0;
+    }
+  }
+}
+
+.thtrm-m-event {
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: center;
+
+  p {
+    padding-top: 0.8em;
+    font-size: 18px;
+
+    a {
+      font-weight: 400;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+}
+
+.thtrm-m-event--past {
+  background: #F5f5f5;
+}
+
+.thtrm-m-event__date {
+  text-align: center;
+
+  .fa {
+    display: block;
+    font-size: 2.5em;
+    color: #3E6F7E;
+
+    @media all and (min-width: 900px) {
+      font-size: 3em;
+    }
+  }
+
+  span {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.2em;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.thtrm-m-event__name {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 0.5em;
+  font-size: 1.2em;
+
+  a {
+    color: #222;
+    text-decoration: none;
+  }
+}
+
+.thtrm-m-event__talk-name {
+  font-weight: bold;
+  color: #FFF;
+  background-color: #777;
+  font-size: 0.6em;
+  display: inline-block;
+  padding: 0em 1em;
+  border-radius: 0.3em;
+  margin: 0 auto;
+  margin-top: 0.4em;
+  line-height: 22px;
+}
+
+.thtrm-m-event__info {
+  font-size: 16px!important;
+}

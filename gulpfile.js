@@ -42,7 +42,7 @@ var AUTOPREFIXER_BROWSERS = [
 
 // Lint JavaScript
 gulp.task('jshint', function () {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src(['app/scripts/**/*.js', '!app/scripts/angular.js'])
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
@@ -123,7 +123,6 @@ gulp.task('html', function () {
     .pipe($.if('*.css', $.uncss({
       html: [
         'app/index.html',
-        'app/styleguide.html'
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [

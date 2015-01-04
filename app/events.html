@@ -86,25 +86,28 @@
         <div class="thtrm-m-section__skew"></div>
         <div class="thtrm-l-constraint">
           <div class="thtrm-m-section__content">
-            <h2 class="thtrm-m-section__sub-headline"><i class="fa fa-calendar"></i> Upcoming Events</h2>
 
-            <ul>
-              <li>
-                <h3>Git Master Class</h3>
-                <span class="thtrm-m-time">15. January 2014 - 16. January 2014</span>
-                
-                <address itemprop="location" itemscope itemtype="http://schem.org/Place" class="thtrm-m-address">
-                  <span><strong itemprop="name">De Voorhoede</strong></span>
-                  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAdress">
-                    <span itemprop="streetAddress">Rijnsburgstraat 9 - 11</span>
-                    <span><span itmeprop="postalCode">1059</span> <span itemprop="addressLocality">Amsterdam</span></span>
-                    <span itemprop="addressCountry">Netherlands</span>
-                  </span>
-                </address>
-                
-              </li>
-              <!-- <li><h3>Git Training Day in Istanbul</h3></li> -->
-            </ul>
+            <div ng-app="thtrmEvents" ng-controller="EventsController as ctrl">
+              <ul class="thtrm-m-events">
+                <li ng-repeat="event in ctrl.events">
+                <div class="thtrm-m-event" ng-class="{ 'thtrm-m-event--past': ctrl.isPastEvent(event.date) }">
+                    <span class="thtrm-m-event__date">
+                      <i class="fa fa-calendar"></i>
+                      <span ng-bind="event.date | date"></span>
+                    </span>
+
+                    <h3 class="thtrm-m-event__name"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}" ng-bind="event.name"></a></h3>
+
+                    <span class="thtrm-m-event__talk-name" ng-if="event.talkName" ng-bind="event.talkName"></span>
+                    <p class="thtrm-m-event__summary" ng-bind="event.summary"></p>
+
+                    <p class="thtrm-m-event__info"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}">More info</a></p>
+                    <p class="thtrm-m-event__info" ng-if="event.slideUrl || event.videoUrl"><a ng-if="event.slidesUrl" ng-href="{{event.slidesUrl}}">View Slides</a> <span ng-if="event.slidesUrl && event.videoUrl">or</span> <a ng-href="{{event.videoUrl}}">Watch Video</a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
@@ -141,6 +144,9 @@
     </footer>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/eventsData.js"></script>
+    <script src="scripts/eventsApp.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
