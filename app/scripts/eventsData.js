@@ -30,16 +30,16 @@ var EVENTSDATA = [
     talkName: '',
     summary: 'Say hello in Munich to Christoph and Pascal while they are running two workshops on Angular directives.'
   },
-  // {
-  //   name: 'NG-NL',
-  //   date: '2015-02-16T09:00:00',
-  //   city: 'Amsterdam, Netherlands',
-  //   websiteUrl: 'http://ng-nl.org',
-  //   videoUrl: '',
-  //   slidesUrl: '',
-  //   talkName: 'The best Angular yet!',
-  //   summary: 'Pascal and Christoph talk about the best Angular yet at Amsterdams own AngularJS conference.'
-  // },
+  {
+    name: 'NG-NL',
+    date: '2015-02-16T09:00:00',
+    city: 'Amsterdam, Netherlands',
+    websiteUrl: 'http://ng-nl.org',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: 'The best Angular yet!',
+    summary: 'Meet Christoph and Pascal when they talk about the best Angular yet at Amsterdams own AngularJS conference.'
+  },
   {
     name: 'Git Master Class',
     date: '2015-01-15T09:30:00',
