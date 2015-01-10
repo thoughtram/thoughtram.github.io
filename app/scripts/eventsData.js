@@ -81,6 +81,16 @@ var EVENTSDATA = [
     websiteUrl: 'http://jsist.org',
   },
   {
+    name: 'IstanbulJS',
+    date: '2014-09-26T18:30:00',
+    city: 'Istanbul, Turkey',
+    talkName: 'nickel.rs - Web Application Framework for Rust',
+    summary: 'Christoph talks about web application development in Rust',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'https://twitter.com/jstanbulorg',
+  },
+  {
     name: 'Git Training Day',
     date: '2014-09-20T08:30:00',
     city: 'Istanbul, Turkey',
