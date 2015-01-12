@@ -58,17 +58,17 @@ angular.module('thtrmEvents', [])
           '<div class="thtrm-m-event">',
             '<span class="thtrm-m-event__date">',
               '<i class="fa fa-calendar"></i>',
-              '<span ng-bind="event.date | date"></span>',
+              '<span ng-bind="::event.date | date"></span>',
             '</span>',
 
-            '<h3 class="thtrm-m-event__name"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}" ng-bind="event.name"></a></h3>',
-            '<p class="thtrm-m-event__city"><i class="fa fa-map"></i>{{event.city}}</p>',
+            '<h3 class="thtrm-m-event__name"><a ng-href="{{::event.websiteUrl}}" title="{{::event.name}}" ng-bind="::event.name"></a></h3>',
+            '<p class="thtrm-m-event__city"><i class="fa fa-map"></i>{{::event.city}}</p>',
 
-            '<span class="thtrm-m-event__talk-name" ng-if="event.talkName" ng-bind="event.talkName"></span>',
-            '<p class="thtrm-m-event__summary" ng-bind="event.summary"></p>',
+            '<span class="thtrm-m-event__talk-name" ng-if="event.talkName" ng-bind="::event.talkName"></span>',
+            '<p class="thtrm-m-event__summary" ng-bind="::event.summary"></p>',
 
-            '<p class="thtrm-m-event__info"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}">More info</a></p>',
-            '<p class="thtrm-m-event__info" ng-if="event.slideUrl || event.videoUrl"><a ng-if="event.slidesUrl" ng-href="{{event.slidesUrl}}">View Slides</a> <span ng-if="event.slidesUrl && event.videoUrl">or</span> <a ng-href="{{event.videoUrl}}">Watch Video</a></p>',
+            '<p class="thtrm-m-event__info"><a ng-href="{{::event.websiteUrl}}" title="{{::event.name}}">More info</a></p>',
+            '<p class="thtrm-m-event__info" ng-if="event.slideUrl || event.videoUrl"><a ng-if="event.slidesUrl" ng-href="{{::event.slidesUrl}}">View Slides</a> <span ng-if="event.slidesUrl && event.videoUrl">or</span> <a ng-href="{{::event.videoUrl}}">Watch Video</a></p>',
           '</div>',
         '</li>',
       '</ul>'
