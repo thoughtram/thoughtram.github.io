@@ -47,9 +47,9 @@ angular.module('thtrmEvents', [])
     },
     restrict: 'E',
     replace: true,
-    controller: function ($filter) {
+    controller: ['$filter', function ($filter) {
       this.events = $filter('orderBy')(this.events, 'date', this.reverse);
-    },
+    }],
     controllerAs: 'ctrl',
     bindToController: true,
     template: [
