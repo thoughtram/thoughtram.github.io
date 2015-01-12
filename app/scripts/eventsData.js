@@ -1,6 +1,16 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'HannoverJS',
+    date: '2015-01-22T19:00:00',
+    city: 'Hanover, Germany',
+    talkName: 'Componentize all the things!',
+    summary: 'Don\'t know what Web Components are? Pascal is going to tell you about it.',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://hannoverjs.de',
+  },
+  {
     name: 'Voxxed Days Ticino',
     date: '2015-04-18T09:00:00',
     city: 'Ticino, Switzerland',
