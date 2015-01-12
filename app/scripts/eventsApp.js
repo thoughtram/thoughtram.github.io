@@ -33,7 +33,7 @@ angular.module('thtrmEvents', [])
       '<h2 class="thtrm-m-section__sub-headline">Upcoming Events</h2>',
       '<thtrm-events-list events="ctrl.upcomingEvents"></thtrm-events-list>',
       '<h2 class="thtrm-m-section__sub-headline">Past Events</h2>',
-      '<thtrm-events-list events="ctrl.pastEvents"></thtrm-events-list>',
+      '<thtrm-events-list events="ctrl.pastEvents" reverse="true"></thtrm-events-list>',
     ].join('')
   };
 })
@@ -42,11 +42,14 @@ angular.module('thtrmEvents', [])
   'use strict';
   return {
     scope: {
-      events: '='
+      events: '=',
+      reverse: '='
     },
     restrict: 'E',
     replace: true,
-    controller: function () {},
+    controller: function ($filter) {
+      this.events = $filter('orderBy')(this.events, 'date', this.reverse);
+    },
     controllerAs: 'ctrl',
     bindToController: true,
     template: [
