@@ -62,6 +62,7 @@ angular.module('thtrmEvents', [])
             '</span>',
 
             '<h3 class="thtrm-m-event__name"><a ng-href="{{event.websiteUrl}}" title="{{event.name}}" ng-bind="event.name"></a></h3>',
+            '<p class="thtrm-m-event__city"><i class="fa fa-map"></i>{{event.city}}</p>',
 
             '<span class="thtrm-m-event__talk-name" ng-if="event.talkName" ng-bind="event.talkName"></span>',
             '<p class="thtrm-m-event__summary" ng-bind="event.summary"></p>',
