@@ -1,6 +1,16 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'goto; Amsterdam',
+    date: '2015-06-17T09:00:00',
+    city: 'Amsterdam, Netherlands',
+    talkName: 'Dependency Injection for future Generations',
+    summary: 'Learn about the new Dependency Injection system in Angular 2.0 and meet Pascal in Amsterdam.',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://gotocon.com/amsterdam-2015/',
+  },
+  {
     name: 'HannoverJS',
     date: '2015-01-22T19:00:00',
     city: 'Hanover, Germany',
