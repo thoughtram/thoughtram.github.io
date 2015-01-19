@@ -62,7 +62,7 @@ var EVENTSDATA = [
   },
   {
     name: 'NG-NL',
-    date: '2015-02-16T09:00:00',
+    date: '2015-02-13T09:00:00',
     city: 'Amsterdam, Netherlands',
     websiteUrl: 'http://ng-nl.org',
     videoUrl: '',
