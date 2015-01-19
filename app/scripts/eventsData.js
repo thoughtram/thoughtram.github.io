@@ -8,7 +8,7 @@ var EVENTSDATA = [
     summary: 'Come and say hi at Vienna\'s Angular meetup!',
     slidesUrl: '',
     videoUrl: '',
-    websiteUrl: 'http://www.meetup.com/AngularJS-Vienna/',
+    websiteUrl: 'http://www.meetup.com/AngularJS-Vienna/events/219775723/',
   },
   {
     name: 'goto; Amsterdam',
