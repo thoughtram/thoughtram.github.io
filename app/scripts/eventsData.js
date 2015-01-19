@@ -1,6 +1,16 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'Angular Meetup Vienna',
+    date: '2015-03-18T19:00:00',
+    city: 'Vienna, Austria',
+    talkName: '',
+    summary: 'Come and say hi at Vienna\'s Angular meetup!',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://www.meetup.com/AngularJS-Vienna/',
+  },
+  {
     name: 'goto; Amsterdam',
     date: '2015-06-17T09:00:00',
     city: 'Amsterdam, Netherlands',
