@@ -33,6 +33,17 @@
   }
 }
 
+.thtrm-m-section--image-background {
+  background-image: url('/images/testimonial-mike.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .thtrm-m-section__content {
+    background: #fff;
+  }
+}
+
 .thtrm-m-section--blue {
   background: #4D8799;
 
