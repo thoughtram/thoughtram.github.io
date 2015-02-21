@@ -11,6 +11,16 @@ var EVENTSDATA = [
     websiteUrl: 'http://www.meetup.com/AngularJS-Vienna/events/219775723/',
   },
   {
+    name: 'ng-conf',
+    date: '2015-03-05T09:00:00',
+    city: 'Salt Lake City, Utah',
+    talkName: 'Better i18n for your Angular apps',
+    summary: 'Learn about the new i18n story that is coming to Angular and meet Pascal at ng-conf!',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://ng-conf.org',
+  },
+  {
     name: 'goto; Amsterdam',
     date: '2015-06-17T09:00:00',
     city: 'Amsterdam, Netherlands',
