@@ -71,6 +71,16 @@ var EVENTSDATA = [
     websiteUrl: 'http://hannoverjs.de',
   },
   {
+    name: 'Voxxed Days Ticino Workshop',
+    date: '2015-04-18T09:00:00',
+    city: 'Ticino, Switzerland',
+    websiteUrl: 'https://voxxeddays.com/ticino15/vdt-workshops/#angularjs',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: 'Angular Training Day',
+    summary: 'Pascal is going to run a full Angular training day at Voxxed Days Ticino!'
+  },
+  {
     name: 'Voxxed Days Ticino',
     date: '2015-04-18T09:00:00',
     city: 'Ticino, Switzerland',
