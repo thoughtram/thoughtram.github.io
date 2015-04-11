@@ -1,6 +1,16 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'Angular Master Class',
+    date: '2015-07-15T09:30:00',
+    city: 'Amsterdam, Netherlands',
+    websiteUrl: 'http://thoughtram.io/angular-master-class.html',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: '',
+    summary: 'Meet Christoph and Pascal in Amsterdam at the Angular Master Class!'
+  },
+  {
     name: 'Betahaus Education',
     date: '2015-07-17T09:00:00',
     city: 'Hamburg, Germany',
