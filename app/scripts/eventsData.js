@@ -2,6 +2,16 @@
 var EVENTSDATA = [
   {
     name: 'Angular Master Class',
+    date: '2015-08-03T09:30:00',
+    city: 'Hanover, Germany',
+    websiteUrl: 'http://thoughtram.io/angular-master-class.html',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: '',
+    summary: 'Home run! Join our Angular Master Class in Hanover!'
+  },
+  {
+    name: 'Angular Master Class',
     date: '2015-07-15T09:30:00',
     city: 'Amsterdam, Netherlands',
     websiteUrl: 'http://thoughtram.io/angular-master-class.html',
