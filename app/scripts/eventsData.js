@@ -1,6 +1,26 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'CodeTalks 2015',
+    date: '2015-09-30T09:30:00',
+    city: 'Hamburg, Germany',
+    websiteUrl: 'http://codetalks.de',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: 'Dependency Injection for future generations',
+    summary: 'Pascal will introduce you to the concepts of Dependency Injection and how it is implemented in Angular 2.'
+  },
+  {
+    name: 'CodeTalks 2015',
+    date: '2015-09-29T09:30:00',
+    city: 'Hamburg, Germany',
+    websiteUrl: 'http://codetalks.de',
+    videoUrl: '',
+    slidesUrl: '',
+    talkName: 'Rust - Rethinking System Programming',
+    summary: 'Learn how the Rust programming language will change the way we build system applications in Christoph\'s talk at CodeTalks!'
+  },
+  {
     name: 'Angular Master Class',
     date: '2015-09-14T09:30:00',
     city: 'Helsinki, Finland',
