@@ -1,0 +1,33 @@
+.thtrm-topic-box {
+  background: rgba(56, 76, 84, 1);
+  text-align: center;
+  padding: 0em 2em 3em;
+
+  &--first-row {
+    padding-top: 3em;
+  }
+}
+
+.thtrm-topic-box-content {
+  border: 2px solid #fff;
+  padding: 3em;
+  padding-top: 2.5em;
+  // background: #1d2e35;
+}
+
+.thtrm-topic-box-headline {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.thtrm-topic-box-text {
+  margin: 0 auto;
+  margin-top: 1em;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+}

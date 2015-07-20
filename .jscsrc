@@ -1,6 +1,8 @@
 {
   "preset": "google",
-  "validateLineBreaks": "LF",
-  "validateIndentation": 2,
-  "excludeFiles": ["node_modules/**"]
+  "disallowSpacesInAnonymousFunctionExpression": null,
+  "excludeFiles": [
+    "node_modules/**",
+    "gulpfile.babel.js"
+  ]
 }

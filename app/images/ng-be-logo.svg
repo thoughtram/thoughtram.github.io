@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="472px" height="490px" viewBox="0 0 472 490" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>ng-be</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ng-be" sketch:type="MSArtboardGroup">
+            <g id="shield" sketch:type="MSLayerGroup">
+                <path d="M141,35 L141,440.432477 L42,388.380931 L0,86.3809305 L141,35 L141,35 Z" id="left" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <path d="M141,440.050834 L236,489.999288 L236,0 L141,34.6183574 L141,440.050834 L141,440.050834 Z" id="left-middle" fill="#FAE042" sketch:type="MSShapeGroup"></path>
+                <path d="M236,440.050834 L331,489.999288 L331,0 L236,34.6183574 L236,440.050834 L236,440.050834 Z" id="right-middle" fill="#E1C93B" sketch:type="MSShapeGroup" transform="translate(283.500000, 244.999644) scale(-1, 1) translate(-283.500000, -244.999644) "></path>
+                <path d="M472,35 L472,440.432477 L373,388.380931 L331,86.3809305 L472,35 L472,35 Z" id="right" fill="#D52533" sketch:type="MSShapeGroup" transform="translate(401.500000, 237.716238) scale(-1, 1) translate(-401.500000, -237.716238) "></path>
+            </g>
+            <path d="M281.831933,250 L235.504587,143 L189.177242,250 L281.831933,250 L281.831933,250 L281.831933,250 Z M303.480225,300 L338.550459,381 L132.458716,381 L167.528949,300 L303.480225,300 L303.480225,300 L303.480225,300 Z M236,24 L398,381 L74,381 L236,24 L236,24 L236,24 Z" id="Triangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

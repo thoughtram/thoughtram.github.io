@@ -1,12 +1,6 @@
-@import '_h5bp';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+// @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900);
 
-/*
- * Visual Style Guide styles
- * Remove if you prefer to use a CSS library, like Bootstrap
- */
-@import 'components/components';
+@import './variables';
 
 *,
 *::before,
@@ -17,7 +11,7 @@
 html,
 body,
 button {
-  -moz-osx-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
@@ -32,78 +26,98 @@ body {
 
 body {
   position: relative;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  background-color: #fff;
+  margin: 0;
+  background: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
-  min-height: 100%;
-  color: #222;
-  font-size: $fontBase;
-  line-height: 1.6250em; /* 26px */
+  // min-height: 100%;
 }
 
-body.open {
-  overflow: hidden;
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  border: none;
+  vertical-align: middle;
 }
 
-.base,
-p,
-ul,
-ol {
-  font-size: 19px;
+p {
+  margin: 0;
 }
 
-/** Larger Screens - desktops and tablets **/
-@media all and (min-width: 990px) {
-  body {
-    overflow-y: scroll;
+blockquote {
+  padding-top: 1.7em;
+  position: relative;
+  font-size: 1.2em;
+  font-style: italic;
+
+  &:before {
+    content: '"';
+    display: block;
+    left: 50%;
+    margin-left: -.1em;
+    position: absolute;
+    top: 0.05em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 5em;
+    transform: translateX(-50%);
+    color: #cacaca;
+    line-height: .5;
+  }
+
+  span {
+    display: block;
+    margin-top: 1.1em;
+    font-size: .8em;
+    font-style: normal;
   }
 }
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: normal;
-//   font-weight: 300;
-//   src: url(/fonts/RobotoCondensed-Light.eot);
-//   src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(/fonts/RobotoCondensed-Light.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-Light.woff) format('woff');
-// }
+address {
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url(/fonts/RobotoCondensed-Regular.eot);
-//   src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(/fonts/RobotoCondensed-Regular.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-Regular.woff) format('woff');
-// }
+.thtrm-main {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  min-height: 100%;
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url(/fonts/RobotoCondensed-Bold.eot);
-//   src: local('Roboto Condensed Regular'), local('RobotoCondensed-Bold'), url(/fonts/RobotoCondensed-Bold.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-Bold.woff) format('woff');
-// }
+  @include desktop {
+    min-height: initial;
+  }
+}
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: italic;
-//   font-weight: 300;
-//   src: url(/fonts/RobotoCondensed-LightItalic.eot);
-//   src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url(/fonts/RobotoCondensed-LightItalic.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-LightItalic.woff) format('woff');
-// }
+.thtrm-background-light-gray {
+  background: #eee;
+}
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: italic;
-//   font-weight: 400;
-//   src: url(/fonts/RobotoCondensed-Italic.eot);
-//   src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url(/fonts/RobotoCondensed-Italic.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-Italic.woff) format('woff');
-// }
+.thtrm-imprint {
+  .thtrm-main {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+}
 
-// @font-face {
-//   font-family: 'Roboto Condensed';
-//   font-style: italic;
-//   font-weight: 700;
-//   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
-//   src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url(/fonts/RobotoCondensed-BoldItalic.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-BoldItalic.woff) format('woff');
-// }
+.thtrm-subtitle {
+  color: #384c54;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+
+  @include desktop {
+    font-size: 20px;
+  }
+}
+
+@import 'thtrm-header',
+        'thtrm-banner',
+        'thtrm-section',
+        'thtrm-table-layout',
+        'thtrm-teaser',
+        'thtrm-instructor',
+        'thtrm-testimonial',
+        'thtrm-topic-box',
+        'thtrm-list',
+        'thtrm-cta',
+        'thtrm-footer';

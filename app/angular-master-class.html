@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="AngularJS is a JavaScript toolset that changes the way we build web applications. We have over 3 years experience with AngularJS, we've built widely used modules for it and are also active contributors to the project. In our Angular Master Class attendees learn everything they need to know to build fully fledged single page applications with AngularJS.">
+    <meta name="description" content="In this course we cover everything you need to know to build apps for tomorrow. From file structures, components and services to server communication and complex directives.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular Master Class | thoughtram - Extend your memory</title>
+    <title>Angular Master Class by thoughtram</title>
+    <meta name="google-site-verification" content="o9eGPEgIETEqYGombq7NiQuBIB_qa6gz1yAL7PxKyK0" />
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -16,7 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="thoughtram">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
@@ -29,281 +30,146 @@
 
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="AngularJS is a JavaScript toolset that changes the way we build web applications. We have over 3 years experience with AngularJS, we've built widely used modules for it and are also active contributors to the project. In our Angular Master Class attendees learn everything they need to know to build fully fledged single page applications with AngularJS.">
+    <meta property="og:description" content="In this course we cover everything you need to know to build apps for tomorrow. From file structures, components and services to server communication and complex directives.">
     <meta property="og:url" content="http://thoughtram.io/angular-master-class.html">
-    <meta property="og:site_name" content="Angular Master Class | thoughtram - Extend your memory">
-    <meta property="og:title" content="Angular Master Class by thoughtram">
-    <meta property="og:image" content="http://thoughtram.io/images/angularjs-shield.png">
+    <meta property="og:image" content="http://thoughtram.io/images/background-ng-connect_desktop.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Angular Master Class | thoughtram">
+    <meta property="twitter:title" content="Angular Master Class by thoughtram">
     <meta property="twitter:site" content="thoughtram">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <!-- Add your site or app content here -->
-
-    <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header role="banner" class="thtrm-l-header has-backface-visibility--hidden">
-      <div class="thtrm-l-header__bar">
-        <h1 class="thtrm-l-header__logo"><a href="/" title="thoughtram official website"  aria-hidden="true">thoughtram</a></h1>
-        <button class="thtrm-l-header__menu-btn" role="button"><img src="images/hamburger.svg" alt="Menu"></button>
-        <section class="thtrm-l-header__bar__actions">
-          <ul class="thtrm-l-header__bar__actions__navigation">
-            <li><a href="/" title="Home" >Home</a></li>
-            <li><a href="/about-us.html" title="About us" >About us</a></li>
-            <li><a href="/products.html" title="Products" >Products</a></li>
-            <li><a href="/training.html" title="Training" >Training</a></li>
-            <li><a href="http://blog.thoughtram.io" title="Blog" >Blog</a></li>
+  <body itemscope itemtype="http://schema.org/WebPage" class="sub-site">
+    <header class="thtrm-header" role="banner">
+      <div class="thtrm-header-bar">
+        <a href="/" title="thoughtram.io Start Page"><h1 class="thtrm-header-logo">thoughtram</h1></a>
+        <div class="thtrm-header-menu-wrapper">
+          <span role="button" tabindex="0" class="thtrm-header-menu-label">Menu</span>
+          <ul class="thtrm-header-menu">
+            <li><a title="Training" class="thtrm-header-menu-item" href="/training.html">Training</a></li>
+            <li><a title="Code Review" class="thtrm-header-menu-item" href="/code-review.html">Code Review</a></li>
+            <li><a title="Blog" class="thtrm-header-menu-item" href="http://blog.thoughtram.io">Blog</a></li>
           </ul>
-        </section>
+        </div>
       </div>
     </header>
-
-    <nav role="navigation" class="thtrm-l-navdrawer has-backface-visibility--hidden">
-      <h4 class="thtrm-l-navdrawer__headline">Navigation</h4>
-      <ul class="thtrm-l-navdrawer__navigation">
-        <li><a href="/" title="Home" >Home</a></li>
-        <li><a href="/about-us.html" title="About us" >About us</a></li>
-        <li><a href="/products.html" title="Products" >Products</a></li>
-        <li><a href="/training.html" title="Training" >Training</a></li>
-        <li><a href="http://blog.thoughtram.io" title="Blog" >Blog</a></li>
-      </ul>
-    </nav>
-
-    <main role="main" class="thtrm-l-main" itemprop="mainContentOfPage">
-      <section class="thtrm-m-section">
-        <div class="thtrm-l-constraint">
-          <img itemprop="primaryImageOfPage" class="thtrm-m-training-image" alt="Angular Logo" src="images/angularjs-shield.png">
-          <div class="thtrm-m-section__content">
-            <h1 class="thtrm-m-section__headline">Angular Master Class</h1>
-            <p itemprop="about" class="thtrm-m-teaser-text">AngularJS is a JavaScript toolset that changes the way we build web applications. <strong>We have over 3 years experience</strong> with AngularJS, we've built widely used modules for it and are also active contributors to the project. In our Angular Master Class, attendees learn everything they need to know to build fully fledged single page applications with AngularJS.</p>
-          </div>
-        </div>
-      </section>
-      <section class="thtrm-m-section thtrm-m-section--negative-skew thtrm-m-section--blue">
-        <div class="thtrm-m-section__skew"></div>
-        <div class="thtrm-m-floating-polygon"></div>
-        <div class="thtrm-l-constraint">
-          <div class="thtrm-m-section__content">
-            <h2 class="thtrm-m-section__sub-headline">Why take this training?</h2>
-            <p class="thtrm-m-teaser-text">Want to get up and running with the Angular framework, but don't have the time to read through all the documentation and tutorials in the internet? Then this training is for you. In this course we cover <strong>everything you need to know to build apps for tomorrow</strong>. From file structures, controllers and services to complex directives and server communication.</p>
-          </div>
-        </div>
-      </section>
-      <section class="thtrm-m-section">
-        <div class="thtrm-m-section__skew"></div>
-        <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--right"></div>
-        <div class="thtrm-l-constraint">
-          <div class="thtrm-m-section__content">
-            <h2 class="thtrm-m-section__headline">What you will learn</h2>
-            <p class="thtrm-m-teaser-text">Throughout this workshop you're going to build an Angular application to learn about controller architecture, built-in services, the different directive implementations and much more. Here's what the Angular Master Class experience offers.</p>
-            <div class="thtrm-l-grid-units">
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3 ">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Getting Started</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>Concepts, architecture and philosophy</li>
-                    <li>Angular's runtime, its compiler and two-way data binding</li>
-                    <li>Controllers</li>
-                    <li>Understanding Scopes</li>
-                    <li>Built-in and Custom Services
-                    <li>Dependency Injection</li>
-                    <li>Promises</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Directives</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>Routing and Views</li>
-                    <li>Built-in Directives</li>
-                    <li>Compile Process</li>
-                    <li>Template Directives</li>
-                    <li>Directive Controllers</li>
-                    <li>Component Directives and Transclusion</li>
-                    <li>Component based Apps</li>
-                    <li>Best Practices</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Server Communication</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>Http Service</li>
-                    <li>Http interceptors and custom interceptors</li>
-                    <li>Cross-Origin Policy Restriction</li>
-                    <li>Resource Service and REST</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="thtrm-l-grid-units">
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3 ">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Advanced Routing</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>States and Views</li>
-                    <li>States with URLs</li>
-                    <li>Multiple Views</li>
-                    <li>Nested States</li>
-                    <li>Abstract States</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Forms and Validation</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>Forms without Forms</li>
-                    <li>Built-in Validation</li>
-                    <li>Parsers and Formatters</li>
-                    <li>Custom Validators and async Validators</li>
-                    <li>Error Messages with ngMessages</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-3">
-                <div class="thtrm-m-content-box">
-                  <h2 class="thtrm-m-section__sub-headline">Upgrading to Angular 2</h2>
-                  <ul class="thtrm-m-list thtrm-m-list--checked">
-                    <li>Preparing the Upgrade</li>
-                    <li>Upgrade Strategies</li>
-                    <li>Interoperating Angular 1 and Angular 2 components</li>
-                    <li>Interoperating Services and Providers</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <p class="thtrm-m-teaser-text">We created <strong>future-proved material based on Angular 1.4 towards Angular 2</strong>, to make sure the apps you build today are going to work tomorrow.</p>
-          </div>
-        </div>
-      </section>
-      <section class="thtrm-m-section thtrm-m-section--negative-skew thtrm-m-section--dark-blue">
-        <div class="thtrm-m-section__skew"></div>
-        <div class="thtrm-m-floating-polygon thtrm-m-floating-polygon--left"></div>
-        <div class="thtrm-l-constraint">
-          <div class="thtrm-m-section__content">
-            <h2 class="thtrm-m-section__sub-headline">What you will take home</h2>
-            <p class="thtrm-m-teaser-text">As an Angular Master Class attendee you'll get lifelong access to all current and future slidedecks via our <a href="http://blog.thoughtram.io/announcements/2015/11/19/how-we-run-trainings.html" target="_blank">exclusive classroom platform</a>. You'll also get <strong>access to our private repositories</strong> with lots of examples, exercises and receipts. In addition we provide you with great <strong>thoughtram and Angular stickers</strong>, so you can decorate your machine accordingly.</p>
-          </div>
-        </div>
-      </section>
-      <section class="thtrm-m-section thtrm-m-section--last-on-page">
-        <div class="thtrm-m-section__skew"></div>
-        <div class="thtrm-l-constraint">
-          <div class="thtrm-m-section__content">
-            <h2 class="thtrm-m-section__sub-headline"><i class="fa fa-calendar"></i> Upcoming Trainings</h2>
-            <!-- <p class="thtrm-m-teaser-text"><strong>Interested in attending our Angular Master Class?</strong> Great, we're looking forward hearing from you! Here's a list of upcoming trainings in cities near you. Come by and say hello!</p> -->
-            <p class="thtrm-m-teaser-text">There are currently no public trainings.</p>
-            <!-- <div class="thtrm-l-grid-units"> -->
-            <!--   <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2 "> -->
-            <!--     <div id="hanover" itemscope itemtype="http://schema.org/Event" class="thtrm-m-content-box"> -->
-            <!--       <img itemprop="image" alt="Angular Logo" src="images/angularjs-shield.png"> -->
-            <!--       <h3 itemprop="name" class="thtrm-m-section__sub-headline">Angular Master Class Hanover</h3> -->
-            <!--       <p style="text-align: center;">In cooperation with <a href="http://edelstall.de/futur/#ueber-edelstall-futur">EDELSTALL Futur</a></p> -->
-            <!--       <address itemprop="location" itemscope itemtype="http://schem.org/Place" class="thtrm-m-address"> -->
-            <!--         <span><strong itemprop="name">EDELSTALL GmbH Coworking Space</strong></span> -->
-            <!--         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> -->
-            <!--           <span itemprop="streetAddress">Schwarzer Bär 2</span> -->
-            <!--           <span><span itemprop="postalCode">30449</span> <span itemprop="addressLocality">Hanover</span></span> -->
-            <!--           <span itemprop="addressCountry">Germany</span> -->
-            <!--         </span> -->
-            <!--       </address> -->
-
-            <!--       <span itemprop="startDate" content="2015-03-16T09-30" class="thtrm-m-time"> -->
-            <!--         Monday, August 03, 2015 at 9:30 AM -<br>Tuesday, August 04, 2015 at 6:00 PM (CET)</span> -->
-
-            <!--         <iframe style="width: 100%; margin-top: 1.5em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.1248568616866!2d9.720608999999996!3d52.36815600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074bfe13224df%3A0x9f4e6470096cf0ce!2sEDELSTALL+GmbH+-+Coworking+Space+Hannover!5e0!3m2!1sen!2sde!4v1429026747256" height="250" frameborder="0" style="border:0"></iframe> -->
-
-            <!--       <div style="margin-top: 1.5em; width:100%; text-align:left;" ><iframe  src="//eventbrite.de/tickets-external?eid=16537555273&ref=etckt" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!--   <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2 "> -->
-            <!--     <div id="hanover" itemscope itemtype="http://schema.org/Event" class="thtrm-m-content-box"> -->
-            <!--       <img itemprop="image" alt="Angular Logo" src="images/angularjs-shield.png"> -->
-            <!--       <h3 itemprop="name" class="thtrm-m-section__sub-headline">Angular Master Class Brussels</h3> -->
-            <!--       <address itemprop="location" itemscope itemtype="http://schem.org/Place" class="thtrm-m-address"> -->
-            <!--         <span><strong itemprop="name">Silversquare</strong></span> -->
-            <!--         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> -->
-            <!--           <span itemprop="streetAddress">Avenue Louise 523</span> -->
-            <!--           <span><span itemprop="postalCode">1050</span> <span itemprop="addressLocality">Brussels</span></span> -->
-            <!--           <span itemprop="addressCountry">Belgium</span> -->
-            <!--         </span> -->
-            <!--       </address> -->
-
-            <!--       <span itemprop="startDate" content="2015-03-16T09-30" class="thtrm-m-time"> -->
-            <!--         Tuesday, August 25, 2015 at 9:30 AM -<br>Wednesday, August 26, 2015 at 6:00 PM (CET)</span> -->
-
-            <!--         <iframe style="width: 100%; margin-top: 1.5em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.856017424942!2d4.372034599999999!3d50.815306299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4e5e32cb7b5%3A0xa179615b4fb2f359!2sAvenue+Louise+523%2C+1050+Bruxelles%2C+Belgium!5e0!3m2!1sen!2sde!4v1437407529529" height="250" frameborder="0" style="border:0"></iframe> -->
-
-            <!--       <div style="margin-top: 1.5em; width:100%; text-align:left;" ><iframe  src="//eventbrite.de/tickets-external?eid=17831957866&ref=etckt" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-            <!-- <div class="thtrm-l-grid-units"> -->
-            <!--   <div class="thtrm-l-grid-u--1-1 thtrm-l-grid-u--medium-1-2 "> -->
-            <!--     <div id="helsinki" class="thtrm-m-content-box"> -->
-            <!--       <img alt="Angular Logo" src="images/angularjs-shield.png"> -->
-            <!--       <h3 class="thtrm-m-section__sub-headline">Angular Master Class Helsinki</h3> -->
-            <!--       <address itemprop="location" itemscope itemtype="http://schem.org/Place" class="thtrm-m-address"> -->
-            <!--         <span><strong itemprop="name">HUB13</strong></span> -->
-            <!--         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAdress"> -->
-            <!--           <span itemprop="streetAddress">Kaisaniemenkatu 13 A</span> -->
-            <!--           <span><span itmeprop="postalCode">00100</span> <span itemprop="addressLocality">Helsinki</span></span> -->
-            <!--           <span itemprop="addressCountry">Finland</span> -->
-            <!--         </span> -->
-            <!--       </address> -->
-
-            <!--       <span class="thtrm-m-time"> -->
-            <!--         Monday, September 14, 2015 at 9:30 AM -<br>Tuesday, September 15, 2015 at 6:00 PM (CET)</span> -->
-
-            <!--         <iframe style="width: 100%; margin-top: 1.5em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.2643840660032!2d24.951213649386972!3d60.17197968105125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bd207407e39%3A0xd497738070a16c23!2sHUB13!5e0!3m2!1sen!2sch!4v1429431677149" height="250" frameborder="0" style="border:0"></iframe> -->
-
-
-            <!--       <div style="margin-top: 1.5em; width:100%; text-align:left;" ><iframe  src="//eventbrite.de/tickets-external?eid=16641291551&ref=etckt" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-            <!-- <p class="thtrm-m-teaser-text">All of our trainings, workshops, classes and material follow a <a title="thoughtram's code of conduct" href="/code-of-conduct.html" >Code of Conduct</a>, we encourage our attendees to do so too.</p> -->
-            <h4 style="margin-top: 2em;" class="thtrm-m-section__sub-headline">We also do in-house trainings! <a class="thtrm-m-btn thtrm-m-btn--medium-inline-block" href="mailto:hello@thoughtram.io" title="Mail us!"><i class="fa fa-envelope"></i> Contact us</a></h4>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer role="contentinfo" class="thtrm-l-footer">
-      <div class="thtrm-l-constraint">
-        <ul class="thtrm-l-footer__list">
-          <li><a href="/" title="Home" >Home</a></li>
-          <li><a href="/about-us.html" title="About us" >About us</a></li>
-          <li><a href="/products.html" title="Products" >Products</a></li>
-          <li><a href="/training.html" title="Training" >Training</a></li>
-          <li><a href="http://blog.thoughtram.io" title="thoughtram blog" >Blog</a></li>
-        </ul>
+    <main role="main" class="thtrm-main">
+      <div class="thtrm-banner thtrm-banner--a2mc thtrm-banner--class">
+        <hgroup class="thtrm-banner-container">
+          <img class="thtrm-banner-logo" alt="Angular Logo" width="200" src="/images/angular-shield-inverse.svg">
+          <h2 class="thtrm-banner-text">Angular Master Class</h2>
+          <h3 class="thtrm-banner-tagline">Master the most popular web app framework</h3>
+        </hgroup>
       </div>
-      <div class="thtrm-l-footer__bottom">
-        <div class="thtrm-l-constraint clear">
-          <div class="thtrm-m-footer__bottom__logo-slogan">
-            <img src="images/thoughtram-brain-white.png" alt="thoughtram logo">
-            <p>We are <img alt="thoughtram" src="images/thoughtram-logo-line-white.png"></p>
+      <section class="thtrm-section">
+        <h3 class="thtrm-section-headline">The best Angular yet</h3>
+        <span class="thtrm-section-headline-spoiler">Solid and complete.</span>
+        <p class="thtrm-section-text">AngularJS changed the way we think about web application development. Its community and ecosystem is huge which makes it a perfect choice for most web applications.</p>
+      </section>
+      <div class="thtrm-table-layout">
+        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-two-columns">
+          <div class="thtrm-table-layout-cell">
+            <div class="thtrm-teaser-box">
+              <h4 class="thtrm-teaser-box-headline">Learn it the right way</h4>
+              <p class="thtrm-teaser-box-text">In this course we cover everything you need to know to build apps for tomorrow. From file structures, components and services to server communication and complex directives.</p>
+            </div>
           </div>
-          <p>&copy; 2014 thoughtram GmbH  </p>
-          <ul class="thtrm-m-list thtrm-m-list--horizontally">
-            <li><a href="http://github.com/thoughtram" title="thoughtram on GitHub" ><i class="fa fa-github"></i></a></li>
-            <li><a href="http://twitter.com/thoughtram" title="thoughtram on Twitter" ><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://facebook.com/thoughtram" title="thoughtram on facebook" ><i class="fa fa-facebook"></i></a></li>
-            <li><a href="http://plus.google.com/thoughtramio" title="thoughtram on Google Plus" ><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="http://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q" title="thoughtram on Youtube" ><i class="fa fa-youtube"></i></a></li>
-            <li><a href="/code-of-conduct.html" title="thoughtram's code of conduct" >Code of Conduct</a></li>
-            <li><a href="/impressum.html" title="Impressum" >Impressum</a></li>
-          </ul>
+          <div class="thtrm-table-layout-cell thtrm-teaser-image thtrm-teaser-image--amc"></div>
         </div>
+      </div>
+      <section class="thtrm-section">
+        <h3 class="thtrm-section-headline">What's inside?</h3>
+        <span class="thtrm-section-headline-spoiler">Everything you need.</span>
+        <p class="thtrm-section-text">There's a lot to learn. We focus on what matters. The following topics are part of the Angular Master Class experience.</p>
+      </section>
+      <div class="thtrm-table-layout thtrm-table-layout--filled-space">
+        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Introduction</h3>
+                <p class="thtrm-topic-box-text">Angular's bigger concepts, architecture, philosophy and runtime, including Scopes and two-way data binding.</p>
+              </div>
+            </div>
+          </div>
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Components and Directives</h3>
+                <p class="thtrm-topic-box-text">Learn how to build components that display dynamic data and take advantage of Angular's compile process.</p>
+              </div>
+            </div>
+          </div>
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Server Communication</h3>
+                <p class="thtrm-topic-box-text">Perform http requests using Angular's http and REST service.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thtrm-table-layout thtrm-table-layout--filled-space thtrm-table-layout--last">
+        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Advanced Routing</h3>
+                <p class="thtrm-topic-box-text">Go beyond basic routing with the UI-Router and states, sibling states and child states.</p>
+              </div>
+            </div>
+          </div>
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Forms and Validation</h3>
+                <p class="thtrm-topic-box-text">Forms are an important aspect of nearly every application. Learn how to create and validate forms in Angular.</p>
+              </div>
+            </div>
+          </div>
+          <div class="thtrm-table-layout-cell thtrm-table-layout-cell--bordered">
+            <div class="thtrm-topic-box">
+              <div class="thtrm-topic-box-content">
+                <h3 class="thtrm-topic-box-headline">Upgrading to Angular 2</h3>
+                <p class="thtrm-topic-box-text">Paving the path to Angular 2. Take an application and upgrade it to Angular 2 using the Upgrade Adapter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="thtrm-section">
+        <h3 class="thtrm-section-headline">What you will take home</h3>
+        <span class="thtrm-section-headline-spoiler">For now and for ever.</span>
+        <p class="thtrm-section-text">As an Angular Master Class attendee you’ll get life-long access to all current and future slide decks via our exclusive learning platform <i>classroom</i>. Same goes for all our private repositories with tons of examples, exercises and solutions.</p>
+      </section>
+      <div class="thtrm-table-layout">
+        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-two-columns">
+          <div class="thtrm-table-layout-cell thtrm-teaser-image thtrm-teaser-image--prerequisites"></div>
+          <div class="thtrm-table-layout-cell">
+            <div class="thtrm-teaser-box">
+              <h4 class="thtrm-teaser-box-headline">Prerequisites</h4>
+              <p class="thtrm-teaser-box-text">Attending our training doesn't require a special setup. These few things should get you started.</p>
+              <ul class="thtrm-teaser-box-list">
+                <li class="thtrm-teaser-box-list-item"><i class="material-icons">done</i> A laptop with Node/npm and Git installed</li>
+                <li class="thtrm-teaser-box-list-item"><i class="material-icons">done</i> A GitHub account</li>
+                <li class="thtrm-teaser-box-list-item"><i class="material-icons">done</i> HTML, JavaScript or TypeScript experience</li>
+                <li class="thtrm-teaser-box-list-item"><i class="material-icons">done</i> Good mood!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="thtrm-footer">
+      <p class="thtrm-footer-text-cta">Need a training or code review? <a href="mailto:hello@thoughtam.io" title="Contact thoughtram" class="thtrm-footer-cta">Contact us</a></p>
+      <div class="thtrm-footer-text">
+        <img class="thtrm-footer-logo" alt="thoughtram brain" src="/images/thoughtram-brain-white.png">
+        <p>This website was created in collaboration with <a href="http://twitter.com/timche_" title="Tim Cheung on Twitter"><strong>Tim Cheung</strong></a>.</p>
+        <p ><a href="/code-of-conduct.html" title="Code of Conduct">Code of Conduct</a> &bullet; <a href="/imprint.html" title="Legal Notice">Legal notice</a></p>
+        <p class="thtrm-footer-bottom">&copy; 2014-2016 thoughtram GmbH</p>
       </div>
     </footer>
 
@@ -320,6 +186,5 @@
       ga('create', 'UA-51360648-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <!-- Built with love using Web Starter Kit -->
   </body>
 </html>

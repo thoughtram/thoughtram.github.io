@@ -89,14 +89,14 @@
 
 .thtrm-l-header {
   display: block;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 19;
+  // width: 100%;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // overflow: hidden;
+  // z-index: 19;
   background-color: #fff;
-  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.98);
 
   &.open,
@@ -106,8 +106,8 @@
   }
 
   @media all and (min-width: 990px) {
-    box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.98);
+    // box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.5);
+    // background: rgba(255, 255, 255, 0.98);
 
     &.open,
     &.open ~ main {
@@ -250,7 +250,7 @@
   list-style: none;
   padding: 0;
   margin-top: -3.2em;
-
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   a {
     text-decoration: none;
     color: #000;
@@ -397,18 +397,154 @@
 
 .thtrm-l-main {
   margin: 0 auto;
-  /* Height of the header */
-  padding: 60px 0 0 0;
+  padding: 0 0 0 0;
   min-height: 100%;
 
   @media all and (min-width: 990px) {
-    padding-top: 100px;
     min-height: initial;
   }
 
   @media all and (min-width: 1500px) {
     padding-top: 150px;
   }
+}
+
+.thtrm-m-intro-banner {
+  background: url('../images/intro-background-new.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 750px;
+  padding-top: 16em;
+
+  p {
+    color: white;
+    font-size: 50px;
+    width: 950px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: normal;
+    // background-color: rgba(68,68,68, 0.5);
+    padding: 0.5em;
+    text-shadow: 1px 1px 10px #000;
+    line-height: 68px;
+
+    strong {
+      text-shadow: 1px 1px 10px #000;
+    }
+  }
+}
+
+.thtrm-l-table {
+  border-collapse: collapse;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+}
+
+.thtrm-l-table-row {
+  display: table-row;
+  overflow: hidden;
+}
+
+.thtrm-l-table-cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+  height: 100%;
+}
+
+h2 {
+  padding-top: 0;
+  color: #fff;
+}
+
+.cell-padding {
+  padding: 320px 80px;
+}
+
+.thtrm-m-footer-left {
+  background-color: #4D8799;
+  padding: 3em 5em;
+  text-align: left;
+
+  h5 {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  p {
+    padding-top: 0;
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
+    width: 400px;
+    margin-top: 0.5em;
+  }
+
+  img {
+    margin-top: 3em;
+  }
+}
+
+
+.thtrm-m-footer-right {
+  background-color: #123742;
+  padding: 3em 5em;
+  color: white;
+
+  h5 {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 0.5em;
+  }
+
+  li {
+    font-size: 15px;
+    padding: 0;
+    line-height: 26px;
+  }
+}
+
+.thtrm-color-white {
+  color: white;
+}
+
+.event-banner {
+  background: url('../images/event-banner.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+.event-banner-2 {
+  background: url('../images/event-banner-2.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+.event-banner-3 {
+  background: url('../images/event-banner-3.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+.event-banner-4 {
+  background: url('../images/event-banner-4.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
 }
 
 .thtrm-l-footer {
