@@ -20,7 +20,7 @@ git commit -m "$msg"
 git subtree split -P dist -b deploy-dist
 
 # Push source and build repos.
-git push -f upstream deploy-dist:master
+git push -f origin deploy-dist:master
 git branch -D deploy-dist
 git checkout dev
 git branch -D deploy
