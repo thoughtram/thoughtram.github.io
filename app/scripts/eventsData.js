@@ -22,16 +22,6 @@ var EVENTSDATA = [
   },
   {
     name: 'Angular Master Class',
-    date: '2015-09-14T09:30:00',
-    city: 'Helsinki, Finland',
-    websiteUrl: 'http://thoughtram.io/angular-master-class.html',
-    videoUrl: '',
-    slidesUrl: '',
-    talkName: '',
-    summary: 'We are very happy to run our Angular Master Class in Helsinki!'
-  },
-  {
-    name: 'Angular Master Class',
     date: '2015-08-03T09:30:00',
     city: 'Hanover, Germany',
     websiteUrl: 'http://thoughtram.io/angular-master-class.html',
