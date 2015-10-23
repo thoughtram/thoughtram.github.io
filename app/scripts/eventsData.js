@@ -1,6 +1,16 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'Angular Trainig Day',
+    date: '2015-10-29T10:00:00',
+    city: 'Bangkok, Thailand',
+    talkName: '',
+    summary: 'Come together for a free Angular Trainig Day in Bangkok!',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'https://www.eventbrite.de/e/angular-training-day-bangkok-tickets-18617003960',
+  },
+  {
     name: 'CodeTalks 2015',
     date: '2015-09-30T09:30:00',
     city: 'Hamburg, Germany',
