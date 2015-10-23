@@ -1,0 +1,15 @@
+.definition-list {
+  dd {
+    display: inline;
+    margin: 0;
+  }
+  dd:after{
+    display: block;
+    content: '';
+  }
+  dt{
+    display: inline-block;
+    min-width: 250px;
+    font-weight: 400;
+  }
+}
