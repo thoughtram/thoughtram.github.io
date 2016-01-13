@@ -1,6 +1,26 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'Angular 2 Master Class Jump Start',
+    date: '2016-01-26T10:00:00',
+    city: 'Berlin, Germany',
+    talkName: '',
+    summary: 'We\'re debuting Angular 2 Master Class experience!',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://www.eventbrite.de/e/angular-2-master-class-jump-start-tickets-20093393882',
+  },
+  {
+    name: 'Angular 2 Jump Start',
+    date: '2016-02-18T10:00:00',
+    city: 'Amsterdam, Netherlands',
+    talkName: '',
+    summary: 'Join us at Amsterdam\'s very own Angular conference',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://ng-nl.org',
+  },
+  {
     name: 'Angular Trainig Day',
     date: '2015-10-29T10:00:00',
     city: 'Bangkok, Thailand',
