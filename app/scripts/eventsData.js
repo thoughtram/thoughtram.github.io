@@ -1,6 +1,36 @@
 /* jshint unused:false */
 var EVENTSDATA = [
   {
+    name: 'Developer Week 2016',
+    date: '2016-06-20T09:30:00',
+    city: 'Nürnberg, Germany',
+    talkName: 'Angular 2 Change Detection Explained',
+    summary: 'Learn about Change Detection in Angular 2',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://www.developer-week.de/',
+  },
+  {
+    name: 'EnterJS 2016',
+    date: '2016-06-14T09:30:00',
+    city: 'Darmstadt, Germany',
+    talkName: 'Angular 2 Change Detection Explained',
+    summary: 'Learn about Change Detection in Angular 2',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://enterjs.de',
+  },
+  {
+    name: 'Angular 2 Master Class',
+    date: '2016-03-08T09:30:00',
+    city: 'Düsseldorf, Germany',
+    talkName: '',
+    summary: 'We\'ll run our Angular 2 Master Class in Düsseldorf!',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'https://www.eventbrite.de/e/angular-2-master-class-dusseldorf-tickets-21015847967',
+  },
+  {
     name: 'Angular 2 Master Class Jump Start',
     date: '2016-01-26T10:00:00',
     city: 'Berlin, Germany',
@@ -9,6 +39,16 @@ var EVENTSDATA = [
     slidesUrl: '',
     videoUrl: '',
     websiteUrl: 'http://www.eventbrite.de/e/angular-2-master-class-jump-start-tickets-20093393882',
+  },
+  {
+    name: 'NG-NL',
+    date: '2016-02-18T10:00:00',
+    city: 'Amsterdam, Netherlands',
+    talkName: 'Angular 2 Change Detection Explained',
+    summary: 'Learn about Change Detection in Angular 2',
+    slidesUrl: '',
+    videoUrl: '',
+    websiteUrl: 'http://ng-nl.org',
   },
   {
     name: 'Angular 2 Jump Start',
