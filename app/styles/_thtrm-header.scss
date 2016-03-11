@@ -67,7 +67,8 @@
   }
 
   &:focus,
-  &:hover {
+  &:hover,
+  &.is-active {
     outline: 0;
 
     .thtrm-header-menu {
