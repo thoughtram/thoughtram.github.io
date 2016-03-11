@@ -9,10 +9,24 @@
   top: 0;
   width: 100%;
   height: 70px;
+  
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
 
   @include tablet {
     height: initial;
     padding-bottom: 25px;
+  }
+
+  > a {
+    float: left;
+    
+    @include tablet {
+      float: none;
+    }
   }
 }
 
@@ -41,11 +55,16 @@
 }
 
 .thtrm-header-menu-wrapper {
+  float: right;
   margin-left: auto;
   display: flex;
-  position: absolute;
   right: 0;
-  top: 0;
+  top: 10px;
+  
+  @include tablet {
+    float: none;
+    position: absolute;
+  }
 
   &:focus,
   &:hover {
@@ -63,7 +82,6 @@
 
   @include tablet {
     margin-right: 20px;
-    top: 10px;
   }
 
   @include desktop {
