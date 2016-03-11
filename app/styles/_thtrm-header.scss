@@ -45,7 +45,7 @@
   display: flex;
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 0;
 
   &:focus,
   &:hover {
@@ -63,6 +63,7 @@
 
   @include tablet {
     margin-right: 20px;
+    top: 10px;
   }
 
   @include desktop {
