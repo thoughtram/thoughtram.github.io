@@ -9,6 +9,7 @@
   top: 0;
   width: 100%;
   height: 70px;
+  z-index: 100;
   
   &:after {
     content: '';
@@ -57,13 +58,12 @@
 .thtrm-header-menu-wrapper {
   float: right;
   margin-left: auto;
-  display: flex;
-  right: 0;
-  top: 10px;
   
   @include tablet {
     float: none;
     position: absolute;
+    right: 0;
+    top: 10px;
   }
 
   &:focus,
