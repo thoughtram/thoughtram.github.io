@@ -10,7 +10,7 @@
   width: 100%;
   height: 70px;
   z-index: 100;
-  
+
   &:after {
     content: '';
     clear: both;
@@ -24,7 +24,7 @@
 
   > a {
     float: left;
-    
+
     @include tablet {
       float: none;
     }
@@ -58,7 +58,7 @@
 .thtrm-header-menu-wrapper {
   float: right;
   margin-left: auto;
-  
+
   @include tablet {
     float: none;
     position: absolute;
@@ -100,8 +100,7 @@
   display: block;
   color: #fff;
 
-  &:hover,
-  &:focus {
+  &:hover {
     cursor: pointer;
     background-color: rgb(29, 46, 53);
 
