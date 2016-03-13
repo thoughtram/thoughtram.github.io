@@ -110,6 +110,17 @@ address {
   }
 }
 
+.thtrm-hashtag-link {
+  font-size: 44px;
+  text-decoration: none;
+  color: #384c54;
+  font-weight: 600;
+
+  &:hover {
+    color: #6d92a0;
+  }
+}
+
 @import 'thtrm-header',
         'thtrm-banner',
         'thtrm-section',

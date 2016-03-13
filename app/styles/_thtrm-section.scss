@@ -3,6 +3,10 @@
   text-align: center;
   background-color: #fff;
 
+  &--gray {
+    background: #eee;
+  }
+
   &--is-promo {
     background: rgba(56, 76, 84, 1);
     padding: 3em 2em;
@@ -122,6 +126,17 @@
   font-size: 18px;
   line-height: 28px;
   position: relative;
+
+  &--without-margin {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: inherit;
+    border-bottom: 1px solid rgba(56, 76, 84, 1);
+  }
 
   .thtrm-section--is-promo & {
     color: #fff;
