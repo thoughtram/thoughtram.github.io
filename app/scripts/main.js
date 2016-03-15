@@ -1,4 +1,4 @@
-(function(window, navigator) {
+(function(window, navigator, document) {
   'use strict';
 
   // Check to make sure service workers are supported in the current browser,
@@ -42,11 +42,13 @@
               case 'redundant':
                 throw new Error('The installing ' +
                                 'service worker became redundant.');
+              default:
+                break;
             }
           };
         }
       };
-    }).catch(function (e) {
+    }).catch(function(e) {
       console.error('Error during service worker registration:', e);
     });
   }
@@ -55,20 +57,19 @@
   var triggerCL = trigger.classList;
   var activeClass = 'is-active';
 
-  var docListener = function (event) {
+  var docListener = function(event) {
     if (event.target.className !== 'thtrm-header-menu-label') {
       triggerCL.remove(activeClass);
       document.removeEventListener('click', docListener);
     }
   };
 
-  trigger.addEventListener('click', function () {
+  trigger.addEventListener('click', function() {
     if (triggerCL.contains(activeClass)) {
-      triggerCL.remove(activeClass)
+      triggerCL.remove(activeClass);
     } else {
       triggerCL.add(activeClass);
       document.addEventListener('click', docListener);
-    };
+    }
   });
-
-})(window, navigator);
+})(window, navigator, document);
