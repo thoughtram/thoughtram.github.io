@@ -10,6 +10,10 @@
 
   @include tablet {
     font-size: 20px;
+
+    &--with-bigger-margin {
+        margin-top: 2em;
+    }
   }
 
   i {

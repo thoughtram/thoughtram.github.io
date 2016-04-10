@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="We help you setting up your machine for your next training.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prepare for your training</title>
+    <meta name="google-site-verification" content="o9eGPEgIETEqYGombq7NiQuBIB_qa6gz1yAL7PxKyK0" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#384c54">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="thoughtram">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#384c54">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="We help you setting up your machine for your next training.">
+    <meta property="og:url" content="http://thoughtram.io">
+    <meta property="og:image" content="http://thoughtram.io/images/background-ng-connect_desktop.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Prepare for your training">
+    <meta property="twitter:site" content="thoughtram">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" class="thtrm-prepare">
+    <header class="thtrm-header" role="banner">
+      <div class="thtrm-header-bar">
+        <a href="/" title="thoughtram.io Start Page"><h1 class="thtrm-header-logo">thoughtram</h1></a>
+        <div class="thtrm-header-menu-wrapper">
+          <span role="button" tabindex="0" class="thtrm-header-menu-label">Menu</span>
+          <ul class="thtrm-header-menu">
+            <li><a title="Training" class="thtrm-header-menu-item" href="/training.html">Training</a></li>
+            <li><a title="Code Review" class="thtrm-header-menu-item" href="/code-review.html">Code Review</a></li>
+            <li><a title="Blog" class="thtrm-header-menu-item" href="http://blog.thoughtram.io">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="thtrm-main">
+      <div class="thtrm-banner thtrm-banner--prepare">
+        <hgroup class="thtrm-banner-container">
+          <h2 class="thtrm-banner-text">Prepare for your training</h2>
+          <h3 class="thtrm-banner-tagline">Let's set up your machine</h3>
+        </hgroup>
+      </div>
+      <section class="thtrm-section thtrm-section--slim">
+        <h2>Preparation Guide</h2>
+        <p>This is the <i>thougtram Preparation Guide</i> to get you and your machine ready for your next training. Depending on what training you'll attend, the setup and prerequisites might be different, as we're using different tools to give you the best experience possible. Some tools are also rather optional as they'd ease the overall training flow but aren't necessary to attend or follow our training.</p><br>
+
+        <p>Please read the following guides depending on which class you're going to join:</p>
+
+        <h4>Git Master Class</h4>
+
+        <ol>
+          <li><a href="#git" title="Git guide">Git</a></li>
+        </ol>
+
+        <h4>Angular Master Class</h4>
+
+        <ol>
+          <li><a href="#git" title="Git guide">Git</a></li>
+          <li><a href="#node" title="Node guide">Node.js/npm</a></li>
+          <li><a href="#serve" title="Serve guide"><code>serve</code> command</a></li>
+        </ol>
+
+        <h4>Angular 2 Master Class</h4>
+
+        <ol>
+          <li><a href="#git" title="Git guide">Git</a></li>
+          <li><a href="#node" title="Node guide">Node.js/npm</a></li>
+          <li><a href="#ng-cli" title="Angular CLI guide">Angular CLI</a></li>
+          <li><a href="#a2mc-starter" title="Angular 2 Master Class Starter Kit">Angular 2 Master Class Starter Kit</a></li>
+        </ol>
+
+        <br>
+        <hr>
+        <h2 id="git">Git</h2>
+
+        <p>Git is a version control system that we use to manage and maintain the code of our entire training material, including slides, exercises, exercise descriptions and solutions. Thus, there are a couple of repositories for each training class you might want to install on your machine to have a smooth experience.</p>
+
+        <h3 id="installing-git">Installing Git</h3>
+
+        <p>Installing Git is easy. Simply head over to <a href="http://git-scm.com/download" title="Git downloads">git-scm.com/download</a> and download the latest binary for your platform.</p><br>
+
+        <img src="images/guide-git-1.png" alt="Git download page">
+
+        <p>Once you've downloaded the binary, execute the installer so Git will be installed on you machine. This will set up the command line tool for Git. After the installation is finished, open your terminal (for Windows users we recommend <strong>Git Bash</strong> which comes with the dedicated installer) and type <code>git --help</code>. This will output the help for Git's most common commands. If you see the same as what is shown in the following figure, Git is installed on your machine and runs properly.</p><br>
+
+        <img src="images/guide-git-2.png" alt="Git in the terminal">
+        <hr>
+        <h2 id="node">Node.js/npm</h2>
+
+        <p>Node.js is JavaScript runtime built on Chrome's V8 JavaScript engine. npm is the largest package ecosystem of open source libraries in the world. We use node to run webservers and build scripts, as those are written in JavaScript, and npm to install needed dependencies for our exercises.</p>
+
+        <h3 id="installing-git">Installing Node.js and npm</h3>
+
+        <p>To install Node and npm on your machine, grab the latest binary from <a href="https://nodejs.org/en/download/" title="Nodejs downloads">nodejs.org/en/download</a> and execute the installer. Follow the assistent's instructions, the installation process might take a while.</p><br>
+
+        <img src="images/guide-node-1.png" alt="Node.js download page">
+
+        <p><strong>Make sure you have a version installed that is >= 4</strong> to avoid weird problems during the training. To check your node version, simply run <code>node -v</code> in your terminal.</p><br>
+
+        <img src="images/guide-node-2.png" alt="Node.js version">
+
+        <p>You should now have also npm installed. To double check, run <code>npm -v</code> in your terminal.</p><br>
+
+        <img src="images/guide-node-3.png" alt="npm version">
+
+        <p>Cool, Node and npm are running on your machine!</p>
+        <br>
+        <hr>
+        <h2 id="serve"><code>serve</code> command</h2>
+
+        <p>For this guide, you need to have Node.js installed first. If you don't have it yet, go and read our guide on <a href="#installing-node" title="Installing Node">installing Node</a>.</p></br>
+
+        <p>Some exercises in the <strong>Angular Master Class</strong> require a static web server to serve application files. There are several ways to spin up a web server and you can totally use what ever you want as long as you know how to make it run during the class. If you don't know an easy way to spin up a static web server, we recommend the <code>serve</code> command, which is a Node.js module that allows you to start a web server on any file directory on your local machine.</p><br>
+
+        <h3>Installing <code>serve</code></h3>
+
+        <p>To install <code>serve</code> as a global command on your machine, execute <code>npm install -g serve</code> in your terminal of choice.</p><br>
+
+        <img src="images/guide-serve-1.png" alt="Terminal that shows how to install the serve command">
+
+        <p>After that, you can run <code>serve</code> as a command and give it a path to a directory you want to serve. Optionally, you can change the port the server is listening to using the <code>-p</code> or <code>--port</code> option.</p>
+
+        <img src="images/guide-serve-2.png" alt="Terminal that shows execute the serve command">
+
+        <h2 id="ng-cli">Angular CLI</h2>
+
+        <p>For this guide, you need to have Node.js installed first. If you don't have it yet, go and read our guide on <a href="#installing-node" title="Installing Node">installing Node</a>.</p></br>
+
+        <p>Throughout the Angular 2 Master Class, we use the official Angular command line interface to scaffold the application, generate components, services and compile and run the code. We think it's the best experience you can get when devolping Angular 2 application, as it takes a lot of hassle away from you by providing many powerful tools and an optimized build process which even lets you easily deploy your application on GitHub.</p>
+
+        <h3>Installing Angular CLI</h3>
+
+        <p>To install Angular CLI on your machine, execute <code>npm install -g angular-cli</code> in your terminal of choice. <strong>We use angular-cli version >= 0.0.30</strong>, please make sure to install a version in the same range as well!</p>
+
+        <h2 id="a2mc-starter">Angular 2 Master Class Starter Kit</h2>
+        <p>For this guide, you need to have Git installed first. If you don't have it yet, go and read our guide on <a href="#installing-git" title="Installing Git">installing Git</a>.</p></br>
+
+        <p>To get started quickly at our training, we've prepared a starter kit repository that you'll use to build your application during the class. You can download or <code>git clone</code> the repository from <a href="https://github.com/thoughtram/angular2-master-class-starter" title="Angular 2 Master Class Starter Kit">github.com/thoughtram/angular2-master-class-starter</a>.</p><br>
+
+        <img src="images/guide-a2mc-starter-1.png" alt="Terminal that shows how to clone the starter kit repository">
+
+        <p>The repository comes with a scaffolded Angular 2 application structure that was generated using Angular CLI, hence, this application can be run using the usual Angular CLI commands like <code>ng serve</code>.</p>
+        <!-- <p><strong>Note: If you run the application using <code>ng serve</code> and you'll see errors in the browser console, this is intended.</strong></p> -->
+      </section>
+    </main>
+    <footer class="thtrm-footer">
+      <!-- <p class="thtrm-footer-text-cta">Need a training or code review? <a href="mailto:hello@thoughtram.io" title="Contact thoughtram" class="thtrm-footer-cta">Contact us</a></p> -->
+      <div class="thtrm-footer-text">
+        <img class="thtrm-footer-logo" alt="thoughtram brain" src="/images/thoughtram-brain-white.png">
+        <p>This website was created in collaboration with <a href="http://twitter.com/timche_" title="Tim Cheung on Twitter"><strong>Tim Cheung</strong></a>.</p>
+        <p ><a href="/code-of-conduct.html" title="Code of Conduct">Code of Conduct</a> &bullet; <a href="/imprint.html" title="Legal Notice">Legal notice</a></p>
+        <p class="thtrm-footer-bottom">&copy; 2014-2016 thoughtram GmbH</p>
+      </div>
+    </footer>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-51360648-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

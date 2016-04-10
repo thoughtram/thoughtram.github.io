@@ -90,10 +90,17 @@ address {
   background: #eee;
 }
 
-.thtrm-imprint {
+.thtrm-imprint,
+.thtrm-prepare {
   .thtrm-main {
     font-size: 1.1em;
     line-height: 1.5;
+  }
+}
+
+.thtrm-prepare {
+  img {
+    max-width: 100%;
   }
 }
 
