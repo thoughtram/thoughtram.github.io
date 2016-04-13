@@ -118,7 +118,7 @@
   padding-bottom: 14%;
   padding-top: 14%;
   position: relative;
-  background: url('/images/quote-placeholder.jpg') no-repeat center / cover;
+  background: url('/images/user-story-almero.jpg') no-repeat center / cover;
   background-blend-mode: multiply;
   color: #fff;
   text-align: center;
@@ -180,6 +180,42 @@
 
     @include phablet {
       font-size: 70px;
+    }
+  }
+
+}
+
+.thtrm-blockquote-box {
+  background-color: #384c54;
+  padding: 3em 1.5em;
+
+  @include phablet {
+    padding: 4em 5.5em;
+  }
+
+  @include tablet {
+    padding: 3em 2em;
+    height: 450px;
+    padding-top: 8em;
+  }
+
+  @include desktop {
+    padding: 8em 5.5em;
+
+    blockquote {
+      font-size: 22px;
+      line-height: 2;
+    }
+  }
+
+  blockquote {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    line-height: 1.4;
+
+    &:before {
+      color: #fff;
     }
   }
 }

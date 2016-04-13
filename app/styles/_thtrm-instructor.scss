@@ -14,6 +14,11 @@
 ;
   }
 
+  &--almero {
+    background-image: url('/images/user-story-almero.jpg')!important;
+    background-color: #90BAC7;
+  }
+
   @include tablet {
     height: 450px;
   }
