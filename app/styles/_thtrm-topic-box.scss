@@ -2,11 +2,42 @@
   background: rgba(56, 76, 84, 1);
   text-align: center;
   padding: 0em 2em 3em;
+  position: relative;
 
   &--first-row {
     padding-top: 3em;
   }
+
+  &--with-badge {
+    &:before {
+      position: absolute;
+      content: 'New!';
+      color: #fff;
+      background: #549BCA;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.3em 0.5em ;
+      top: -2.5em;
+      right: -2.5em;
+      border-radius: 0.1em;
+    }
+
+    @include tablet {
+
+      &:before {
+        top: -3.2em;
+      }
+    }
+
+    @include desktop {
+      &:before {
+        top: -1.5em;
+        right: -0.5em;
+      }
+    }
+  }
 }
+
 
 .thtrm-topic-box-content {
   border: 2px solid #fff;
