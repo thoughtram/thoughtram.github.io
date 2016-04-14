@@ -127,7 +127,8 @@ address {
   }
 }
 
-@import 'thtrm-header',
+@import 'thtrm-constraint',
+        'thtrm-header',
         'thtrm-banner',
         'thtrm-section',
         'thtrm-table-layout',
