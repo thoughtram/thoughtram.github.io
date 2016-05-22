@@ -1,6 +1,5 @@
 .thtrm-instructor {
-  background-color: #90BAC7;
-  background-image: url('/images/instructor-christoph.jpg');
+  background-color: #384c54;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8,14 +7,55 @@
   text-align: center;
   position: relative;
   height: 500px;
-
-  .thtrm-table-layout-cell:nth-child(2) & {
-    background-image: url('/images/instructor-pascal.jpg');
-;
-  }
+  overflow: hidden;
 
   @include tablet {
     height: 450px;
+  }
+
+  &--christoph {
+    background-image: url('/images/author-christoph.jpg');
+    background-color: #90BAC7;
+  }
+
+  &--thomas {
+    background-image: url('/images/thomas_high_res.png');
+    background-color: #90BAC7;
+  }
+
+  &--pascal {
+    background-image: url('/images/author-pascal.jpg');
+    background-color: #90BAC7;
+  }
+
+  &:hover {
+    .thtrm-instructor-overlay {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.thtrm-instructor-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding: 2em;
+  padding-top: 10em;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  transition: 300ms ease transform;
+
+  @include phablet {
+    width: 50%;
+  }
+  @include tablet {
+    width: 100%;
+  }
+  @include desktop {
+    width: 50%;
+    padding-top: 7em;
   }
 }
 
@@ -36,13 +76,14 @@
   color: #fff;
   text-transform: uppercase;
   margin: 0;
-  font-size: 24px;
-  margin-bottom: 0.5em;
+  font-size: 26px;
+  margin-bottom: 1.5em;
 }
 
 .thtrm-instructor-text {
   color: #fff;
   font-size: 18px;
+  line-height: 1.4;
 }
 
 .thtrm-instructor-cta {
@@ -53,7 +94,7 @@
   display: inline-block;
   padding: 0.5em 1em;
   font-weight: 600;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-left: 0.5em;
   // transition: (color .2s ease-out, background .2s ease-in);
 
