@@ -24,7 +24,7 @@
   }
 
   &--almero {
-    background-image: url('/images/user-story-almero.jpg')!important;
+    background-image: url('/images/user-story-almero.jpg');
     background-color: #90BAC7;
   }
 
@@ -33,9 +33,22 @@
     background-color: #90BAC7;
   }
 
-  &:hover {
-    .thtrm-instructor-overlay {
-      transform: translateX(0%);
+  &.thtrm-instructor--has-overlay {
+    &:hover {
+      .thtrm-instructor-overlay {
+        transform: translateX(0%);
+      }
+
+      .thtrm-instructor-overlay-trigger {
+        opacity: 0;
+      }
+
+      .thtrm-instructor-content {
+        .thtrm-instructor-name,
+        .thtrm-instructor-text {
+          opacity: 0;
+        }
+      }
     }
   }
 }
@@ -48,7 +61,8 @@
   position: absolute;
   top: 0.1em;
   cursor: pointer;
-
+  transition: 300ms ease opacity;
+  transition-delay: 300ms;
 }
 
 
@@ -98,12 +112,16 @@
   margin: 0;
   font-size: 24px;
   margin-bottom: 0.1em;
+  transition: 300ms ease opacity;
+  transition-delay: 300ms;
 }
 
 .thtrm-instructor-text {
   color: #fff;
   font-size: 18px;
   line-height: 1.4;
+  transition: 300ms ease opacity;
+  transition-delay: 300ms;
 
   &--small {
     font-size: 16px;
