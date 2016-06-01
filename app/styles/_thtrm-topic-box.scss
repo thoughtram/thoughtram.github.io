@@ -62,3 +62,24 @@
   line-height: 28px;
   position: relative;
 }
+
+.thtrm-topic-list {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding-top: 1.8em;
+  padding-left: 2em;
+  border-top: 1px dotted #fff;
+  list-style: none;
+}
+
+.thtrm-topic-list-item {
+  line-height: 28px;
+  .material-icons {
+    vertical-align: -20%;
+    margin-right: 0.3em;
+  }
+}
