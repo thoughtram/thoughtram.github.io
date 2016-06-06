@@ -1,5 +1,5 @@
 .thtrm-topic-box {
-  background: rgba(56, 76, 84, 1);
+  //background: #6a8389;
   text-align: center;
   padding: 0em 2em 3em;
   position: relative;
@@ -64,7 +64,6 @@
 }
 
 .thtrm-topic-list {
-  color: #fff;
   font-size: 16px;
   text-align: left;
   margin-left: 0;
@@ -77,9 +76,28 @@
 }
 
 .thtrm-topic-list-item {
+  color: #fff;
   line-height: 28px;
   .material-icons {
     vertical-align: -20%;
     margin-right: 0.3em;
   }
 }
+
+.thtrm-topic-list-item-wide {
+  padding-left:1em;
+}
+
+
+.topic_gradient_ltr {
+  @include hGradient(#4f666d,#6a8389);
+}
+
+.topic_gradient_middle {
+  background-color : #6a8389;
+}
+
+.topic_gradient_rtl {
+  @include hGradient(#6a8389, #4f666d);
+}
+
