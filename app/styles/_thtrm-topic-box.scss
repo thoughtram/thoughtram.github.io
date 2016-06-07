@@ -90,14 +90,17 @@
 
 
 .topic-gradient-ltr {
+  background: #6d8b94;
   @include hGradient(#4f666d,#6a8389);
 }
 
 .topic-gradient-middle {
+  background: #6d8b94;
   background-color : #6a8389;
 }
 
 .topic-gradient-rtl {
+  background: #6d8b94;
   @include hGradient(#6a8389, #4f666d);
 }
 
