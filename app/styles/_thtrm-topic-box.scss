@@ -89,15 +89,15 @@
 }
 
 
-.topic_gradient_ltr {
+.topic-gradient-ltr {
   @include hGradient(#4f666d,#6a8389);
 }
 
-.topic_gradient_middle {
+.topic-gradient-middle {
   background-color : #6a8389;
 }
 
-.topic_gradient_rtl {
+.topic-gradient-rtl {
   @include hGradient(#6a8389, #4f666d);
 }
 
