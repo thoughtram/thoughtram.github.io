@@ -246,9 +246,7 @@
   padding: 0;
   list-style: none;
   color: #fff;
-  // text-transform: uppercase;
   text-align: left;
-  // font-weight: 600;
   font-size: 18px;
   font-weight: bold;
   margin-left: 0;
@@ -256,7 +254,6 @@
 
 .thtrm-teaser-box-list-item {
   padding: .75em 1em;
-  // background: rgba(255,255,255,.05);
   border: 2px solid #fff;
   border-top-width: 0;
 
@@ -280,12 +277,11 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #fff;
+  border: 2px solid #fff!important;
   display: inline-block;
   padding: 0.5em 1em;
   font-weight: 600;
   font-size: 16px;
-  // transition: (color .2s ease-out, background .2s ease-in);
 
   &:hover {
     background-color: #fff;
