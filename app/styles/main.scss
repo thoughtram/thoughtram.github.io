@@ -1,4 +1,4 @@
-@import './variables';
+@import '../../node_modules/thtrm-css/variables';
 
 *,
 *::before,
@@ -125,15 +125,6 @@ address {
   }
 }
 
-@import 'thtrm-constraint',
-        'thtrm-header',
-        'thtrm-banner',
-        'thtrm-section',
-        'thtrm-table-layout',
-        'thtrm-teaser',
-        'thtrm-instructor',
+@import '../../node_modules/thtrm-css/all',
         'thtrm-testimonial',
-        'thtrm-topic-box',
-        'thtrm-list',
-        'thtrm-cta',
-        'thtrm-footer';
+        'thtrm-topic-box';
