@@ -20,6 +20,7 @@
   &--is-light {
     background: #f2f2f2;
   }
+
   &--slim {
     max-width: 900px;
     margin-left: auto;
@@ -164,7 +165,6 @@
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 1em;
-  // transition: (color .2s ease-out, background .2s ease-in);
 
   .thtrm-section--is-promo & {
     color: #fff;

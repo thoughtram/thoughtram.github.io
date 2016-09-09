@@ -54,6 +54,13 @@
       }
     }
 
+    .thtrm-table-layout-row--with-two-columns.thtrm-table-layout-row--2-3 & {
+      width: 31.6%;
+      &:first-child {
+        width: 68.4%;
+      }
+    }
+
     .thtrm-table-layout-row--with-three-columns & {
       width: 33.333333%;
     }
