@@ -11,16 +11,16 @@
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#384c54">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="assets/images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="thoughtram">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/images/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileImage" content="assets/images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#384c54">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -32,7 +32,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Attending one of our trainings? This guide will help you setting up your machine, so you're ready when the class starts.">
     <meta property="og:url" content="http://thoughtram.io">
-    <meta property="og:image" content="http://thoughtram.io/images/background-ng-connect_desktop.jpg">
+    <meta property="og:image" content="http://thoughtram.io/assets/images/background-ng-connect_desktop.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Prepare for your training">
@@ -115,11 +115,11 @@
 
         <p>Installing Git is easy. Simply head over to <a href="http://git-scm.com/download" title="Git downloads">git-scm.com/download</a> and download the latest binary for your platform.</p><br>
 
-        <img src="images/guide-git-1.png" alt="Git download page">
+        <img src="assets/images/guide-git-1.png" alt="Git download page">
 
         <p>Once you've downloaded the binary, execute the installer so Git will be installed on you machine. This will set up the command line tool for Git. After the installation is finished, open your terminal (for Windows users we recommend <strong>Git Bash</strong> which comes with the dedicated installer) and type <code>git --help</code>. This will output the help for Git's most common commands. If you see the same as what is shown in the following figure, Git is installed on your machine and runs properly.</p><br>
 
-        <img src="images/guide-git-2.png" alt="Git in the terminal">
+        <img src="assets/images/guide-git-2.png" alt="Git in the terminal">
         <hr>
         <h2 id="node">Node.js/npm</h2>
 
@@ -129,15 +129,15 @@
 
         <p>To install Node and npm on your machine, grab the latest binary from <a href="https://nodejs.org/en/download/" title="Nodejs downloads">nodejs.org/en/download</a> and execute the installer. Follow the assistent's instructions, the installation process might take a while.</p><br>
 
-        <img src="images/guide-node-1.png" alt="Node.js download page">
+        <img src="assets/images/guide-node-1.png" alt="Node.js download page">
 
         <p><strong>Make sure you have a version installed that is >= 6</strong> to avoid weird problems during the training (we know, the screenshot shows <code>4.x</code> but we really need <code>6.x</code>). To check your node version, simply run <code>node -v</code> in your terminal.</p><br>
 
-        <img src="images/guide-node-2.png" alt="Node.js version">
+        <img src="assets/images/guide-node-2.png" alt="Node.js version">
 
         <p>You should now have also npm installed. To double check, run <code>npm -v</code> in your terminal (<strong>this should be 3.x</strong>).</p><br>
 
-        <img src="images/guide-node-3.png" alt="npm version">
+        <img src="assets/images/guide-node-3.png" alt="npm version">
 
         <p>Cool, Node and npm are running on your machine!</p>
         <br>
@@ -152,11 +152,11 @@
 
         <p>To install <code>serve</code> as a global command on your machine, execute <code>npm install -g serve</code> in your terminal of choice.</p><br>
 
-        <img src="images/guide-serve-1.png" alt="Terminal that shows how to install the serve command">
+        <img src="assets/images/guide-serve-1.png" alt="Terminal that shows how to install the serve command">
 
         <p>After that, you can run <code>serve</code> as a command and give it a path to a directory you want to serve. Optionally, you can change the port the server is listening to using the <code>-p</code> or <code>--port</code> option.</p>
 
-        <img src="images/guide-serve-2.png" alt="Terminal that shows execute the serve command">
+        <img src="assets/images/guide-serve-2.png" alt="Terminal that shows execute the serve command">
 
         <h2 id="ng-cli">Angular CLI</h2>
 
@@ -173,7 +173,7 @@
 
         <p>To get started quickly at our training, we've prepared a starter kit repository that you'll use to build your application during the class. You can download or <code>git clone</code> the repository from <a href="https://github.com/thoughtram/angular2-master-class-starter" title="Angular 2 Master Class Starter Kit">github.com/thoughtram/angular2-master-class-starter</a>.</p><br>
 
-        <img src="images/guide-a2mc-starter-1.png" alt="Terminal that shows how to clone the starter kit repository">
+        <img src="assets/images/guide-a2mc-starter-1.png" alt="Terminal that shows how to clone the starter kit repository">
 
         <p>The repository comes with a scaffolded Angular 2 application structure that was generated using Angular CLI, hence, this application can be run using the usual Angular CLI commands like <code>ng serve</code>.</p>
       </section>
@@ -181,7 +181,7 @@
     <footer class="thtrm-footer">
       <!-- <p class="thtrm-footer-text-cta">Need a training or code review? <a href="mailto:hello@thoughtram.io" title="Contact thoughtram" class="thtrm-footer-cta">Contact us</a></p> -->
       <div class="thtrm-footer-text">
-        <img class="thtrm-footer-logo" alt="thoughtram brain" src="/images/thoughtram-brain-white.png">
+        <img class="thtrm-footer-logo" alt="thoughtram brain" src="/assets/images/thoughtram-brain-white.png">
         <p>This website was created in collaboration with <a href="http://twitter.com/timche_" title="Tim Cheung on Twitter"><strong>Tim Cheung</strong></a> and <a href="http://twitter.com/tim_hartmann_" title="Tim Hartmann on Twitter"><strong>Tim Hartmann</strong></a>.</p>
         <p ><a href="/code-of-conduct.html" title="Code of Conduct">Code of Conduct</a> &bullet; <a href="/imprint.html" title="Legal Notice">Legal notice</a></p>
         <p class="thtrm-footer-bottom">&copy; 2014-2016 thoughtram GmbH</p>
