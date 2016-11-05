@@ -125,6 +125,42 @@ address {
   }
 }
 
+.thtrm-footer-navigation {
+  background: #62a7be;
+  color: #fff;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+.thtrm-footer-navigation-list {
+  text-align: left;
+  list-style: none;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+
+  li {
+    margin-top: 0.5em;
+    margin-left: 3.5em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
 @import '../../node_modules/thtrm-css/all',
         'thtrm-testimonial',
         'thtrm-topic-box';
