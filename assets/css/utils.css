@@ -1,0 +1,16 @@
+.u-text--centered {
+	text-align: center;
+}
+
+.u-text--bigger {
+	font-size: 2em;
+	line-height: 1;
+}
+
+.u-min-h1 {
+	min-height: 712px;
+}
+
+.u-mega-padding-bottom {
+	margin-bottom: 200px;
+}
