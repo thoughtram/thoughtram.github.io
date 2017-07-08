@@ -1,0 +1,17 @@
+/**
+ * Image grid
+ */
+
+.thtrm-image-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thtrm-image-grid img {
+    width: 25%;
+    max-width: 18%;
+    max-height: 150px;
+    text-align: center;
+    object-fit: contain;
+}

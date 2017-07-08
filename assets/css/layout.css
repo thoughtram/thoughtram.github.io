@@ -1,0 +1,130 @@
+/**
+ * Layout
+ */
+.thtrm-page {
+    display: grid;
+    grid-template-columns: [pad-left] 5vw [center] auto [pad-left] 5vw;
+    grid-template-rows: [banner] 90px [main] auto [aside] auto [footer] auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-page {
+        grid-template-columns: [pad-left] 10.76vw [center] auto [pad-left] 10.76vw;
+        grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .thtrm-page {
+        grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
+        grid-template-rows: [banner] 260px [main] auto [aside] auto [footer] auto;
+    }
+
+}
+
+[role=banner],
+[role=main] {
+    /* TODO: Check subgrid support and see if it is worth it */
+    /*display: subgrid;*/
+}
+
+.thtrm-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.thtrm-main {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.thtrm-aside {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin: 50px 0 10px;
+}
+
+.thtrm-footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+/**
+ * Banner
+ */
+.thtrm-banner {
+    position: relative;
+}
+
+/**
+ * Footer
+ */
+
+.thtrm-footer {
+    border-top: 5px solid var(--thtrm-color-text);
+    font-size: var(--thtrm-small-fontsize);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.thtrm-footer > .thtrm-footer__sitemap {
+    margin-bottom: 2rem;
+}
+
+.thtrm-footer > .thtrm-footer__sitemap h2 {
+    font-size: var(--thtrm-base-fontsize);
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.thtrm-footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thtrm-footer nav ul {
+    list-style: none;
+}
+
+.thtrm-footer nav li a {
+    text-decoration: none;
+}
+
+.thtrm-footer nav li a::after {
+    color: currentColor;
+    content: "›";
+    font-weight: normal;
+    font-size: 1.15em;
+    margin-left: .25em;
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-aside {
+        margin: 200px 0 50px;
+    }
+
+    .thtrm-footer > .thtrm-footer__sitemap {
+        display: grid;
+        grid-template-columns: 33.33333333333% 33.33333333333% 33.33333333333%;
+        margin-bottom: 2rem;
+    }
+
+    .thtrm-footer > .thtrm-footer__sitemap h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}

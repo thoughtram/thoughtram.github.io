@@ -1,5 +1,6 @@
 const testimonialGalleryThumbnails = [...document.querySelectorAll(".js-thtrm-testimonial-trigger")]
 const testimonialGallery = new Flickity("#js-thtrm-testimonials", {
+	cellSelector: ".thtrm-testimonial",
 	cellAlign: "left",
 	contain: true,
 	pageDots: false,

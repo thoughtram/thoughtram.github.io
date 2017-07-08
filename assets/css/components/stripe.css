@@ -1,0 +1,21 @@
+/**
+ * Stripe
+ */
+.thtrm-stripe {
+    background-color: var(--thtrm-color-lightblue);
+    color: var(--thtrm-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 140px;
+    margin: auto;
+    position: absolute;
+    left: var(--thtrm-page-margin);
+    right: var(--thtrm-page-margin);
+    top: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+
+}

@@ -42,6 +42,7 @@
             Add proper Microdata to markup
             Revisit CSS classes and add layout/component prefixes
             Add proper ARIA semantics
+            Add img[srcset]
     -->
 </head>
 <body id="debug" class="thtrm-page" itemscope itemtype="http://schema.org/WebPage">
@@ -155,7 +156,17 @@
          role="navigation"
          itemscope
          itemtype="http://www.schema.org/SiteNavigationElement">
-        <ul class="thtrm-nav__list">
+        <button class="thtrm-button--ghost thtrm-nav__button"
+                id="thtrm-nav-button"
+                aria-expanded="false"
+                aria-label="Menu"
+                aria-controls="thtrm-nav-main-list">
+            <span aria-hidden="true">
+                Menu
+                <svg class="thtrm-icon"><use xlink:href="#icon--menu"/></svg>
+            </span>
+        </button>
+        <ul id="thtrm-nav-main-list" class="thtrm-nav__list">
             <li><a href="#">Training</a></li>
             <li><a href="#">Consulting</a></li>
             <li><a href="#">Casts</a></li>
@@ -187,7 +198,7 @@
     <section class="thtrm-section">
         <h1 class="thtrm-section__heading">Other said about us</h1>
         <div id="js-thtrm-testimonials" style="width: 100%;">
-            <div class="thtrm-testimonial slide">
+            <div class="thtrm-testimonial">
                 <!--TODO: Fill with content-->
                 <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-mike.png"
                      alt="Mike Adolphs, Manager at GitHub">
@@ -200,7 +211,7 @@
                     <cite>&mdash; Mike Adolphs, <span>Manager at Github</span></cite>
                 </blockquote>
             </div>
-            <div class="thtrm-testimonial slide">
+            <div class="thtrm-testimonial">
                 <!--TODO: Fill with content-->
                 <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-mike.png"
                      alt="Mike Adolphs, Manager at GitHub">
@@ -213,7 +224,7 @@
                     <cite>&mdash; Mike Adolphs, <span>Manager at Github</span></cite>
                 </blockquote>
             </div>
-            <div class="thtrm-testimonial slide">
+            <div class="thtrm-testimonial">
                 <!--TODO: Fill with content-->
                 <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-mike.png"
                      alt="Mike Adolphs, Manager at GitHub">
@@ -363,6 +374,17 @@
         <p>© 2014-2017 thoughtram </p>
     </div>
 </footer>
+<!--SVG sprite-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <symbol viewBox="0 0 24 24" id="icon--chevron-right">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon--menu">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+</svg>
 <script src="assets/libs/flickity.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

@@ -26,5 +26,6 @@
 
 .thtrm-button--ghost {
 	background-color: transparent;
+	color: inherit;
 	padding: .25rem;
 }
