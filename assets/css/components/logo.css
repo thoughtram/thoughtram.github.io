@@ -2,14 +2,22 @@
  * Logo
  */
 .thtrm-logo {
-    max-width: 40vw;
-    width: 100%;
-    margin-top: -16px;
+    max-height: 45px;
+    width: 160px;
+    margin-top: -20px;
 }
 
 @media screen and (min-width: 1440px) {
     .thtrm-logo {
-        max-width: 16vw;
-        margin-top: -16px;
+        max-height: 80px;
+        width: 200px;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .thtrm-logo {
+        max-height: 100px;
+        width: 380px;
+    }
+}
+
