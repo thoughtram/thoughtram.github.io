@@ -39,20 +39,25 @@
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
     .thtrm-boxes {
         display: grid;
         grid-template-columns: 33.33333333333% 33.33333333333% 33.33333333333%;
-        margin-top: -5rem;
         padding: 1rem 2rem;
-        position: absolute;
-        bottom: 0;
         font-size: var(--thtrm-small-fontsize);
-        z-index: 10;
     }
 
     .thtrm-boxes > .thtrm-box {
         margin: .25rem;
         width: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-boxes {
+        margin-top: -5rem;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
     }
 }

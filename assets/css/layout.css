@@ -112,9 +112,9 @@
     margin-left: .25em;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 600px) {
     .thtrm-aside {
-        margin: 200px 0 50px;
+        margin: 100px 0 50px;
     }
 
     .thtrm-footer > .thtrm-footer__sitemap {
@@ -126,5 +126,11 @@
     .thtrm-footer > .thtrm-footer__sitemap h2 {
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-aside {
+        margin: 200px 0 50px;
     }
 }

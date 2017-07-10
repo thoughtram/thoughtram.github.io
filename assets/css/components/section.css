@@ -89,7 +89,7 @@
 .thtrm-section__image {
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
 
     .thtrm-section,
     [class^=thtrm-section--] {
@@ -141,17 +141,6 @@
         width: calc(50% + 5.38vw);
     }
 
-    .thtrm-section--offright-white {
-        background-color: var(--thtrm-color-white);
-        max-width: 90%;
-        position: relative;
-        padding: 10rem 2rem 2rem;
-        top: -8rem;
-        right: -10%;
-        z-index: 9;
-        margin-bottom: -6rem;
-    }
-
     .thtrm-section .thtrm-content-box,
     [class^=thtrm-section--] .thtrm-content-box {
         position: absolute;
@@ -166,4 +155,18 @@
         margin-bottom: 28px;
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .thtrm-section--offright-white {
+        background-color: var(--thtrm-color-white);
+        max-width: 90%;
+        position: relative;
+        padding: 10rem 2rem 2rem;
+        top: -8rem;
+        right: -10%;
+        z-index: 9;
+        margin-bottom: -6rem;
+    }
 }

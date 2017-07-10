@@ -50,7 +50,7 @@
     transition: 250ms;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 800px) {
     .thtrm-testimonial {
         position: relative;
         width: 100%;
