@@ -18,8 +18,7 @@
 .thtrm-testimonial::before {
     position: absolute;
     content: "“";
-    top: -25px;
-    /*top: -75px;*/
+    top: -35px;
     left: 20px;
     font-size: 8rem;
     color: var(--thtrm-color-text);
