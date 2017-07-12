@@ -97,17 +97,17 @@ img {
         --thtrm-nav-fontsize: calc(1 * var(--thtrm-base-fontsize));
         --thtrm-h1-fontszize: calc(2.25 * var(--thtrm-base-fontsize));
         --thtrm-h2-fontszize: calc(2 * var(--thtrm-base-fontsize));
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    :root {
-        --thtrm-base-fontsize: 27px;
 
         /**
          * @layout
          */
         --thtrm-page-margin: 10.76vw;
         --thtrm-page-neg-margin: -10.76vw;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    :root {
+        --thtrm-base-fontsize: 27px;
     }
 }

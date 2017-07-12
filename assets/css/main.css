@@ -10,7 +10,6 @@
  * FIXME: @imports are just for organizational reasons. Will be ported to SASS when moved over to GWS
  */
 @import "../libs/normalize.css";
-@import "../libs/flickity.min.css";
 @import "base.css";
 @import "layout.css";
 @import "components/box.css";

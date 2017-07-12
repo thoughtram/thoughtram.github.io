@@ -5,6 +5,14 @@
     position: relative;
     width: 100%;
     padding-top: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: -webkit-grab;
 }
 
 .thtrm-testimonial::before {
@@ -20,6 +28,10 @@
 
 .thtrm-testimonial__avatar {
     display: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .thtrm-testimonial__quote {
@@ -86,4 +98,31 @@
         max-width: 240px;
         z-index: 99;
     }
+}
+
+.thtrm-testimonials {
+    width: 100%;
+}
+
+/**
+ * Lory prerequisited styles
+ */
+
+.thtrm-testimonials .frame {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.thtrm-testimonials .slides {
+    display: inline-block;
+}
+
+.thtrm-testimonials li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }

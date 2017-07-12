@@ -89,40 +89,47 @@
     </section>
     <section class="thtrm-section">
         <h1 class="thtrm-section__heading">Other said about us</h1>
-        <div id="js-thtrm-testimonials" style="width: 100%;">
-            <div class="thtrm-testimonial">
-                <!--TODO: Fill with content-->
-                <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-mike.png"
-                     alt="Mike Adolphs, Manager at GitHub">
-                <blockquote class="thtrm-testimonial__quote">
-                    <p>"I was impressed by how passionate Christoph and Pascal conveyed knowledge about Git! Regardless
-                        of
-                        whether you're a beginner or an experienced Git user, you will gain new insights by attending
-                        one of
-                        their trainings."</p>
-                    <cite>&mdash; Mike Adolphs, <span>Manager at Github</span></cite>
-                </blockquote>
-            </div>
-            <div class="thtrm-testimonial">
-                <!--TODO: Fill with content-->
-                <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-2.jpg"
-                     alt="Mike Adolphs, Manager at GitHub">
-                <blockquote class="thtrm-testimonial__quote">
-                    <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular. And doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
-                    <cite>&mdash; Brad Green, <span>Project Manager Angular, Google Inc.</span></cite>
-                </blockquote>
-            </div>
-            <div class="thtrm-testimonial">
-                <!--TODO: Fill with content-->
-                <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-3.jpg"
-                     alt="Mike Adolphs, Manager at GitHub">
-                <blockquote class="thtrm-testimonial__quote">
-                    <p>"I am delighted after the Git Master Class course with thoughtram. Pascal and Christoph are passioned about Git and that same passion and knowledge was passed to the course members."</p>
-                    <cite>&mdash; Celine Kurpershoek, <span>Front-end Engineer, De Voorhoede</span></cite>
-                </blockquote>
+        <div id="js-thtrm-testimonials" class="thtrm-testimonials slider js_slider">
+            <div class="frame js_frame">
+                <ul class="slides js_slides">
+                    <li class="js_slide">
+                        <div class="thtrm-testimonial">
+                            <!--TODO: Fill with content-->
+                            <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-mike.png"
+                                 alt="Mike Adolphs, Manager at GitHub">
+                            <blockquote class="thtrm-testimonial__quote">
+                                <p>"I was impressed by how passionate Christoph and Pascal conveyed knowledge about Git! Regardless of whether you're a beginner or an experienced Git user, you will gain new insights by attending one of their trainings."</p>
+                                <cite>&mdash; Mike Adolphs, <span>Manager at Github</span></cite>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li class="js_slide">
+                        <div class="thtrm-testimonial">
+                            <!--TODO: Fill with content-->
+                            <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-2.jpg"
+                                 alt="Mike Adolphs, Manager at GitHub">
+                            <blockquote class="thtrm-testimonial__quote">
+                                <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular. And doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
+                                <cite>&mdash; Brad Green, <span>Project Manager Angular, Google Inc.</span></cite>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li class="js_slide">
+                        <div class="thtrm-testimonial">
+                            <!--TODO: Fill with content-->
+                            <img class="thtrm-testimonial__avatar" src="assets/images/next/avatar-3.jpg"
+                                 alt="Mike Adolphs, Manager at GitHub">
+                            <blockquote class="thtrm-testimonial__quote">
+                                <p>"I am delighted after the Git Master Class course with thoughtram. Pascal and Christoph are passioned about Git and that same passion and knowledge was passed to the course members."</p>
+                                <cite>&mdash; Celine Kurpershoek, <span>Front-end Engineer, De Voorhoede</span></cite>
+                            </blockquote>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <nav class="thtrm-testimonials__navigation">
+
             <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1">
                 <img class="thtrm-testimonials__thumbnail" src="assets/images/next/avatar-mike.png" alt="">
             </button>
@@ -273,7 +280,7 @@
         <path d="M0 0h24v24H0z" fill="none"/>
     </symbol>
 </svg>
-<script src="assets/libs/flickity.pkgd.min.js"></script>
+<script src="assets/libs/lory.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
