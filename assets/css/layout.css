@@ -1,65 +1,108 @@
 /**
  * Layout
  */
+
+/* Progressively enhance CSS layout grid */
 .thtrm-page {
-    display: grid;
-    grid-template-columns: [pad-left] 5vw [center] auto [pad-left] 5vw;
-    grid-template-rows: [banner] 90px [main] auto [aside] auto [footer] auto;
-}
-
-@media screen and (min-width: 1440px) {
-    .thtrm-page {
-        grid-template-columns: [pad-left] 10.76vw [center] auto [pad-left] 10.76vw;
-        grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
-    }
-
-}
-
-@media screen and (min-width: 1900px) {
-    .thtrm-page {
-        grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
-        grid-template-rows: [banner] 260px [main] auto [aside] auto [footer] auto;
-    }
-
-}
-
-[role=banner],
-[role=main] {
-    /* TODO: Check subgrid support and see if it is worth it */
-    /*display: subgrid;*/
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .thtrm-banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.thtrm-main {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    height: 90px;
 }
 
 .thtrm-aside {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
     margin: 50px 0 10px;
 }
 
 .thtrm-footer {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 4;
+
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-page {
+        padding-left: 10.76vw;
+        padding-right: 10.76vw;
+    }
+
+    .thtrm-banner {
+        height: 160px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .thtrm-page {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .thtrm-banner {
+        height: 260px;
+    }
+}
+
+/* Use display:grid where you can */
+@supports (display: grid) {
+
+    .thtrm-page {
+        display: grid;
+        grid-template-columns: [pad-left] 5vw [center] 90vw [pad-left] 5vw;
+        grid-template-rows: [banner] 90px [main] auto [aside] auto [footer] auto;
+        /* Resets for PE */
+        padding-left:0;
+        padding-right:0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .thtrm-page {
+            grid-template-columns: [pad-left] 10.76vw [center] 78.48vw [pad-left] 10.76vw;
+            grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
+        }
+
+    }
+
+    @media screen and (min-width: 1900px) {
+        .thtrm-page {
+            grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
+            grid-template-rows: [banner] 260px [main] auto [aside] auto [footer] auto;
+        }
+
+    }
+
+
+    .thtrm-banner {
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .thtrm-main {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .thtrm-aside {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .thtrm-footer {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
 }
 
 /**
