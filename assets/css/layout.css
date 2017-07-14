@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 600px) {
     .thtrm-aside {
-        margin: 100px 0 50px;
+        margin: 50px 0;
     }
 
     .thtrm-footer > .thtrm-footer__sitemap {
@@ -174,6 +174,6 @@
 
 @media screen and (min-width: 1440px) {
     .thtrm-aside {
-        margin: 200px 0 50px;
+        margin: 50px 0;
     }
 }

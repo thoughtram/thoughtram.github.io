@@ -68,6 +68,25 @@
     transform: translate3d(0, 0, 0);
 }
 
+.thtrm-nav-toc {
+    border-top: 3px solid black;
+    font-size: .75rem;
+}
+
+.thtrm-nav-toc li {
+    display: inline-block;
+}
+
+.thtrm-nav-toc a {
+    color: var(--thtrm-color-text);
+    display: block;
+    padding: .75rem 1rem;
+}
+
+.thtrm-nav-toc a::after {
+    content: "";
+}
+
 @media screen and (min-width: 800px) {
     .thtrm-nav .thtrm-nav__list li:last-of-type {
         padding-right: 0;
