@@ -1,6 +1,12 @@
 /**
  * Blockquote/Testimonial
  */
+.thtrm-testimonials {
+    width: 90vw;
+    display: block;
+    overflow: hidden;
+}
+
 .thtrm-testimonial {
     position: relative;
     width: 100%;
@@ -136,9 +142,10 @@
     }
 }
 
-.thtrm-testimonials {
-    width: 100%;
-    display: block;
+@media screen and (min-width: 1440px) {
+    .thtrm-testimonials {
+        width: 100%
+    }
 }
 
 /**
