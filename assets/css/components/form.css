@@ -2,6 +2,10 @@
 	display: none
 }
 
+.thtrm-form > * {
+	margin: .5rem;
+}
+
 .thtrm-form .thtrm-form__input--text {
 	background-color: var(--thtrm-color-gray);
 	border: none;
