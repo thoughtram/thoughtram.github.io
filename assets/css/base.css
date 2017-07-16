@@ -130,8 +130,8 @@ img {
         /**
          * @layout
          */
-        --thtrm-page-margin: 10.76vw;
-        --thtrm-page-neg-margin: -10.76vw;
+        --thtrm-page-margin: 10vw;
+        --thtrm-page-neg-margin: -10vw;
     }
 }
 

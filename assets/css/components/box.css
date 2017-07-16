@@ -32,6 +32,11 @@
 .thtrm-box > .thtrm-box__paragraph {
 }
 
+.thtrm-box--offset-right,
+.thtrm-box--offset-left {
+    margin-bottom: .5rem;
+}
+
 .thtrm-box > .thtrm-box__more-link {
     color: var(--thtrm-color-white);
     display: block;
@@ -42,7 +47,24 @@
 
 /* FIXME: Decouple thtrm-boxes from layout tasks */
 @media screen and (min-width: 700px) {
-    .thtrm-box {
+    .thtrm-box:not([class*=thtrm-box--offset]) {
         width: auto;
+    }
+
+    .thtrm-box--offset-right,
+    .thtrm-box--offset-left {
+        margin-bottom: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        width: 80%;
+        right: -70%;
+    }
+
+    .thtrm-box--offset-right {
+        right: -70%;
+    }
+
+    .thtrm-box--offset-left {
+        left: -70%;
     }
 }

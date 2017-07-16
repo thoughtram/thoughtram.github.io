@@ -6,6 +6,14 @@
 	flex-wrap: nowrap;
 }
 
+.u-flex--justify-end {
+	justify-content: flex-end;
+}
+
+.u-unflex {
+	display: block;
+}
+
 .u-text--bigger {
 	font-size: 2em;
 	line-height: 1;

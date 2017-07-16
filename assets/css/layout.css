@@ -25,8 +25,8 @@
 
 @media screen and (min-width: 1440px) {
     .thtrm-page {
-        padding-left: 10.76vw;
-        padding-right: 10.76vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .thtrm-banner {
@@ -60,7 +60,7 @@
 
     @media screen and (min-width: 1440px) {
         .thtrm-page {
-            grid-template-columns: [pad-left] 10.76vw [center] 78.48vw [pad-left] 10.76vw;
+            grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
             grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
         }
 
