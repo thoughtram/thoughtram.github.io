@@ -22,7 +22,6 @@
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    /*pointer-events: none;*/
     transition: 250ms;
     transform: translate3d(0, -10%, 0);
     padding: 1rem .5rem;
@@ -59,9 +58,10 @@
     content: "";
 }
 
-.thtrm-nav .thtrm-nav__button:focus + .thtrm-nav__list,
-.thtrm-nav .thtrm-nav__button:hover + .thtrm-nav__list,
-.thtrm-nav__list:hover {
+.thtrm-nav__list.is-visible,
+.no-js .thtrm-nav .thtrm-nav__button:focus + .thtrm-nav__list,
+.no-js .thtrm-nav .thtrm-nav__button:hover + .thtrm-nav__list,
+.no-js .thtrm-nav__list:hover {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
