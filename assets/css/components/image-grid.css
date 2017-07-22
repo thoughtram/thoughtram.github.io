@@ -4,14 +4,29 @@
 
 .thtrm-image-grid {
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: space-around;
 }
 
 .thtrm-image-grid img {
-    width: 25%;
-    max-width: 18%;
-    max-height: 150px;
-    text-align: center;
+    margin-bottom: 2rem;
     object-fit: contain;
+    width: 40%;
+}
+
+@media screen and (min-width: 700px) {
+    .thtrm-image-grid {
+        flex-flow: row;
+    }
+
+    .thtrm-image-grid img {
+        width: 25%;
+        /* Accomodate for visual balance between different logo shapes */
+        max-width: 18%;
+        max-height: 200px;
+        margin-bottom: 0;
+        text-align: center;
+        object-fit: contain;
+    }
 }
