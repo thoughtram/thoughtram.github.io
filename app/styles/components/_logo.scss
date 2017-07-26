@@ -1,0 +1,23 @@
+/**
+ * Logo
+ */
+.thtrm-logo {
+    max-height: 45px;
+    width: 160px;
+    margin-top: -20px;
+}
+
+@media screen and (min-width: 1440px) {
+    .thtrm-logo {
+        max-height: 80px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .thtrm-logo {
+        max-height: 100px;
+        width: 380px;
+    }
+}
+

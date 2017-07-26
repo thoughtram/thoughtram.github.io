@@ -1,0 +1,39 @@
+:root {
+  /**
+   * @colors
+   */
+  --thtrm-color-darkblue: #456474;
+  --thtrm-color-midblue: #4C91A7;
+  --thtrm-color-blue: #69caff; /* Links etc. */
+  --thtrm-color-teal: #42899b;
+  --thtrm-color-lightblue: #72C7DF;
+  --thtrm-color-text: #000000;
+  --thtrm-color-lighttext: #7D7D7D;
+  --thtrm-color-gray: #EEEEEE;
+  --thtrm-color-lightgray: #f8f8f9;
+  --thtrm-color-white: #FFFFFF; /* Page background */
+  /**
+   * @typography
+   */
+  --thtrm-base-font: Roboto;
+  --thtrm-base-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --thtrm-base-fontweight: 500; /* Medium */
+  --thtrm-base-fontsize: 19px;
+  --thtrm-small-fontsize: calc(0.75 * var(--thtrm-base-fontsize));
+  --thtrm-nav-fontsize: calc(1 * var(--thtrm-base-fontsize));
+  --thtrm-h1-fontszize: calc(1.75 * var(--thtrm-base-fontsize));
+  --thtrm-h2-fontszize: calc(1.5 * var(--thtrm-base-fontsize));
+
+  /**
+   * @layout
+   */
+  --thtrm-page-margin: 5vw;
+  --thtrm-page-neg-margin: -5vw;
+
+  /**
+   * @layers
+   */
+  --thtrm-layer-deco: 9;
+  --thtrm-layer-navigation: 99;
+  --thtrm-layer-surface: 99999999999;
+}
