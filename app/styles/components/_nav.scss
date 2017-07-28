@@ -92,6 +92,10 @@
         padding-right: 0;
     }
 
+    .thtrm-nav .thtrm-nav__list::before {
+      display: none;
+    }
+
     .thtrm-nav .thtrm-nav__button {
         display: none;
     }
