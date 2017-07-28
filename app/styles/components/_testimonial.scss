@@ -99,7 +99,7 @@
     transition: 250ms;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $thtrm-media-nav) {
     .thtrm-testimonial {
         position: relative;
         width: 100%;
@@ -112,7 +112,7 @@
         font-size: 10rem;
     }
 
-    .thtrm-testimonial > .thtrm-testimonials__thumbnail {
+    .thtrm-testimonials__thumbnail {
         width: 100px;
         height: 100px;
     }
@@ -175,7 +175,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     .thtrm-testimonials {
         width: 100%
     }
@@ -216,11 +216,4 @@
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
-}
-
-@media screen and (min-width: 1920px) {
-  .thtrm-testimonial > .thtrm-testimonials__thumbnail {
-    width: 200px;
-    height: 200px;
-  }
 }

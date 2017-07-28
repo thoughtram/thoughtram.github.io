@@ -23,7 +23,7 @@
 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     .thtrm-page {
         padding-left: 10vw;
         padding-right: 10vw;
@@ -35,7 +35,7 @@
 
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: $thtrm-media-lg) {
     .thtrm-page {
         padding-left: 10vw;
         padding-right: 10vw;
@@ -58,7 +58,7 @@
         padding-right:0;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $thtrm-media-md) {
         .thtrm-page {
             grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
             grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
@@ -66,7 +66,7 @@
 
     }
 
-    @media screen and (min-width: 1900px) {
+    @media screen and (min-width: $thtrm-media-lg) {
         .thtrm-page {
             grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
             grid-template-rows: [banner] 260px [main] auto [aside] auto [footer] auto;
@@ -155,7 +155,7 @@
     margin-left: .25em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $thtrm-media-xsm) {
     .thtrm-aside {
         margin: 50px 0;
     }
@@ -172,7 +172,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     .thtrm-aside {
         margin: 50px 0;
     }

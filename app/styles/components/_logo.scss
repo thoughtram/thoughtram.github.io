@@ -7,14 +7,14 @@
     margin-top: -20px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     .thtrm-logo {
         max-height: 80px;
         width: 200px;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $thtrm-media-lg) {
     .thtrm-logo {
         max-height: 100px;
         width: 380px;

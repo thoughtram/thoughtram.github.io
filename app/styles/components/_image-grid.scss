@@ -15,7 +15,7 @@
     width: 40%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $thtrm-media-sm) {
     .thtrm-image-grid {
         flex-flow: row;
     }

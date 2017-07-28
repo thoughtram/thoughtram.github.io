@@ -102,7 +102,7 @@
 .thtrm-section__image {
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $thtrm-media-sm) {
 
     .thtrm-section,
     [class^=thtrm-section--] {
@@ -198,7 +198,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     .thtrm-section__item--columns {
         margin-top: -5rem;
         position: absolute;
@@ -218,7 +218,7 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $thtrm-media-lg) {
   .thtrm-section--fullbleed {
     height: 50vh;
     min-height: 800px;

@@ -46,7 +46,7 @@
 }
 
 /* FIXME: Decouple thtrm-boxes from layout tasks */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $thtrm-media-sm) {
     .thtrm-box:not([class*=thtrm-box--offset]) {
         width: auto;
     }

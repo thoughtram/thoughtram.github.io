@@ -79,7 +79,7 @@ img {
     height: auto;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $thtrm-media-md) {
     :root {
         --thtrm-base-fontsize: 25px;
         --thtrm-small-fontsize: calc(0.75 * var(--thtrm-base-fontsize));
@@ -95,7 +95,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $thtrm-media-lg) {
     :root {
         --thtrm-base-fontsize: 27px;
     }
