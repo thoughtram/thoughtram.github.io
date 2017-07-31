@@ -27,6 +27,7 @@
 import path from 'path';
 import gulp from 'gulp';
 import del from 'del';
+import customProperties from 'postcss-css-variables';
 import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
 import swPrecache from 'sw-precache';
@@ -103,6 +104,8 @@ gulp.task('styles', () => {
       precision: 10
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+    // Progressively enchance for IE/EDGE
+    .pipe($.postcss([customProperties()]))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate and minify styles
     .pipe($.if('*.css', $.cssnano()))
