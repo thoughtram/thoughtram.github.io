@@ -195,6 +195,16 @@
     .thtrm-section__item--columns > * {
         margin-left: 1%;
         margin-right: 1%;
+        -ms-grid-column-span: 1;
+    }
+    .thtrm-section__item--columns > *:first-child {
+      -ms-grid-column: 1;
+    }
+    .thtrm-section__item--columns > *:nth-child(2) {
+      -ms-grid-column: 2;
+    }
+    .thtrm-section__item--columns > *:nth-child(3) {
+      -ms-grid-column: 3;
     }
 }
 

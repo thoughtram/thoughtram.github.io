@@ -103,9 +103,12 @@ gulp.task('styles', () => {
     .pipe($.sass({
       precision: 10
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+    .pipe($.autoprefixer({
+      browsers: AUTOPREFIXER_BROWSERS,
+      grid: true
+    }))
     // Progressively enchance for IE/EDGE
-    .pipe($.postcss([customProperties()]))
+    .pipe($.postcss([customProperties({preserve: true})]))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate and minify styles
     .pipe($.if('*.css', $.cssnano()))
