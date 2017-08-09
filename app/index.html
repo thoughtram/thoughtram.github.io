@@ -137,13 +137,16 @@
         </div>
         <nav class="thtrm-testimonials__navigation">
 
-            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1">
+            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1" aria-label="Go to slide one"
+                    aria-controls="js-thtrm-testimonials">
                 <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-mike.png" alt="">
             </button>
-            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="2">
+            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="2" aria-label="Go to slide two"
+                    aria-controls="js-thtrm-testimonials">
                 <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-2.jpg" alt="">
             </button>
-            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="3">
+            <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="3" aria-label="Go to slide three"
+                    aria-controls="js-thtrm-testimonials">
                 <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-3.jpg" alt="">
             </button>
         </nav>
@@ -240,12 +243,12 @@
   <form class="thtrm-form"
         action="//thoughtram.us8.list-manage.com/subscribe/post?u=dfbb1507fbced5a20d9dc5698&amp;id=731f22cdca"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-    <label for="mce-EMAIL"></label>
     <label class="thtrm-form__label" for="thtrm-newsletter" aria-hidden="true">Your email</label>
     <input type="email" class="thtrm-form__input--text" id="thtrm-newsletter" value="" name="EMAIL"
            placeholder="Your email address..." required>
     <div class="u-offscreen-text">
-      <input type="text" placeholder="Your email …" name="b_dfbb1507fbced5a20d9dc5698_731f22cdca" tabindex="-1"
+      <label class="thtrm-form__label" for="thtrm-newsletter-text" aria-hidden="true">Your email</label>
+      <input id="thtrm-newsletter-text" placeholder="Your email …" name="b_dfbb1507fbced5a20d9dc5698_731f22cdca" tabindex="-1"
              value="">
     </div>
     <input type="submit" value="Notify me" name="subscribe" class="thtrm-form__button thtrm-button"
