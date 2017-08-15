@@ -2,22 +2,23 @@
  * Logo
  */
 .thtrm-logo {
-    max-height: 45px;
-    width: 160px;
-    margin-top: -20px;
+  max-height: 45px;
+  width: 160px;
+  margin-top: -1.65rem;
 }
 
-@media screen and (min-width: $thtrm-media-md) {
-    .thtrm-logo {
-        max-height: 80px;
-        width: 200px;
-    }
+@media screen and (min-width: $thtrm-media-laptop) {
+  .thtrm-logo {
+    max-height: 80px;
+    width: 200px;
+    margin-top: -1rem;
+  }
 }
 
-@media screen and (min-width: $thtrm-media-lg) {
-    .thtrm-logo {
-        max-height: 100px;
-        width: 380px;
-    }
+@media screen and (min-width: $thtrm-media-widescreen) {
+  .thtrm-logo {
+    max-height: 100px;
+    width: 380px;
+  }
 }
 

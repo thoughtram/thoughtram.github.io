@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize.css/normalize";
 /** TODO: Should be moved to thouhgtram thtrm-css */
 @import "_variables.scss";
+@import "fonts.scss";
 @import "_base.scss";
 @import "_layout.scss";
 @import "components/_box.scss";
@@ -10,6 +11,7 @@
 @import "components/_image-grid.scss";
 @import "components/_logo.scss";
 @import "components/_nav.scss";
+@import "components/_ratio.scss";
 @import "components/_section.scss";
 @import "components/_stripe.scss";
 @import "components/_testimonial.scss";

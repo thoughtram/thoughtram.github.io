@@ -15,15 +15,11 @@
     height: 90px;
 }
 
-.thtrm-aside {
-    margin: 50px 0 10px;
-}
-
 .thtrm-footer {
 
 }
 
-@media screen and (min-width: $thtrm-media-md) {
+@media screen and (min-width: $thtrm-media-laptop) {
     .thtrm-page {
         padding-left: 10vw;
         padding-right: 10vw;
@@ -35,7 +31,7 @@
 
 }
 
-@media screen and (min-width: $thtrm-media-lg) {
+@media screen and (min-width: $thtrm-media-widescreen) {
     .thtrm-page {
         padding-left: 10vw;
         padding-right: 10vw;
@@ -58,7 +54,7 @@
         padding-right:0;
     }
 
-    @media screen and (min-width: $thtrm-media-md) {
+    @media screen and (min-width: $thtrm-media-laptop) {
         .thtrm-page {
             grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
             grid-template-rows: [banner] 160px [main] auto [aside] auto [footer] auto;
@@ -66,7 +62,7 @@
 
     }
 
-    @media screen and (min-width: $thtrm-media-lg) {
+    @media screen and (min-width: $thtrm-media-widescreen) {
         .thtrm-page {
             grid-template-columns: [pad-left] 10vw [center] 80vw [pad-left] 10vw;
             grid-template-rows: [banner] 260px [main] auto [aside] auto [footer] auto;
@@ -155,11 +151,7 @@
     margin-left: .25em;
 }
 
-@media screen and (min-width: $thtrm-media-xsm) {
-    .thtrm-aside {
-        margin: 50px 0;
-    }
-
+@media screen and (min-width: $thtrm-media-narrow) {
     .thtrm-footer .thtrm-sitemap {
         display: grid;
         grid-template-columns: 33.33333333333% 33.33333333333% 33.33333333333%;
@@ -188,11 +180,5 @@
     .thtrm-footer .thtrm-sitemap__heading {
         margin-top: 0;
         margin-bottom: 1rem;
-    }
-}
-
-@media screen and (min-width: $thtrm-media-md) {
-    .thtrm-aside {
-        margin: 50px 0;
     }
 }

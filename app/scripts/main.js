@@ -1,7 +1,8 @@
 'use strict';
-/* global document lory */
+/* global window document lory */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const body = document.querySelector('body');
   const navToggle = document.querySelector('#thtrm-nav-button');
   const menu = document.querySelector('#thtrm-nav-main-list');
   const testimonialWrapper = document.querySelector('#js-thtrm-testimonials');
@@ -15,8 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     xs.forEach(removeActiveModifierClass);
     addActiveModifierClass(xs[activeIndex]);
   };
+  const toggleNav = (state) => {
+    const isVisible = state ||
+      navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
 
-  if (testimonialWrapper) {
+    navToggle.setAttribute(
+      'aria-expanded',
+      `${isVisible}`
+    );
+    menu.classList.toggle('is-visible');
+    return isVisible;
+  };
+
+  const hideNav = () => {
+    navToggle.setAttribute(
+      'aria-expanded', 'false'
+    );
+    menu.classList.remove('is-visible');
+  };
+
+  if (testimonialWrapper && window.lory) {
     const testimonialThumbnails =
       [...document.querySelectorAll('.js-thtrm-testimonial-trigger')];
     const testimonialGallery = lory && lory(testimonialWrapper, {
@@ -40,11 +59,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }));
   }
 
-  navToggle.addEventListener('click', () => {
-    navToggle.setAttribute(
-      'aria-expanded',
-      `${!navToggle.getAttribute('aria-expanded')}`
-    );
-    menu.classList.toggle('is-visible');
+  navToggle.addEventListener('click', (ev) => {
+    const isVisible = toggleNav();
+    ev.stopPropagation();
+    ev.stopImmediatePropagation();
+    if (isVisible === 'true') {
+      body.addEventListener('click', hideNav, {once: true});
+    } else {
+      body.removeEventListener('click', hideNav);
+    }
+  }, false);
+
+  document.addEventListener('keydown', (evt) => {
+    let isEscape = 'key' in evt ?
+      (evt.key == 'Escape' || evt.key == 'Esc') :
+      (evt.keyCode == 27);
+
+    if (isEscape) {
+      hideNav();
+      body.removeEventListener('click', hideNav);
+    }
   });
 });
