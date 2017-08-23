@@ -1,0 +1,37 @@
+{
+  "@type": "Course",
+  "name": "Git Master Class",
+  "description": "We use Git on our daily basis to be as productive as possible, especially when working in larger projects with even larger teams. The Git Master Class experience teaches you the ins and outs of the version control system.",
+  "courseCode": "#GMC",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": [
+      "onsite"
+    ]
+  },
+  "coursePrerequisites": {
+    "@type": "ItemList",
+    "itemListElement": [
+      "A laptop with Git installed",
+      "A GitHub account",
+      "Good mood!"
+    ],
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "name": "Prerequisites"
+  },
+  "url": "https://thoughtram.io/angular-master-class.html",
+  "disambiguateDescription": {
+    "@type": "ItemList",
+    "itemListElement": [
+      "Introduction",
+      "Anatomy of a commit",
+      "Branches and Merges",
+      "Rebasing and Cherry Picking",
+      "Workflows",
+      "Working with remotes"
+    ],
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "name": "Angular Master Class Contents"
+  },
+  "provider": "https://thoughtram.io/foaf#organization"
+}

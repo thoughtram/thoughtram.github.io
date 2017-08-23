@@ -24,10 +24,10 @@
 // You can read more about the new JavaScript features here:
 // https://babeljs.io/docs/learn-es2015/
 
-import fs from 'fs';
 import path from 'path';
 import gulp from 'gulp';
 import del from 'del';
+import customProperties from 'postcss-css-variables';
 import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
 import swPrecache from 'sw-precache';
@@ -40,26 +40,31 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('lint', () =>
-  gulp.src('app/scripts/main.js')
+  gulp.src(['app/scripts/**/*.js','!node_modules/**'])
     .pipe($.eslint())
     .pipe($.eslint.format())
-    .pipe($.if(!browserSync.active, $.eslint.failOnError()))
+    .pipe($.if(!browserSync.active, $.eslint.failAfterError()))
 );
 
 // Optimize images
 gulp.task('images', () =>
-  gulp.src('app/assets/images/**/*')
+  gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/assets/images'))
+    .pipe(gulp.dest('dist/images'))
     .pipe($.size({title: 'images'}))
 );
 
 gulp.task('videos', () => {
   return gulp.src('app/videos/**/*')
     .pipe(gulp.dest('dist/videos'));
+});
+
+gulp.task('fonts', () => {
+  return gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 // Copy all files at the root level (app)
@@ -98,24 +103,31 @@ gulp.task('styles', () => {
     .pipe($.sass({
       precision: 10
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+    .pipe($.autoprefixer({
+      browsers: AUTOPREFIXER_BROWSERS,
+      grid: true
+    }))
+    // Progressively enchance for IE/EDGE
+    .pipe($.postcss([customProperties({preserve: true})]))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate and minify styles
-    .pipe($.if('*.css', $.minifyCss()))
+    .pipe($.if('*.css', $.cssnano()))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/styles'));
+    .pipe(gulp.dest('dist/styles'))
+    .pipe(gulp.dest('.tmp/styles'));
 });
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
-// to enables ES2015 support remove the line `"only": "gulpfile.babel.js",` in the
+// to enable ES2015 support remove the line `"only": "gulpfile.babel.js",` in the
 // `.babelrc` file.
 gulp.task('scripts', () =>
     gulp.src([
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './app/scripts/main.js'
+      './app/scripts/main.js',
+      './app/scripts/polyfills.js'
       // Other scripts
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -124,11 +136,12 @@ gulp.task('scripts', () =>
       .pipe($.sourcemaps.write())
       .pipe(gulp.dest('.tmp/scripts'))
       .pipe($.concat('main.min.js'))
-      .pipe($.uglify({preserveComments: 'some'}))
+      .pipe($.uglify({output: {comments: 'some'}}))
       // Output files
       .pipe($.size({title: 'scripts'}))
       .pipe($.sourcemaps.write('.'))
       .pipe(gulp.dest('dist/scripts'))
+      .pipe(gulp.dest('.tmp/scripts'))
 );
 
 // Scan your HTML for assets & optimize them
@@ -136,27 +149,37 @@ gulp.task('html', () => {
   return gulp.src('app/**/*.html')
     .pipe($.useref({searchPath: '{.tmp,app}'}))
     // Remove any unused CSS
-    .pipe($.if('*.css', $.uncss({
-      html: [
-        'app/index.html'
-      ],
-      // CSS Selectors for UnCSS to ignore
-      ignore: []
-    })))
+    // .pipe($.if('*.css', $.uncss({
+    //   html: [
+    //     'app/index.html'
+    //   ],
+    //   // CSS Selectors for UnCSS to ignore
+    //   ignore: []
+    // })))
 
     // Concatenate and minify styles
     // In case you are still using useref build blocks
-    .pipe($.if('*.css', $.minifyCss()))
+    // .pipe($.if('*.css', $.minifyCss()))
 
     // Minify any HTML
-    .pipe($.if('*.html', $.minifyHtml()))
+    .pipe($.if('*.html', $.htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      removeAttributeQuotes: true,
+      removeRedundantAttributes: true,
+      removeEmptyAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      removeOptionalTags: true
+    })))
     // Output files
     .pipe($.if('*.html', $.size({title: 'html', showFiles: true})))
     .pipe(gulp.dest('dist'));
 });
 
 // Clean output directory
-gulp.task('clean', cb => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
+gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
 // Watch files for changes & reload
 gulp.task('serve', ['scripts', 'styles'], () => {
@@ -176,8 +199,8 @@ gulp.task('serve', ['scripts', 'styles'], () => {
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts']);
-  gulp.watch(['app/assets/images/**/*'], reload);
+  gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts', reload]);
+  gulp.watch(['app/images/**/*'], reload);
 });
 
 // Build and serve the output from the dist build
@@ -200,7 +223,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'videos', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'videos', 'fonts', 'copy'],
     'generate-service-worker',
     cb
   )
@@ -242,13 +265,20 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
     ],
     staticFileGlobs: [
       // Add/remove glob patterns to match your directory setup.
-      `${rootDir}/assets/images/**/*`,
+      `${rootDir}/images/**/*`,
       `${rootDir}/scripts/**/*.js`,
       `${rootDir}/styles/**/*.css`,
+      `${rootDir}/fonts/**/*`,
       `${rootDir}/*.{html,json}`
     ],
+    runtimeCaching: [{
+      urlPattern: new RegExp('^https://cdnjs.cloudflare.com/ajax/libs/'),
+      handler: 'cacheFirst'
+    }],
     // Translates a static file path to the relative URL that it's served from.
-    stripPrefix: path.join(rootDir, path.sep)
+    // This is '/' rather than path.sep because the paths returned from
+    // glob always use '/'.
+    stripPrefix: rootDir + '/'
   });
 });
 

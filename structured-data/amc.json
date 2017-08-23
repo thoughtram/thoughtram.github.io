@@ -1,0 +1,41 @@
+{
+  "@type": "Course",
+  "name": "Angular Master Class",
+  "description": "Just like AngularJS was pushing the boundaries of web development at it's time of creation, Angular is pushing hard again. We believe in its success and think investing time to learn it now, will be time very well spent.",
+  "courseCode": "#AMC",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": [
+      "onsite"
+    ]
+  },
+  "coursePrerequisites": {
+    "@type": "ItemList",
+    "itemListElement": [
+      "A laptop with Node/npm and Git installed",
+      "A GitHub account",
+      "HTML, JavaScript or TypeScript experience",
+      "Good mood!"
+    ],
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "name": "Prerequisites"
+  },
+  "url": "https://thoughtram.io/angular-master-class.html",
+  "disambiguateDescription": {
+    "@type": "ItemList",
+    "itemListElement": [
+      "Introduction",
+      "Material and Flex Layout",
+      "Angular CLI",
+      "Dependency Injection",
+      "Routing",
+      "HTTP",
+      "Observables",
+      "Component Architecture",
+      "Forms"
+    ],
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "name": "Angular Master Class Contents"
+  },
+  "provider": "https://thoughtram.io/foaf#organization"
+}

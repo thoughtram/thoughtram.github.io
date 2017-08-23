@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "@id": "https://thoughtram.io/foaf#organization",
+  "name": "thoughtram GmbH",
+  "description": "We are thoughtram. We enjoy learning new stuff every day and we love teaching it to others even more.",
+  "brand": "thoughtram",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hohenzollernstr. 47",
+    "postalCode": "30161",
+    "addressLocality": "Hannover",
+    "addressRegion": "NDS",
+    "addressCountry": "DE"
+  },
+  "email": "hello@thoughtram.io",
+  "url": "https://thoughtram.io",
+  "logo": "https://thoughtram.io/assets/images/thoughtram-logo-desktop_white.png",
+  "sameAs": [
+    "https://github.com/thoughtram",
+    "https://twitter.com/thoughtram",
+    "https://www.facebook.com/thoughtram",
+    "https://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "hello@thoughtram.io",
+      "contactType": "Customer service",
+      "url": "http://thoughtram.io"
+    }
+  ],
+  "vatID": "DE296749725"
+}

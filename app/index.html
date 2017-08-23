@@ -1,293 +1,354 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Learn Angular and Git the right way. thoughtram provides high-quality code reviews, online and onsite trainings for your team all around the world.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Training with passion by thoughtram</title>
-    <meta name="google-site-verification" content="o9eGPEgIETEqYGombq7NiQuBIB_qa6gz1yAL7PxKyK0" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+        content="Learn Angular and Git the right way. thoughtram provides high-quality code reviews, online and onsite trainings for your team all around the world.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training with passion by thoughtram</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#384c54">
-    <link rel="icon" sizes="192x192" href="assets/images/touch/chrome-touch-icon-192x192.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#384c54">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="thoughtram">
-    <link rel="apple-touch-icon" href="assets/images/touch/apple-touch-icon.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="thoughtram">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#384c54">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#384c54">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:description"
+        content="Learn Angular and Git the right way. High quality trainings by thoughtram.">
+  <meta property="og:url" content="http://thoughtram.io">
+  <meta property="og:image" content="http://thoughtram.io/assets/images/intro-background-desktop.jpg">
 
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Learn Angular and Git the right way. High quality trainings by thoughtram.">
-    <meta property="og:url" content="http://thoughtram.io">
-    <meta property="og:image" content="http://thoughtram.io/assets/images/intro-background-desktop.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Training with passion by thoughtram">
+  <meta property="twitter:site" content="thoughtram.io">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Training with passion by thoughtram">
-    <meta property="twitter:site" content="thoughtram.io">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" class="thtrm-home">
-    <!-- Add your site or app content here -->
-
-    <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMLVSW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PMLVSW');</script>
-    <!-- End Google Tag Manager -->
-    <header class="thtrm-header" role="banner">
-      <div class="thtrm-header-bar">
-        <div class="thtrm-constraint">
-          <a class="thtrm-header-logo-link" href="/" title="thoughtram.io Start Page"><h1 class="thtrm-header-logo">thoughtram</h1></a>
-          <div class="thtrm-header-menu-wrapper">
-            <span role="button" tabindex="0" class="thtrm-header-menu-label">Menu</span>
-            <ul class="thtrm-header-menu">
-              <li><a title="Start" class="thtrm-header-menu-item active hidden-on-desktop" href="/">Start</a></li>
-              <li><a title="Training" class="thtrm-header-menu-item" href="/training.html">Training</a></li>
-              <li><a title="Code Review" class="thtrm-header-menu-item" href="/code-review.html">Code Review</a></li>
-              <li><a title="Casts" class="thtrm-header-menu-item " href="http://casts.thoughtram.io">Casts</a></li>
-              <li><a title="Blog" class="thtrm-header-menu-item" href="http://blog.thoughtram.io">Blog</a></li>
-            </ul>
-          </div>
-        </div>
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="application/ld+json" src="structured-data/organization.json"></script>
+</head>
+<body id="debug" class="thtrm-page" itemscope itemtype="http://schema.org/WebPage">
+<header class="thtrm-banner" role="banner">
+  <img src="images/next/logo.svg"
+       alt="thoughtram"
+       class="thtrm-logo"
+       title="The thoughtram logo"
+  >
+  <nav id="thtrm-nav-main"
+       class="thtrm-nav"
+       role="navigation"
+       itemscope
+       itemtype="http://www.schema.org/SiteNavigationElement">
+    <button class="thtrm-button--ghost thtrm-nav__button"
+            id="thtrm-nav-button"
+            aria-expanded="false"
+            aria-label="Menu"
+            aria-controls="thtrm-nav-main-list">
+            <span aria-hidden="true">
+                Menu
+                <svg class="thtrm-icon"><use xlink:href="#icon--chevron-down"/></svg>
+            </span>
+    </button>
+    <ul id="thtrm-nav-main-list" class="thtrm-nav__list">
+      <li><a href="#">Training</a></li>
+      <li><a href="#">Consulting</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="thtrm-main" role="main">
+  <section class="thtrm-section--padded-bottom u-flex--nowrap">
+    <div class="thtrm-section__item--halfpadded">
+      <h1 class="thtrm-section__heading">We moving People to the next level.</h1>
+      <p class="thtrm-section__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et.</p>
+      <a class="thtrm-section__link" href="#">See all trainings</a>
+    </div>
+    <div class="thtrm-section__item--flushright">
+      <div class="thtrm-section__image thtrm-ratio--landscape">
+        <img src="images/next/thtrm-hero.jpg"
+             srcset="images/next/thtrm-hero.jpg 600w"
+             sizes="(min-width: 700px) 40vw,
+                            90vw"
+             alt="A picture">
       </div>
-    </header>
-    <main role="main" class="thtrm-main">
-      <div class="thtrm-banner">
-        <hgroup class="thtrm-banner-container">
-          <h2 class="thtrm-banner-text">Training with passion</h2>
-          <h3 class="thtrm-banner-tagline">Learn <strong>Angular</strong> and <strong>Git</strong> the right way.</h3>
-        </hgroup>
+      <div class="thtrm-content-box">
+        <p>
+          We help people to get a deep understanding of different technologies through trainings and code reviews. Our
+          services can be arranged online, making it possible to join in from anywhere in the world, or on-site to get
+          the best experience possible.
+        </p>
       </div>
-      <section class="thtrm-section">
-        <h3 class="thtrm-section-headline">What we do</h3>
-        <span class="thtrm-section-headline-spoiler">Trainings & Code Reviews </span>
-        <p class="thtrm-section-text">We help people to get a deep understanding of different technologies through trainings and code reviews. Our services can be arranged online, making it possible to join in from anywhere in the world, or on-site to get the best experience possible.</p>
-      </section>
-      <div class="thtrm-table-layout">
-        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-teaser thtrm-teaser--code-review">
-              <h4 class="thtrm-teaser-headline">Code Review</h4>
-              <a href="/code-review.html" title="Code Review" class="thtrm-teaser-cta">Learn more</a>
+    </div>
+  </section>
+  <section class="thtrm-section">
+    <h1 class="thtrm-section__heading">Other said about us</h1>
+    <div id="js-thtrm-testimonials" class="thtrm-testimonials slider js_slider">
+      <div class="frame js_frame">
+        <ul class="slides js_slides">
+          <li class="js_slide">
+            <div class="thtrm-testimonial">
+              <!--TODO: Fill with content-->
+              <img class="thtrm-testimonial__avatar" src="images/next/avatar-mike.png"
+                   alt="Mike Adolphs, Manager at GitHub">
+              <blockquote class="thtrm-testimonial__quote">
+                <p>"I was impressed by how passionate Christoph and Pascal conveyed knowledge about Git! Regardless of
+                  whether you're a beginner or an experienced Git user, you will gain new insights by attending one of
+                  their trainings."</p>
+                <cite>&mdash; Mike Adolphs, <span>Manager at Github</span></cite>
+              </blockquote>
             </div>
-          </div>
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-teaser thtrm-teaser--online-training">
-              <h4 class="thtrm-teaser-headline">Online Training</h4>
-              <a href="/training.html#online-training" title="Online Training" class="thtrm-teaser-cta">Learn more</a>
+          </li>
+          <li class="js_slide">
+            <div class="thtrm-testimonial">
+              <!--TODO: Fill with content-->
+              <img class="thtrm-testimonial__avatar" src="images/next/avatar-2.jpg"
+                   alt="Mike Adolphs, Manager at GitHub">
+              <blockquote class="thtrm-testimonial__quote">
+                <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular. And
+                  doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
+                <cite>&mdash; Brad Green, <span>Project Manager Angular, Google Inc.</span></cite>
+              </blockquote>
             </div>
-          </div>
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-teaser thtrm-teaser--onsite-training">
-              <h4 class="thtrm-teaser-headline">On-Site Training</h4>
-              <a href="/training.html#on-site-training" title="On-Site Training" class="thtrm-teaser-cta">Learn more</a>
+          </li>
+          <li class="js_slide">
+            <div class="thtrm-testimonial">
+              <!--TODO: Fill with content-->
+              <img class="thtrm-testimonial__avatar" src="images/next/avatar-3.jpg"
+                   alt="Mike Adolphs, Manager at GitHub">
+              <blockquote class="thtrm-testimonial__quote">
+                <p>"I am delighted after the Git Master Class course with thoughtram. Pascal and Christoph are passioned
+                  about Git and that same passion and knowledge was passed to the course members."</p>
+                <cite>&mdash; Celine Kurpershoek, <span>Front-end Engineer, De Voorhoede</span></cite>
+              </blockquote>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-      <section class="thtrm-section thtrm-section--is-promo">
-        <img width="100" src="/assets/images/angular2-shield-inverse.svg">
-        <h3 class="thtrm-section-headline">Angular Master Class</h3>
-        <p class="thtrm-section-text">Learn Angular in one of our upcoming public trainings or in-house workshops.</p>
-        <a href="/angular-master-class.html" title="Angular Master Class" class="thtrm-layout-divider-cta">Join now</a>
-      </section>
-      <section class="thtrm-section">
-        <h3 class="thtrm-section-headline">Who we are</h3>
-        <span class="thtrm-section-headline-spoiler">Community folks. Learners. Teachers.</span>
-        <p class="thtrm-section-text">We are a small team that is passionate about open source and community work. We live and breath code, we love to learn and we enjoy to teach.</p>
-      </section>
-      <div class="thtrm-table-layout">
-        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-instructor thtrm-instructor--christoph thtrm-instructor--has-overlay">
-              <i class="thtrm-instructor-overlay-trigger material-icons">keyboard_arrow_down</i>
-              <div class="thtrm-instructor-content">
-                <h4 class="thtrm-instructor-name">Christoph Burgdorf</h4>
-                <p class="thtrm-instructor-text thtrm-instructor-text--small">AngularJS Contributor and Angular Docs Author</p>
-              </div>
-              <div class="thtrm-instructor-overlay">
-                <p class="thtrm-instructor-text">Christoph began programming at the age of 10. He is the creator of the Nickel.rs web framework and a contributor of the AngularJS project. Christoph is also part of the Angular Docs Authoring team.</p>
-                <p><a class="thtrm-instructor-cta" href="http://twitter.com/cburgdorf" title="Christoph Burgdorf on Twitter">Twitter</a> <a class="thtrm-instructor-cta" href="http://github.com/cburgdorf" title="Christoph Burgdorf on GitHub">GitHub</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-instructor thtrm-instructor--thomas thtrm-instructor--has-overlay">
-              <div class="thtrm-instructor-content">
-                <h4 class="thtrm-instructor-name">Thomas Burleson</h4>
-                <p class="thtrm-instructor-text thtrm-instructor-text--small">Team Lead for Angular Material</p>
-              </div>
-              <i class="thtrm-instructor-overlay-trigger material-icons">keyboard_arrow_down</i>
-              <div class="thtrm-instructor-overlay">
-                <p class="thtrm-instructor-text ">Thomas was a late bloomer; programming at 24. He is a autodidact technologist with a passion for Angular, UX, and great software. Thomas is the Team Lead for Angular Material. He loves teaching, mentoring, and working with Angular developers.</p>
-                <p><a class="thtrm-instructor-cta" href="http://twitter.com/thomasburleson" title="Thomas Burleson on Twitter">Twitter</a> <a class="thtrm-instructor-cta" href="http://github.com/thomasburleson" title="Thomas Burleson on GitHub">GitHub</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="thtrm-table-layout-cell">
-            <div class="thtrm-instructor thtrm-instructor--pascal thtrm-instructor--has-overlay">
-              <i class="thtrm-instructor-overlay-trigger material-icons">keyboard_arrow_down</i>
-              <div class="thtrm-instructor-content">
-                <h4 class="thtrm-instructor-name">Pascal Precht</h4>
-                <p class="thtrm-instructor-text thtrm-instructor-text--small">Google Developer Expert for the Angular Team</p>
-              </div>
-              <div class="thtrm-instructor-overlay">
-                <p class="thtrm-instructor-text">Pascal is a front-end engineer and a Angular Developer Expert nominated by Google. He created the angular-translate module, is an Angular contributor and also part of the Angular Docs Authoring team.</p>
-                <p><a class="thtrm-instructor-cta" href="http://twitter.com/PascalPrecht" title="Pascal Precht on Twitter">Twitter</a> <a class="thtrm-instructor-cta" href="http://github.com/PascalPrecht" title="Pascal Precht on GitHub">GitHub</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="thtrm-section">
-        <h3 class="thtrm-section-headline">What people say</h3>
-        <span class="thtrm-section-headline-spoiler">Impressed. Delighted. Thrilled.</span>
-        <p class="thtrm-section-text">From small business to large multinational corporations, thoughtram has made happy clients all around the planet. Hear what people say.</p>
-      </section>
-      <div class="thtrm-table-layout">
-        <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
-          <div class="thtrm-table-layout-cell thtrm-background-light-gray">
-            <div class="thtrm-testimonial thtrm-testimonial--mike-adolphs">
-              <div class="thtrm-testimonial-image">
-                <h4 class="thtrm-testimonial-name">Mike Adolphs <span>Support Enginer, GitHub Inc.</h4>
-              </div>
-              <div class="thtrm-testimonial-content">
-                <p>"I was impressed by how passionate Christoph and Pascal conveyed knowledge about Git! Regardless of whether you're a beginner or an experienced Git user, you will gain new insights by attending one of their trainings."</p>
-              </div>
-            </div>
-          </div>
-          <div class="thtrm-table-layout-cell thtrm-background-light-gray">
-            <div class="thtrm-testimonial thtrm-testimonial--celine-kurpershoek">
-              <div class="thtrm-testimonial-image">
-                <h4 class="thtrm-testimonial-name">Celine Kurpershoek <span>Front-end Engineer, De Voorhoede</h4>
-              </div>
-              <div class="thtrm-testimonial-content">
-                <p>"I am delighted after the Git Master Class course with thoughtram. Pascal and Christoph are passioned about Git and that same passion and knowledge was passed to the course members."</p>
-              </div>
-            </div>
-          </div>
-          <div class="thtrm-table-layout-cell thtrm-background-light-gray">
-            <div class="thtrm-testimonial thtrm-testimonial--brad-green">
-              <div class="thtrm-testimonial-image">
-                <h4 class="thtrm-testimonial-name">Brad Green <span>Project Manager Angular, Google Inc.</h4>
-              </div>
-              <div class="thtrm-testimonial-content">
-                <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular.  And doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="thtrm-section">
-        <h3 class="thtrm-section-headline">Friends who trust in us</h3>
-        <span class="thtrm-section-headline-spoiler">Partners and Friends.</span>
-        <!-- <p class="thtrm-section-text">We organize trainings regularly at public conferences, so everyone has a chance to get the thoughtram experience.</p> -->
-        <div class="thtrm-section-constrained">
-          <ul class="thtrm-list thrm-list-logos">
-            <li>
-                <a href="http://ng-conf.org" title="NG-Conf">
-                  <img src="/assets/images/ng-conf-logo.png" alt="">
-                  <span>NG-Conf</span>
-                </a>
-            </li>
-            <li>
-              <a href="http://ng-nl.org" title="NG-NL">
-                <img src="/assets/images/ngnl-logo.png" alt="">
-                  <span>NG-NL</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://angularconnect.com" title="AngularConnect">
-                <img src="/assets/images/angular-connect-logo.png" alt="">
-                  <span>AngularConnect</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://ng-be.org" title="NG-BE">
-                <img src="/assets/images/ng-be-logo.png" alt="">
-                  <span>NG-BE</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="thtrm-footer thtrm-footer--slim">
-      <p class="thtrm-footer-text-cta">Need a training or code review? <a href="mailto:hello@thoughtram.io" title="Contact thoughtram" class="thtrm-footer-cta">Contact us</a></p>
-      <div class="thtrm-footer-navigation">
-        <div class="thtrm-constraint">
-          <div class="thtrm-table-layout">
-            <div class="thtrm-table-layout-row thtrm-table-layout-row--with-three-columns">
-              <div class="thtrm-table-layout-cell">
-                <div class="thtrm-footer-navigation-wrapper">
-                  <h4>Company</h4>
-                  <ul class="thtrm-footer-navigation-list">
-                    <li><a title="Training by thoughtram" href="/training.html">Training</a></li>
-                    <li><a title="Angular Master Class" href="/angular-master-class.html">Angular Master Class</a></li>
-                    <li><a title="Git Master Class" href="/git-master-class.html">Git Master Class</a></li>
-                    <li><a title="Code Reviews by thoughtram" href="/code-review.html">Code Review</a></li>
-                    <li><a title="thoughtram' Code Of Conduct" href="/code-of-conduct.html">Code Of Conduct</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-table-layout-cell">
-                <div class="thtrm-footer-navigation-wrapper">
-                  <h4>Platforms</h4>
-                  <ul class="thtrm-footer-navigation-list">
-                    <li><a title="High-quality articles by thoughtram" href="http://blog.thoughtram.io">Blog</a></li>
-                    <li><a title="Videos and Screencasts by thoughtram" href="http://casts.thoughtram.io">Casts</a></li>
-                    <li><a title="thoughtram events" href="http://www.eventbrite.de/o/thoughtram-6834864471">Events</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="thtrm-table-layout-cell">
-                <div class="thtrm-footer-navigation-wrapper">
-                  <h4>Community</h4>
-                  <ul class="thtrm-footer-navigation-list">
-                    <li><a title="thoughtram on Twitter" href="http://twitter.com/thoughtram">Twitter</a></li>
-                    <li><a title="thoughtram on Facebook" href="http://facebook.com/thoughtram">Facebook</a></li>
-                    <li><a title="thoughtram on Youtube" href="https://www.youtube.com/channel/UCBn1x1RwoQkLmC8UPCNty0Q/featured">Youtube</a></li>
-                    <li><a title="thoughtram on GitHub" href="http://github.com/thoughtram">GitHub</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="thtrm-footer-text">
-        <img class="thtrm-footer-logo" alt="thoughtram brain" src="/assets/images/thoughtram-brain-white.png">
-        <p>This website was created in collaboration with <a href="http://twitter.com/timche_" title="Tim Cheung on Twitter"><strong>Tim Cheung</strong></a> and <a href="http://twitter.com/tim_hartmann_" title="Tim Hartmann on Twitter"><strong>Tim Hartmann</strong></a>.</p>
-        <p ><a href="/code-of-conduct.html" title="Code of Conduct">Code of Conduct</a> &bullet; <a href="/imprint.html" title="Legal Notice">Legal notice</a></p>
-        <p class="thtrm-footer-bottom">&copy; 2014-2017 thoughtram GmbH</p>
-      </div>
-    </footer>
+    </div>
+    <nav class="thtrm-testimonials__navigation">
 
-    <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1"
+              aria-label="Go to slide one"
+              aria-controls="js-thtrm-testimonials">
+        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-mike.png" alt="">
+      </button>
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="2" aria-label="Go to slide two"
+              aria-controls="js-thtrm-testimonials">
+        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-2.jpg" alt="">
+      </button>
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="3" aria-label="Go to slide three"
+              aria-controls="js-thtrm-testimonials">
+        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-3.jpg" alt="">
+      </button>
+    </nav>
+  </section>
+  <section class="thtrm-section--centered">
+    <h1 class="thtrm-section__heading">We helped these companies</h1>
+    <div class="thtrm-image-grid">
+      <img src="images/next/logo-vw.jpg"
+           srcset="images/next/logo-vw.jpg 600w"
+           alt="VW">
+      <img src="images/next/logo-idealo.jpg"
+           srcset="images/next/logo-idealo.jpg 600w"
+           alt="idealo">
+      <img src="images/next/logo-dpd.jpg"
+           srcset="images/next/logo-dpd.jpg 600w"
+           alt="dpd">
+      <img src="images/next/logo-kiwigrid.jpg"
+           srcset="images/next/logo-kiwigrid.jpg 600w"
+           alt="kiwigrid">
+    </div>
+  </section>
+  <section class="thtrm-section">
+    <div class="thtrm-section__item--flushleft">
+      <div class="thtrm-section__image thtrm-ratio--landscape">
+        <img src="images/next/thtrm-left.jpg"
+             srcset="images/next/thtrm-left.jpg 600w"
+             sizes="(min-width: 700px) 40vw,
+                        90vw"
+             alt="">
+      </div>
+    </div>
+    <div class="thtrm-section__item--halfpadded">
+      <h1 class="thtrm-section__heading">Our knowledge change your work.</h1>
+      <p class="thtrm-section__paragraph">Lorem ipsum dolor sit amet, cons consetetur sadipscing elitr, sed alem diam
+        nonumy eirmod tempor.</p>
+    </div>
+  </section>
+  <section class="thtrm-section">
+    <div class="thtrm-section__item--columns">
+      <div class="thtrm-box thtrm-box--light">
+        <h2 class="thtrm-box__heading">Consulting</h2>
+        <p class="thtrm-box__paragraph">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+      <div class="thtrm-box thtrm-box--dark">
+        <h2 class="thtrm-box__heading">Online-Training</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+      <div class="thtrm-box">
+        <h2 class="thtrm-box__heading">On-Site Training</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+      <div class="thtrm-box thtrm-box--light">
+        <h2 class="thtrm-box__heading">Consulting</h2>
+        <p class="thtrm-box__paragraph">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+      <div class="thtrm-box thtrm-box--dark">
+        <h2 class="thtrm-box__heading">Online-Training</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+      <div class="thtrm-box">
+        <h2 class="thtrm-box__heading">On-Site Training</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+        <a class="thtrm-box__more-link" href="#">Read more</a>
+      </div>
+    </div>
+  </section>
+  <section class="thtrm-section--offright-white">
+    <h1 class="thtrm-section__heading--unpadded-top">Do you need a special offer?</h1>
+    <p class="thtrm-section__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore.</p>
+    <button class="thtrm-button"
+            aria-label="Contact">
+      <span aria-hidden="true">Contact</span>
+    </button>
+  </section>
+  <section class="thtrm-section--fullbleed">
+    <div class="thtrm-ratio--stripe u-fill-space">
+      <img class="u-img-fit-height"
+           src="images/next/thtrm-masterclass.jpg"
+           srcset="images/next/thtrm-masterclass.jpg 600w"
+           sizes="100vw"
+           alt="Angular Master Class attendees"
+      />
+    </div>
+    <div class="thtrm-stripe">
+      <h2 class="thtrm-stripe__title">Angular Master Class</h2>
+      <div class="thtrm-stripe__location">
+        <strong><span class="u-text--bigger">03. May</span> <br>New York</strong>
+      </div>
+      <button class="thtrm-stripe__cta thtrm-button--bordered">Buy a ticket</button>
+    </div>
+  </section>
+</main>
+<aside class="thtrm-aside" role="complementary">
+  <section class="thtrm-section--centered thtrm-section--unpadded-bottom u-flex--justify-center">
+    <h1 class="thtrm-section__heading--small">You don‘t find something in your town?<br>We notify you, if we have
+      something there.</h1>
+    <form class="thtrm-form"
+          action="//thoughtram.us8.list-manage.com/subscribe/post?u=dfbb1507fbced5a20d9dc5698&amp;id=731f22cdca"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+      <label class="thtrm-form__label" for="thtrm-newsletter" aria-hidden="true">Your email</label> <input type="email"
+                                                                                                           class="thtrm-form__input--text"
+                                                                                                           id="thtrm-newsletter"
+                                                                                                           value=""
+                                                                                                           name="EMAIL"
+                                                                                                           placeholder="Your email address..."
+                                                                                                           required>
+      <div class="u-offscreen-text">
+        <label class="thtrm-form__label" for="thtrm-newsletter-text" aria-hidden="true">Your email</label> <input
+        id="thtrm-newsletter-text" placeholder="Your email …" name="b_dfbb1507fbced5a20d9dc5698_731f22cdca"
+        tabindex="-1"
+        value="">
+      </div>
+      <input type="submit" value="Notify me" name="subscribe" class="thtrm-form__button thtrm-button"
+             aria-label="Notify me">
+    </form>
+  </section>
+</aside>
+<footer class="thtrm-footer" role="contentinfo">
+  <section class="thtrm-sitemap">
+    <div class="thtrm-sitemap__item">
+      <h2 class="thtrm-sitemap__heading">Our company</h2>
+      <nav class="thtrm-sitemap__nav" role="navigation">
+        <ul>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Angular Master Class</a></li>
+          <li><a href="#">Git Master Class</a></li>
+          <li><a href="#">Code Review</a></li>
+          <li><a href="#">Code of Conduct</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="thtrm-sitemap__item">
+      <h2 class="thtrm-sitemap__heading">Platforms</h2>
+      <nav class="thtrm-sitemap__nav" role="navigation">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Casts</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="thtrm-sitemap__item">
+      <h2 class="thtrm-sitemap__heading">Community</h2>
+      <nav class="thtrm-sitemap__nav" role="navigation">
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="thtrm-copyright">
+    <a href="">Imprint</a>
+    <p>© 2014-2017 thoughtram </p>
+  </div>
+</footer>
+<!--SVG sprite-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" hidden>
+  <symbol viewBox="0 0 24 24" id="icon--chevron-right">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" id="icon--chevron-down">
+    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+    <path d="M0-.75h24v24H0z" fill="none"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" id="icon--menu">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+  </symbol>
+</svg>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.1/lory.min.js"></script>
+<script src="scripts/main.min.js"></script>
+</body>
 </html>

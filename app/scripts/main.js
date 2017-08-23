@@ -1,75 +1,83 @@
-(function(window, navigator, document) {
-  'use strict';
+'use strict';
+/* global window document lory */
 
-  // Check to make sure service workers are supported in the current browser,
-  // and that the current page is accessed from a secure origin. Using a
-  // service worker from an insecure origin will trigger JS console errors. See
-  // http://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features
-  if ('serviceWorker' in navigator &&
-      (window.location.protocol === 'https:' ||
-       window.location.hostname === 'localhost' ||
-       window.location.hostname.indexOf('127.') === 0)) {
-    navigator.serviceWorker.register('/service-worker.js', {
-      scope: './'
-    }).then(function(registration) {
-      // Check to see if there's an updated version of service-worker.js with
-      // new files to cache:
-      // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-registration-update-method
-      if (typeof registration.update === 'function') {
-        registration.update();
-      }
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.querySelector('body');
+  const navToggle = document.querySelector('#thtrm-nav-button');
+  const menu = document.querySelector('#thtrm-nav-main-list');
+  const testimonialWrapper = document.querySelector('#js-thtrm-testimonials');
+  const addActiveModifierClass = (htmlEl) =>
+    htmlEl.classList.add('is-active');
+  const removeActiveModifierClass = (htmlEl) =>
+    htmlEl.classList.remove('is-active');
+  const goToSlide = (instance) => (slideNum) =>
+    instance.slideTo(slideNum);
+  const updateThumbnails = (xs) => (activeIndex) => {
+    xs.forEach(removeActiveModifierClass);
+    addActiveModifierClass(xs[activeIndex]);
+  };
+  const toggleNav = (state) => {
+    const isVisible = state ||
+      navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
 
-      // updatefound is fired if service-worker.js changes.
-      registration.onupdatefound = function() {
-        // updatefound is also fired the very first time the SW is installed,
-        // and there's no need to prompt for a reload at that point.
-        // So check here to see if the page is already controlled,
-        // i.e. whether there's an existing service worker.
-        if (navigator.serviceWorker.controller) {
-          // The updatefound event implies that registration.installing is set:
-          // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
-          var installingWorker = registration.installing;
-
-          installingWorker.onstatechange = function() {
-            switch (installingWorker.state) {
-              case 'installed':
-                // At this point, the old content will have been purged and the
-                // fresh content will have been added to the cache.
-                // It's the perfect time to display a "New content is
-                // available; please refresh." message in the page's interface.
-                break;
-
-              case 'redundant':
-                throw new Error('The installing ' +
-                                'service worker became redundant.');
-              default:
-                break;
-            }
-          };
-        }
-      };
-    }).catch(function(e) {
-      console.error('Error during service worker registration:', e);
-    });
-  }
-
-  var trigger = document.querySelector('.thtrm-header-menu-wrapper');
-  var triggerCL = trigger.classList;
-  var activeClass = 'is-active';
-
-  var docListener = function(event) {
-    if (event.target.className !== 'thtrm-header-menu-label') {
-      triggerCL.remove(activeClass);
-      document.removeEventListener('click', docListener);
-    }
+    navToggle.setAttribute(
+      'aria-expanded',
+      `${isVisible}`
+    );
+    menu.classList.toggle('is-visible');
+    return isVisible;
   };
 
-  trigger.addEventListener('click', function() {
-    if (triggerCL.contains(activeClass)) {
-      triggerCL.remove(activeClass);
+  const hideNav = () => {
+    navToggle.setAttribute(
+      'aria-expanded', 'false'
+    );
+    menu.classList.remove('is-visible');
+  };
+
+  if (testimonialWrapper && window.lory) {
+    const testimonialThumbnails =
+      [...document.querySelectorAll('.js-thtrm-testimonial-trigger')];
+    const testimonialGallery = lory && lory(testimonialWrapper, {
+      enableMouseEvents: true,
+      slidesToScroll: 1,
+      slideSpeed: 500,
+      ease: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+    });
+
+    const goToSlideTestimonialGallery = goToSlide(testimonialGallery);
+    const updateTestimonialThumbnails = updateThumbnails(testimonialThumbnails);
+
+    testimonialWrapper.addEventListener('after.lory.slide', (ev) => {
+      updateTestimonialThumbnails(ev.detail.currentSlide);
+    });
+
+    testimonialThumbnails.forEach((el) =>
+      el.addEventListener('click', () => {
+        const slideNum = Number(el.getAttribute('data-slide-num')) - 1;
+        goToSlideTestimonialGallery(slideNum);
+      }));
+  }
+
+  navToggle.addEventListener('click', (ev) => {
+    const isVisible = toggleNav();
+    ev.stopPropagation();
+    ev.stopImmediatePropagation();
+    if (isVisible === 'true') {
+      body.addEventListener('click', hideNav, {once: true});
     } else {
-      triggerCL.add(activeClass);
-      document.addEventListener('click', docListener);
+      body.removeEventListener('click', hideNav);
+    }
+  }, false);
+
+  document.addEventListener('keydown', (evt) => {
+    let isEscape = 'key' in evt ?
+      (evt.key == 'Escape' || evt.key == 'Esc') :
+      (evt.keyCode == 27);
+
+    if (isEscape) {
+      hideNav();
+      body.removeEventListener('click', hideNav);
     }
   });
-})(window, navigator, document);
+});
