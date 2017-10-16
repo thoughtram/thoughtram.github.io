@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: var(--thtrm-base-fontweight);
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: 0;
     margin: 0;
 }
@@ -34,7 +34,7 @@ h1 {
 }
 
 a {
-    color: var(--thtrm-color-blue);
+    color: var(--thtrm-color-midblue);
     text-decoration: none;
 }
 
@@ -44,6 +44,10 @@ a::after {
     font-weight: normal;
     font-size: 1.15em;
     margin-left: .25em;
+}
+
+a[title="Home"]:after {
+  display: none;
 }
 
 img {
