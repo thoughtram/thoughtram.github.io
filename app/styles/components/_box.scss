@@ -13,6 +13,18 @@
   background-color: var(--thtrm-color-lightblue);
 }
 
+.thtrm-box--red {
+  background-color: var(--thtrm-amc-red);
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.04);
+}
+
+.thtrm-box--white {
+  background-color: var(--thtrm-color-white);
+  color: var(--thtrm-color-text);
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.04);
+}
+
+
 .thtrm-box--dark {
   background-color: var(--thtrm-color-darkblue);
 }

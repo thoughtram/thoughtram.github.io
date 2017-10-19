@@ -46,3 +46,36 @@
   height: 100%;
   width: 100%;
 }
+
+
+.u-color--red {
+  color: var(--thtrm-amc-red);
+}
+
+.u-color--grey {
+  color: var(--thtrm-color-lighttext);;
+}
+
+.u-bg-lightgray {
+  background-color: var(--thtrm-color-ultralightgray);
+}
+
+.u-bg--red {
+  background-color: var(--thtrm-amc-red);
+}
+
+.u-bg--orange {
+  background-color: var(--thtrm-git-orange);
+}
+
+.u-color--orange {
+  color: var(--thtrm-git-orange);
+}
+
+@media screen and (min-width: $thtrm-media-nav) {
+  .u-max-width--half {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
