@@ -41,6 +41,10 @@
   color: var(--thtrm-amc-red);
 }
 
+.thtrm-card__topic.thtrm-card__topic--grey {
+  color: var(--thtrm-color-lighttext);
+}
+
 .thtrm-card__topic.thtrm-card__topic--black {
   color: var(--thtrm-git-orange);
 }
@@ -56,6 +60,14 @@
     margin-left: -0.8rem;
     position: absolute;
   }
+}
+
+.thtrm-card__paragraph {
+  margin: .5rem 0;
+}
+
+.thtrm-card__link {
+  color: inherit;
 }
 
 @media screen and (min-width: $thtrm-media-phablet) {

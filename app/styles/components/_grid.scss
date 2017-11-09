@@ -4,6 +4,9 @@
   padding:1rem;
   width: 100%;
 
+  &.thtrm-layout-halfs {
+    grid-template-columns: 1fr;
+  }
   &.thtrm-layout-thirds {
     grid-template-columns: 1fr;
   }
@@ -14,6 +17,9 @@
 
 @media screen and (min-width: $thtrm-media-phablet) {
   .thtrm-layout {
+    &.thtrm-layout-halfs {
+      grid-template-columns: 1fr 1fr;
+    }
     &.thtrm-layout-thirds {
       grid-template-columns: 1fr 1fr;
     }
@@ -24,7 +30,9 @@
 }
 @media screen and (min-width: $thtrm-media-nav) {
   .thtrm-layout {
-
+    &.thtrm-layout-halfs {
+      grid-template-columns: 1fr 1fr;
+    }
     &.thtrm-layout-thirds {
       grid-template-columns: 1fr 1fr;
     }
@@ -36,7 +44,9 @@
 
 @media screen and (min-width: $thtrm-media-tablet) {
   .thtrm-layout {
-
+    &.thtrm-layout-halfs {
+      grid-template-columns: 1fr 1fr;
+    }
     &.thtrm-layout-thirds {
       grid-template-columns: 1fr 1fr;
     }
@@ -50,7 +60,9 @@
   .thtrm-layout {
     grid-gap: 1.5rem;
     padding: 1.5rem;
-
+    &.thtrm-layout-halfs {
+      grid-template-columns: 1fr 1fr;
+    }
     &.thtrm-layout-thirds {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -64,9 +76,11 @@
   .thtrm-layout {
     display: grid;
     grid-gap: 1.5rem;
-
+    &.thtrm-layout-halfs {
+      grid-template-columns: 1fr 1fr;
+    }
     &.thtrm-layout-thirds {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     &.thtrm-layout-fourths {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
