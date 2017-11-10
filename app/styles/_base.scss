@@ -46,6 +46,10 @@ a::after {
     margin-left: .25em;
 }
 
+a[title="Home"]:after {
+  display: none;
+}
+
 img {
     width: 100%;
     height: auto;

@@ -38,12 +38,20 @@
   <script type="application/ld+json" src="structured-data/organization.json"></script>
 </head>
 <body id="debug" class="thtrm-page" itemscope itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMLVSW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMLVSW');</script>
+<!-- End Google Tag Manager -->
 <header class="thtrm-banner" role="banner">
-  <img src="images/next/logo.svg"
+  <a href="/" title="Home"><img src="images/next/logo.svg"
        alt="thoughtram"
        class="thtrm-logo"
-       title="The thoughtram logo"
-  >
+       title="The thoughtram logo"></a>
   <nav id="thtrm-nav-main"
        class="thtrm-nav"
        role="navigation"
@@ -62,7 +70,6 @@
     <ul id="thtrm-nav-main-list" class="thtrm-nav__list">
       <li><a title="Training" href="/training.html">Training</a></li>
       <li><a title="Consulting" href="/code-review.html">Consulting</a></li>
-      <li><a title="Team" href="/team.html">Team</a></li>
       <li><a title="Blog" href="https://blog.thoughtram.io">Blog</a></li>
     </ul>
   </nav>
@@ -88,18 +95,17 @@
     </div>
   </section>
   <section class="thtrm-section">
-    <h1 class="thtrm-section__heading">What people say</h1>
+    <h1 class="thtrm-section__heading">Loved by experts</h1>
     <div id="js-thtrm-testimonials" class="thtrm-testimonials slider js_slider">
       <div class="frame js_frame">
         <ul class="slides js_slides">
           <li class="js_slide">
             <div class="thtrm-testimonial">
-              <img class="thtrm-testimonial__avatar" src="images/next/avatar-2.jpg"
-                   alt="Brad Green, Project Manager Angular, Google">
+              <img class="thtrm-testimonial__avatar" src="images/next/avatar-igor.png"
+                   alt="Igor Minar, Angular Team Lead, Google">
               <blockquote class="thtrm-testimonial__quote">
-                <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular. And
-                  doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
-                <cite>&mdash; Brad Green, <span>Project Manager Angular, Google Inc.</span></cite>
+                <p>"I love how Pascal and Christoph can explain even the trickiest things with humor and ease. Thanks for being awesome and contributing so much to the Angular community."</p>
+                <cite>&mdash; Igor Minar, <span>Angular Team Lead, Google Inc.</span></cite>
               </blockquote>
             </div>
           </li>
@@ -111,6 +117,17 @@
                 <p>"I am delighted after the Git Master Class course with thoughtram. Pascal and Christoph are passioned
                   about Git and that same passion and knowledge was passed to the course members."</p>
                 <cite>&mdash; Celine Kurpershoek, <span>Front-end Engineer, De Voorhoede</span></cite>
+              </blockquote>
+            </div>
+          </li>
+          <li class="js_slide">
+            <div class="thtrm-testimonial">
+              <img class="thtrm-testimonial__avatar" src="images/next/avatar-2.jpg"
+                   alt="Brad Green, Project Manager Angular, Google">
+              <blockquote class="thtrm-testimonial__quote">
+                <p>"I'm really impressed by thoughtram's in-depth explanations on the big concepts in Angular. And
+                  doubly impressed that they've stayed up to date on our rapid release schedule!"</p>
+                <cite>&mdash; Brad Green, <span>Project Manager Angular, Google Inc.</span></cite>
               </blockquote>
             </div>
           </li>
@@ -131,27 +148,37 @@
     </div>
     <nav class="thtrm-testimonials__navigation">
 
-      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1" aria-label="Go to slide two"
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger is-active" data-slide-num="1" aria-label="Go to slide one"
               aria-controls="js-thtrm-testimonials">
-        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-2.jpg" alt="">
+        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-igor.png" alt="">
       </button>
-      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="2" aria-label="Go to slide three"
+
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="2" aria-label="Go to slide two"
               aria-controls="js-thtrm-testimonials">
         <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-3.jpg" alt="">
       </button>
-      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="3"
-              aria-label="Go to slide one"
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="3" aria-label="Go to slide three"
+              aria-controls="js-thtrm-testimonials">
+        <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-2.jpg" alt="">
+      </button>
+      <button class="thtrm-button--ghost js-thtrm-testimonial-trigger" data-slide-num="4"
+              aria-label="Go to slide four"
               aria-controls="js-thtrm-testimonials">
         <img class="thtrm-testimonials__thumbnail" src="images/next/avatar-mike.png" alt="">
       </button>
     </nav>
   </section>
   <section class="thtrm-section--centered">
-    <!-- <h1 class="thtrm-section__heading">Companies that trust in us</h1> -->
     <div class="thtrm-image-grid">
+      <img src="images/next/logo-capgemini.svg"
+           srcset="images/next/logo-capgemini.svg 600w"
+           alt="Capgemini">
       <img src="images/next/logo-vw.jpg"
            srcset="images/next/logo-vw.jpg 600w"
            alt="VW">
+      <img src="images/next/logo-cegeka.png"
+           srcset="images/next/logo-cegeka.png 600w"
+           alt="Cegeka">
       <img src="images/next/logo-idealo.jpg"
            srcset="images/next/logo-idealo.jpg 600w"
            alt="idealo">
@@ -161,46 +188,50 @@
       <img src="images/next/logo-kiwigrid.jpg"
            srcset="images/next/logo-kiwigrid.jpg 600w"
            alt="kiwigrid">
+      <img src="images/next/logo-trademe.png"
+           srcset="images/next/logo-trademe.png 600w"
+           alt="Realdolmen">
+      <img src="images/next/logo-r&s.svg"
+           srcset="images/next/logo-r&s.svg 600w"
+           alt="R&S">
+      <img src="images/next/logo-netcetera.jpg"
+           srcset="images/next/logo-netcetera.jpg 600w"
+           alt="Netcetera">
     </div>
   </section>
   <section class="thtrm-section">
     <div class="thtrm-section__item--flushleft">
       <div class="thtrm-section__image thtrm-ratio--landscape">
-        <img src="images/next/thtrm-left.jpg"
-             srcset="images/next/thtrm-left.jpg 600w"
+        <img src="images/next/you-can-sit-with-us.jpg"
+             srcset="images/next/you-can-sit-with-us.jpg 600w"
              sizes="(min-width: 700px) 40vw,
                         90vw"
              alt="">
       </div>
     </div>
     <div class="thtrm-section__item--halfpadded">
-      <h1 class="thtrm-section__heading">Sit with us</h1>
-      <p class="thtrm-section__paragraph">Whether you need training, build Angular apps or rethink your version control processes and architecture - let's sit together and approach your challenges collaboratively.</p>
+      <h1 class="thtrm-section__heading">You can sit with us</h1>
+      <p class="thtrm-section__paragraph">Whether you need training, build Angular apps or rethink your version control processes and architecture - let's sit together!</p>
+      <a class="thtrm-section__link" title="Consulting" href="/code-review.html">Find out more</a>
     </div>
   </section>
   <section class="thtrm-section">
-    <div class="thtrm-section__item--columns">
-      <div class="thtrm-box thtrm-box--light">
+    <div class="thtrm-layout thtrm-layout-halfs">
+      <div class="thtrm-box">
         <h2 class="thtrm-box__heading">Consulting</h2>
         <p class="thtrm-box__paragraph">
           Need help with building your app or an opinion if things are going the right way? We've successfully helped many companies to ship their Angular apps!
         </p>
-        <a class="thtrm-box__more-link" href="#">Read more</a>
+        <a title="Consulting" class="thtrm-box__more-link" href="/code-review.html">Read more</a>
       </div>
       <div class="thtrm-box thtrm-box--dark">
-        <h2 class="thtrm-box__heading">On-Site Training</h2>
+        <h2 class="thtrm-box__heading">Training</h2>
         <p>
           Looking for an effective, customized in-house training to level up your team's skills? We offer our high-quality training all across the globe in Angular and Git!
         </p>
-        <a class="thtrm-box__more-link" href="#">Read more</a>
+        <a title="On-site Training" class="thtrm-box__more-link" href="/training.html#section:onsite-training">Read more</a>
       </div>
-      <div class="thtrm-box">
-        <h2 class="thtrm-box__heading">Online Training</h2>
-        <p>
-          Individual developer or a small team on the other side of the world? Our flexible online training hours help you getting stuff done, even from far distances!
-        </p>
-        <a class="thtrm-box__more-link" href="#">Read more</a>
-      </div>
+    </div>
   </section>
   <section class="thtrm-section--offright-white">
     <h1 class="thtrm-section__heading--unpadded-top">Not what you're looking for?</h1>
@@ -224,7 +255,7 @@
       <div class="thtrm-stripe__location">
         <strong><span class="u-text--bigger">07. December</span> <br>Gent</strong>
       </div>
-      <a href="mailto:hello@thoughtram.io" title="Host a training" class="thtrm-stripe__cta thtrm-button--bordered">Get a ticket</a>
+      <a href="https://ti.to/ng-be/ng-be-2017/" title="Get a ticket" class="thtrm-stripe__cta thtrm-button--bordered">Get a ticket</a>
     </div>
   </section>
 </main>

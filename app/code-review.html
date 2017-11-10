@@ -1,76 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="No matter if you just need a little direction, a third opinion or are plagued by problems which seem unsolveable. We are there to help you out.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Reviews by thoughtram</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="No matter if you just need a little direction, a third opinion or are plagued by problems which seem unsolvable. We are there to help you out.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulting & Code Reviews by thoughtram</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#384c54">
-    <link rel="icon" sizes="192x192" href="assets/images/touch/chrome-touch-icon-192x192.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#384c54">
+  <link rel="icon" sizes="192x192" href="assets/images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="thoughtram">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="thoughtram">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#384c54">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#384c54">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
 
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="No matter if you just need a little direction, a third opinion or are plagued by problems which seem unsolveable. We are there to help you out.">
-    <meta property="og:url" content="http://thoughtram.io/code-review.html">
-    <meta property="og:site_name" content="Code Reviews by thoughtram">
-    <meta property="og:image" content="http://thoughtram.io/assets/images/teaser-background-code-review_phablet.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="No matter if you just need a little direction, a third opinion or are plagued by problems which seem unsolveable. We are there to help you out.">
+  <meta property="og:url" content="http://thoughtram.io/code-review.html">
+  <meta property="og:site_name" content="Consulting & Code Reviews by thoughtram">
+  <meta property="og:image" content="http://thoughtram.io/assets/images/teaser-background-code-review_phablet.jpg">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Code Reviews by thoughtram">
-    <meta property="twitter:site" content="thoughtram">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Consulting & Code Reviews by thoughtram">
+  <meta property="twitter:site" content="thoughtram.io">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" class="sub-site">
-    <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMLVSW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PMLVSW');</script>
-    <!-- End Google Tag Manager -->
-    <header class="thtrm-header" role="banner">
-      <div class="thtrm-header-bar">
-        <div class="thtrm-constraint">
-          <a href="/" class="thtrm-header-logo-link" title="thoughtram.io Start Page"><h1 class="thtrm-header-logo">thoughtram</h1></a>
-          <div class="thtrm-header-menu-wrapper">
-            <span role="button" tabindex="0" class="thtrm-header-menu-label">Menu</span>
-            <ul class="thtrm-header-menu">
-              <li><a title="Training" class="thtrm-header-menu-item " href="/training.html">Training</a></li>
-              <li><a title="Code Review" class="thtrm-header-menu-item active" href="/code-review.html">Code Review</a></li>
-              <li><a title="Casts" class="thtrm-header-menu-item " href="http://casts.thoughtram.io">Casts</a></li>
-              <li><a title="Blog" class="thtrm-header-menu-item" href="http://blog.thoughtram.io">Blog</a></li>
-            </ul>
-          </div>
-        </div>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body id="debug" class="thtrm-page" itemscope itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMLVSW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMLVSW');</script>
+<!-- End Google Tag Manager -->
+<header class="thtrm-banner" role="banner">
+  <a href="/" title="Home"><img src="images/next/logo.svg"
+       alt="thoughtram"
+       class="thtrm-logo"
+       title="The thoughtram logo"></a>
+  <nav id="thtrm-nav-main"
+       class="thtrm-nav"
+       role="navigation"
+       itemscope
+       itemtype="http://www.schema.org/SiteNavigationElement">
+    <button class="thtrm-button--ghost thtrm-nav__button"
+            id="thtrm-nav-button"
+            aria-expanded="false"
+            aria-label="Menu"
+            aria-controls="thtrm-nav-main-list">
+            <span aria-hidden="true">
+                Menu
+                <svg class="thtrm-icon"><use xlink:href="#icon--chevron-down"/></svg>
+            </span>
+    </button>
+    <ul id="thtrm-nav-main-list" class="thtrm-nav__list">
+      <li><a title="Training" href="/training.html">Training</a></li>
+      <li><a title="Consulting" href="/code-review.html">Consulting</a></li>
+      <li><a title="Blog" href="https://blog.thoughtram.io">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="thtrm-main" role="main">
+  <nav class="thtrm-nav-toc">
+    <ul>
+      <li><a href="#section:analyze">Analyzing &amp; Improve</a></li>
+      <li><a href="#section:refactor">Refactoring</a></li>
+      <li><a href="#section:handson">Hands On</a></li>
+    </ul>
+  </nav>
+  <section class="thtrm-section--undercut-bottom u-flex--nowrap">
+    <div class="thtrm-section__item--halfpadded">
+      <h1 class="thtrm-section__heading">Get the best out your Angular Apps</h1>
+      <p class="thtrm-section__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut laboreet.</p>
+    </div>
+    <div class="thtrm-section__item--flushright">
+      <div class="thtrm-section__image thtrm-ratio--landscape">
+        <img srcset="images/next/subpage-1.jpg 600w"
+             sizes="(min-width: 700px) 40vw,
+                        90vw"
+             src="images/next/subpage-1.jpg" alt="">
       </div>
-    </header>
-    <main role="main" class="thtrm-main">
+    </div>
+  </section>
       <div class="thtrm-banner thtrm-banner--code-review">
         <hgroup class="thtrm-banner-container">
           <h2 class="thtrm-banner-text">Code Review</h2>
