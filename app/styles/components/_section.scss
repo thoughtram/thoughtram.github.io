@@ -81,6 +81,14 @@
   text-align: center;
   width: 100%;
   padding: 2rem 5vw;
+
+  p + a {
+    display: inline-block;
+    margin-top: 2em;
+  }
+  p > a:after {
+    display: none;
+  }
 }
 
 .thtrm-section__subheading {
@@ -270,6 +278,7 @@
   .thtrm-section__item--columns > *:nth-child(3n + 3) {
     -ms-grid-column: 3;
   }
+
 }
 
 @media screen and (min-width: $thtrm-media-laptop) {
@@ -279,6 +288,13 @@
 
   .thtrm-section--offright-white {
     max-width: 70%;
+  }
+
+  .thtrm-section__footer {
+    p {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
   }
 }
 
