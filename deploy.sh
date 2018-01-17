@@ -2,7 +2,7 @@
 
 echo -e "\033[0;32mDeploying new thoughtram site...\033[0m"
 
-gulp
+./node_modules/gulp/bin/gulp.js
 
 # delete old gh-pages branch
 git branch -D deploy
