@@ -223,7 +223,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'videos', 'fonts', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'videos', 'fonts', 'copy', 'copy-well-known'],
     'generate-service-worker',
     cb
   )
@@ -244,6 +244,12 @@ gulp.task('pagespeed', cb =>
 gulp.task('copy-sw-scripts', () => {
   return gulp.src(['node_modules/sw-toolbox/sw-toolbox.js', 'app/scripts/sw/runtime-caching.js'])
     .pipe(gulp.dest('dist/scripts/sw'));
+});
+
+// Copy over .well-known file
+gulp.task('copy-well-known', () => {
+  return gulp.src(['app/.well-known/**/*.txt'])
+    .pipe(gulp.dest('dist/.well-known'));
 });
 
 // See http://www.html5rocks.com/en/tutorials/service-worker/introduction/ for
