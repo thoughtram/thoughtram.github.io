@@ -64,6 +64,26 @@
   }
 }
 
+.thtrm-section--privacy-statement {
+  p, strong, li {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  p, ul {
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+  }
+
+  h4,h3 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .thtrm-stripe--fullwidth {
   font-weight: bold;
   color: #fff;
@@ -75,6 +95,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .thtrm-section__header,
 .thtrm-section__footer {
