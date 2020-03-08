@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: thoughtram.io
+Token: 360379ea24b5d99445046b0b1a2bb2a44db08addad2ff0fb2add8aae1a2c36b0

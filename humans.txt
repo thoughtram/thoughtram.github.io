@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Pascal Precht -- Trainer / Co-Founder / Software Engineer -- @PascalPrecht
+  Christoph Burgdorf -- Trainer / Co-Founder / Software Engineer-- @PascalPrecht
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.home.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.training.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.angular-master-class.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.angular2-master-class.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.git-master-class.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://thoughtram.io/sitemap.events.xml</loc>
+    <lastmod>2016-03-14T19:38:13+00:00</lastmod>
+  </sitemap>
+</sitemapindex>
